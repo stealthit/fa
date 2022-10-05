@@ -1,0 +1,205 @@
+/* change image path  */
+/*10px*/
+/*12px*/
+/*13px*/
+/*14px*/
+/*15px*/
+/*16px*/
+/*17px*/
+/*18px*/
+/*20px*/
+/*22px*/
+/*22px*/
+/*24px*/
+/*24px*/
+/*26px*/
+/*26px*/
+/*30px*/
+/*32px*/
+/*32px*/
+/*40px*/
+/*42px*/
+/*62px*/
+/*30px*/
+/*80px*/
+@import url("reset.css");
+@import url("common.css");
+#main.dashboard .contents-wrap .contents-inner .contents-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.875rem;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section01 .graph-box {
+  width: 71.875rem;
+  height: 31.25rem;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.625rem;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.875rem;
+  padding: 1.875rem;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap .todo-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap #todolist ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.75rem;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap #todolist ul li {
+  height: 3.4375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.875rem;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap #todolist ul li .todo-left {
+  position: relative;
+  width: 0.6875rem;
+  padding-top: 0.375rem;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap #todolist ul li .todo-left .todo-marker {
+  width: 0.6875rem;
+  height: 0.6875rem;
+  border-radius: 100%;
+  border: solid 2px #aaa;
+  background-color: #fff;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap #todolist ul li .todo-left::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 3.9375rem;
+  top: 1.4375rem;
+  left: 0.3125rem;
+  background-color: #ccc;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap #todolist ul li .todo-center {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.375rem;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap #todolist ul li .todo-center .todo-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.45;
+  text-align: left;
+  color: #2e3666;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap #todolist ul li .todo-center .todo-place {
+  font-size: 0.875rem;
+  line-height: 1.43;
+  text-align: left;
+  color: #aaa;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap #todolist ul li .todo-right {
+  padding-top: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.43;
+  text-align: right;
+  color: #1ea5d2;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap #todolist ul li.disabled * {
+  color: #ccc !important;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .todo-wrap #todolist ul li:last-child .todo-left::before {
+  width: 0;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .calendar-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.875rem;
+  padding: 1.875rem;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section02 .calendar-wrap .calendar-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section03 .customer-wrap .customer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+#main.dashboard .contents-wrap .contents-inner .contents-body .section03 .customer-wrap .customer-top .search-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */

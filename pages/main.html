@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link href='../css/main.min.css' rel='stylesheet' /> -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="wrapper" class="wrapper menuOpen">
+    <div id="sideMenu" class="sidenav">
+      <ul id="menuList" class="menu-list">
+        <li>
+          <div class="menu-item">
+            <img class="ic-left-logo" src="" alt="">            
+          </div>
+        </li>
+        <li class="active">
+          <div class="menu-item">
+            <img class="ic-menu-dashboard" src="" alt="">
+            <div class="menu-name">대시보드</div>
+          </div>
+          <ul class="menu-depth2">
+            <li>depth2-1</li>
+            <li>depth2-2</li>
+            <li>depth2-3</li>
+            <li>depth2-4</li>
+          </ul>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-counsel" src="" alt="">
+            <div class="menu-name">고객상담</div>
+          </div>
+          <ul class="menu-depth2">
+            <li>depth2-1</li>
+            <li>depth2-2</li>
+            <li>depth2-3</li>
+            <li>depth2-4</li>
+          </ul>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-mywork" src="" alt="">
+            <div class="menu-name">마이워크</div>
+          </div>
+          <ul class="menu-depth2">
+            <li>depth2-1</li>
+            <li>depth2-2</li>
+            <li>depth2-3</li>
+            <li>depth2-4</li>
+          </ul>
+        </li>
+        <li>          
+          <div class="menu-item">
+            <img class="ic-menu-reward" src="" alt="">
+            <div class="menu-name">리워드</div>
+          </div>
+          <ul class="menu-depth2">
+            <li>depth2-1</li>
+            <li>depth2-2</li>
+            <li>depth2-3</li>
+            <li>depth2-4</li>
+          </ul>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-customer" src="" alt="">
+            <div class="menu-name">고객</div>
+          </div>
+          <ul class="menu-depth2">
+            <li>depth2-1</li>
+            <li>depth2-2</li>
+            <li>depth2-3</li>
+            <li>depth2-4</li>
+          </ul>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-product" src="" alt="">
+            <div class="menu-name">상품</div>
+          </div>
+          <ul class="menu-depth2">
+            <li>depth2-1</li>
+            <li>depth2-2</li>
+            <li>depth2-3</li>
+            <li>depth2-4</li>
+          </ul>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-insight" src="" alt="">
+            <div class="menu-name">Insight</div>
+          </div>
+          <ul class="menu-depth2">
+            <li>depth2-1</li>
+            <li>depth2-2</li>
+            <li>depth2-3</li>
+            <li>depth2-4</li>
+          </ul>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-my" src="" alt="">
+            <div class="menu-name">내정보</div>
+          </div>
+          <ul class="menu-depth2">
+            <li>depth2-1</li>
+            <li>depth2-2</li>
+            <li>depth2-3</li>
+            <li>depth2-4</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- sidemenu open/close button (Fixed location) -->
+    <button id="btnSideOpen">
+      <img class="ic-left-logo" src="" alt="">
+    </button>
+
+    <div id="main" class="main-wrap dashboard">      
+      <div class="contents-wrap">
+        <div class="contents-inner">
+          <div class="contents-header">
+            <h2>FA 전용</h2>
+            <div class="depth-info">
+              <div class="depth-1"><a href="">1depth 표시</a></div> >
+              <div class="depth-2"><a href="">2depth 표시</a></div>             
+            </div>
+          </div>
+          <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
+          <div class="contents-body">
+            <section class="section01">
+              <div class="graph-box card">
+                <!-- chart 솔루션 들어갈 부분 (임시 이미지로 작업한 부분 삭제) -->
+                <img src="../assets/Chart.png" alt=""> 
+              </div>
+            </section>
+            <section class="section02">
+              <div class="todo-wrap card">
+                <div class="todo-top">
+                  <h3>To-Do</h3>
+                  <button class="btn-green">일정등록</button>
+                </div>
+                <div id="todolist">                  
+                  <ul>
+                    <li>
+                      <div class="todo-left">
+                        <div class="todo-marker"></div>
+                      </div>
+                      <div class="todo-center">
+                        <div class="todo-title">김길동 투자컨설팅</div>
+                        <div class="todo-place">2층 대회의실</div>
+                      </div>
+                      <div class="todo-right">종일</div>
+                    </li>
+                    <li class="disabled">
+                      <div class="todo-left">
+                        <div class="todo-marker"></div>
+                      </div>
+                      <div class="todo-center">
+                        <div class="todo-title">킥오프 미팅</div>
+                        <div class="todo-place">2층 대회의실</div>
+                      </div>
+                      <div class="todo-right">오전 09:30<br>오전 10:00</div>
+                    </li>
+                    <li>
+                      <div class="todo-left">
+                        <div class="todo-marker"></div>
+                      </div>
+                      <div class="todo-center">
+                        <div class="todo-title">김이박 투자컨설팅</div>
+                        <div class="todo-place">2층 대회의실</div>
+                      </div>
+                      <div class="todo-right">오전 11:30<br>오후 01:00</div>
+                    </li>
+                    <li>
+                      <div class="todo-left">
+                        <div class="todo-marker"></div>
+                      </div>
+                      <div class="todo-center">
+                        <div class="todo-title">신규 웹페이지 사용법 설명회</div>
+                        <div class="todo-place">2층 대회의실</div>
+                      </div>
+                      <div class="todo-right">오후 03:30<br>오후 05:30</div>
+                    </li>
+                  </ul>
+                </div>                
+              </div>
+              <div class="calendar-wrap card">                
+                <div class="calendar-top">
+                  <h3>캘린더</h3>
+                  <button class="btn-green">오늘</button>
+                </div>
+                <div id='calendar'>
+                  <div class="cal_nav">
+                    <a href="javascript:;" class="nav-btn go-prev">prev</a>
+                    <div class="year-month"></div>
+                    <a href="javascript:;" class="nav-btn go-next">next</a>
+                  </div>
+                  <div class="cal_wrap">
+                    <div class="days">
+                      <div class="day">Mo</div>
+                      <div class="day">Tu</div>
+                      <div class="day">We</div>
+                      <div class="day">Th</div>
+                      <div class="day">Fr</div>
+                      <div class="day">Sa</div>
+                      <div class="day">Su</div>
+                    </div>
+                    <div class="dates"></div>
+                  </div>
+                </div>                
+              </div>
+            </section>
+            <section class="section03">
+              <div class="customer-wrap">
+                <div class="customer-top">
+                  <h3>고객 목록</h3>
+                  <div class="search-wrap">
+                    <input type="text" name="" id="" placeholder="이름 또는 전화번호">
+                    <button class="btn-search"></button>
+                  </div>
+                </div>
+                <ul class="customer-list">
+                  <li class="customer-card card">
+                    <div class="item-top">                      
+                      <div class="state prospecting">prospecting</div>
+                      <div class="ic-favorite on"></div>
+                    </div>
+                    <div class="item-body">
+                      <div class="customer-info">
+                        <div class="info-txt">
+                          <div class="name">홍길동</div>
+                          <div class="birth">남, 1985 10 13</div>
+                        </div>
+                        <div class="info-img">
+                          <div class="img-user-01"></div>
+                        </div>
+                      </div>
+                      <ul class="customer-desc">
+                        <li><span>자문 계약일</span> 2015.9.9</li>
+                        <li><span>계좌 수</span> <strong>5</strong> 개</li>
+                        <li><span>AUM</span> <strong>0</strong> 원</li>
+                        <li><span>고객메모</span> <strong>2</strong> 건</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="customer-card card">
+                    <div class="item-top">                      
+                      <div class="state consulting">상담</div>
+                      <div class="ic-favorite"></div>
+                    </div>
+                    <div class="item-body">
+                      <div class="customer-info">
+                        <div class="info-txt">
+                          <div class="name">홍길동</div>
+                          <div class="birth">남, 1985 10 13</div>
+                        </div>
+                        <div class="info-img">
+                          <div class="img-user-02"></div>
+                        </div>
+                      </div>
+                      <ul class="customer-desc">
+                        <li><span>자문 계약일</span> 2015.9.9</li>
+                        <li><span>계좌 수</span> <strong>5</strong> 개</li>
+                        <li><span>AUM</span> <strong>0</strong> 원</li>
+                        <li><span>고객메모</span> <strong>2</strong> 건</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="customer-card card">
+                    <div class="item-top">                      
+                      <div class="state progress">진행</div>
+                      <div class="ic-favorite on"></div>
+                    </div>
+                    <div class="item-body">
+                      <div class="customer-info">
+                        <div class="info-txt">
+                          <div class="name">홍길동</div>
+                          <div class="birth">남, 1985 10 13</div>
+                        </div>
+                        <div class="info-img">
+                          <div class="img-user-03"></div>
+                        </div>
+                      </div>
+                      <ul class="customer-desc">
+                        <li><span>자문 계약일</span> 2015.9.9</li>
+                        <li><span>계좌 수</span> <strong>5</strong> 개</li>
+                        <li><span>AUM</span> <strong>0</strong> 원</li>
+                        <li><span>고객메모</span> <strong>2</strong> 건</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="customer-card card">
+                    <div class="item-top">                      
+                      <div class="state telephone">telephone approching</div>
+                      <div class="ic-favorite on"></div>
+                    </div>
+                    <div class="item-body">
+                      <div class="customer-info">
+                        <div class="info-txt">
+                          <div class="name">홍길동</div>
+                          <div class="birth">남, 1985 10 13</div>
+                        </div>
+                        <div class="info-img">
+                          <div class="img-user-04"></div>
+                        </div>
+                      </div>
+                      <ul class="customer-desc">
+                        <li><span>자문 계약일</span> 2015.9.9</li>
+                        <li><span>계좌 수</span> <strong>5</strong> 개</li>
+                        <li><span>AUM</span> <strong>0</strong> 원</li>
+                        <li><span>고객메모</span> <strong>2</strong> 건</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="customer-card card">
+                    <div class="item-top">                      
+                      <div class="state prospecting">prospecting</div>
+                      <div class="ic-favorite on"></div>
+                    </div>
+                    <div class="item-body">
+                      <div class="customer-info">
+                        <div class="info-txt">
+                          <div class="name">홍길동</div>
+                          <div class="birth">남, 1985 10 13</div>
+                        </div>
+                        <div class="info-img">
+                          <div class="img-user-01"></div>
+                        </div>
+                      </div>
+                      <ul class="customer-desc">
+                        <li><span>자문 계약일</span> 2015.9.9</li>
+                        <li><span>계좌 수</span> <strong>5</strong> 개</li>
+                        <li><span>AUM</span> <strong>0</strong> 원</li>
+                        <li><span>고객메모</span> <strong>2</strong> 건</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="customer-card card">
+                    <div class="item-top">                      
+                      <div class="state prospecting">prospecting</div>
+                      <div class="ic-favorite on"></div>
+                    </div>
+                    <div class="item-body">
+                      <div class="customer-info">
+                        <div class="info-txt">
+                          <div class="name">홍길동</div>
+                          <div class="birth">남, 1985 10 13</div>
+                        </div>
+                        <div class="info-img">
+                          <div class="img-user-01"></div>
+                        </div>
+                      </div>
+                      <ul class="customer-desc">
+                        <li><span>자문 계약일</span> 2015.9.9</li>
+                        <li><span>계좌 수</span> <strong>5</strong> 개</li>
+                        <li><span>AUM</span> <strong>0</strong> 원</li>
+                        <li><span>고객메모</span> <strong>2</strong> 건</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="customer-card card">
+                    <div class="item-top">                      
+                      <div class="state prospecting">prospecting</div>
+                      <div class="ic-favorite on"></div>
+                    </div>
+                    <div class="item-body">
+                      <div class="customer-info">
+                        <div class="info-txt">
+                          <div class="name">홍길동</div>
+                          <div class="birth">남, 1985 10 13</div>
+                        </div>
+                        <div class="info-img">
+                          <div class="img-user-01"></div>
+                        </div>
+                      </div>
+                      <ul class="customer-desc">
+                        <li><span>자문 계약일</span> 2015.9.9</li>
+                        <li><span>계좌 수</span> <strong>5</strong> 개</li>
+                        <li><span>AUM</span> <strong>0</strong> 원</li>
+                        <li><span>고객메모</span> <strong>2</strong> 건</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="customer-card card">
+                    <div class="item-top">                      
+                      <div class="state prospecting">prospecting</div>
+                      <div class="ic-favorite on"></div>
+                    </div>
+                    <div class="item-body">
+                      <div class="customer-info">
+                        <div class="info-txt">
+                          <div class="name">홍길동</div>
+                          <div class="birth">남, 1985 10 13</div>
+                        </div>
+                        <div class="info-img">
+                          <div class="img-user-01"></div>
+                        </div>
+                      </div>
+                      <ul class="customer-desc">
+                        <li><span>자문 계약일</span> 2015.9.9</li>
+                        <li><span>계좌 수</span> <strong>5</strong> 개</li>
+                        <li><span>AUM</span> <strong>0</strong> 원</li>
+                        <li><span>고객메모</span> <strong>2</strong> 건</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="customer-card card">
+                    <div class="item-top">                      
+                      <div class="state prospecting">prospecting</div>
+                      <div class="ic-favorite on"></div>
+                    </div>
+                    <div class="item-body">
+                      <div class="customer-info">
+                        <div class="info-txt">
+                          <div class="name">홍길동</div>
+                          <div class="birth">남, 1985 10 13</div>
+                        </div>
+                        <div class="info-img">
+                          <div class="img-user-01"></div>
+                        </div>
+                      </div>
+                      <ul class="customer-desc">
+                        <li><span>자문 계약일</span> 2015.9.9</li>
+                        <li><span>계좌 수</span> <strong>5</strong> 개</li>
+                        <li><span>AUM</span> <strong>0</strong> 원</li>
+                        <li><span>고객메모</span> <strong>2</strong> 건</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="customer-card card">
+                    <div class="item-top">                      
+                      <div class="state prospecting">prospecting</div>
+                      <div class="ic-favorite on"></div>
+                    </div>
+                    <div class="item-body">
+                      <div class="customer-info">
+                        <div class="info-txt">
+                          <div class="name">홍길동</div>
+                          <div class="birth">남, 1985 10 13</div>
+                        </div>
+                        <div class="info-img">
+                          <div class="img-user-01"></div>
+                        </div>
+                      </div>
+                      <ul class="customer-desc">
+                        <li><span>자문 계약일</span> 2015.9.9</li>
+                        <li><span>계좌 수</span> <strong>5</strong> 개</li>
+                        <li><span>AUM</span> <strong>0</strong> 원</li>
+                        <li><span>고객메모</span> <strong>2</strong> 건</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="customer-card card">
+                    <div class="item-top">                      
+                      <div class="state prospecting">prospecting</div>
+                      <div class="ic-favorite on"></div>
+                    </div>
+                    <div class="item-body">
+                      <div class="customer-info">
+                        <div class="info-txt">
+                          <div class="name">홍길동</div>
+                          <div class="birth">남, 1985 10 13</div>
+                        </div>
+                        <div class="info-img">
+                          <div class="img-user-01"></div>
+                        </div>
+                      </div>
+                      <ul class="customer-desc">
+                        <li><span>자문 계약일</span> 2015.9.9</li>
+                        <li><span>계좌 수</span> <strong>5</strong> 개</li>
+                        <li><span>AUM</span> <strong>0</strong> 원</li>
+                        <li><span>고객메모</span> <strong>2</strong> 건</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="customer-card card">
+                    <div class="item-top">                      
+                      <div class="state prospecting">prospecting</div>
+                      <div class="ic-favorite on"></div>
+                    </div>
+                    <div class="item-body">
+                      <div class="customer-info">
+                        <div class="info-txt">
+                          <div class="name">홍길동</div>
+                          <div class="birth">남, 1985 10 13</div>
+                        </div>
+                        <div class="info-img">
+                          <div class="img-user-01"></div>
+                        </div>
+                      </div>
+                      <ul class="customer-desc">
+                        <li><span>자문 계약일</span> 2015.9.9</li>
+                        <li><span>계좌 수</span> <strong>5</strong> 개</li>
+                        <li><span>AUM</span> <strong>0</strong> 원</li>
+                        <li><span>고객메모</span> <strong>2</strong> 건</li>
+                      </ul>
+                    </div>
+                  </li>                  
+                </ul>
+              </div>
+            </section>
+            <section></section>
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer"></footer>  
+    </div>
+
+
+    <!-- modal area -->
+    <div id="modal-background"></div>
+    <div class=modal-con">      
+    </div>
+  </div>
+</body>
+<!-- <script src='../scripts/main.min.js'></script> -->
+<script src="../scripts/func.js"></script>
+<script src="../scripts/script.js"></script>
+<script>  
+</script>
+</html>

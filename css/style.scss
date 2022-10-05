@@ -1,0 +1,126 @@
+@import "func.scss";
+@import url("reset.css");
+@import url("common.css");
+
+#main.dashboard {
+  .contents-wrap {
+    .contents-inner {
+      .contents-body {
+        display: flex;
+        flex-direction: column;
+        gap: $size-30;
+        .section01 {
+          .graph-box {
+            width: $main_width;
+            height: 31.25rem;
+          }
+        }
+        .section02 {
+          display: flex;
+          gap: $size-26;
+          // height: 30.625rem;
+          
+          .todo-wrap {
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            gap: $size-30;
+            padding: $size-30;                    
+            .todo-top {
+              display: flex;
+              justify-content: space-between;
+            }
+            #todolist {
+              ul {
+                display: flex;
+                flex-direction: column;
+                gap: $size-28;
+                li {
+                  height: $size-55;
+                  display: flex;                
+                  justify-content: space-between;
+                  gap: $size-14;
+                  .todo-left {    
+                    position: relative;              
+                    width: $size-11;
+                    padding-top: $size-6;                  
+                    .todo-marker {
+                      width: $size-11;
+                      height: $size-11;
+                      border-radius: 100%;                    
+                      border: solid 2px #aaa;
+                      background-color: #fff;
+                    }
+                    &::before {
+                      content: '';
+                      position: absolute;
+                      width: 1px;
+                      height: $size-63; 
+                      top: $size-23;     
+                      left: $size-5;              
+                      background-color: #ccc;
+                      // z-index: 1;
+                    }
+                  }
+                  .todo-center {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: $size-6;
+                    .todo-title {
+                      font-size: $size-20;
+                      font-weight: bold;                    
+                      line-height: 1.45;                    
+                      text-align: left;
+                      color: #2e3666;
+                    }
+                    .todo-place {
+                      font-size: $size-14;                    
+                      line-height: 1.43;                    
+                      text-align: left;
+                      color: #aaa;
+                    }
+                  }
+                  .todo-right {
+                    padding-top: $size-4;
+                    font-size: $size-14;
+                    font-weight: bold;                  
+                    line-height: 1.43;                  
+                    text-align: right;
+                    color: #1ea5d2;                    
+                  }
+                  &.disabled *{color: #ccc !important;}     
+                  &:last-child {
+                    .todo-left::before {width: 0;}
+                  }             
+                }
+              }
+            }
+          }  
+
+          .calendar-wrap {
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            gap: $size-30;
+            padding: $size-30;         
+            .calendar-top {
+              display: flex;
+              justify-content: space-between;
+            }            
+          }          
+        }
+        .section03 {
+          .customer-wrap {
+            .customer-top {
+              display: flex;
+              justify-content: space-between;
+              .search-wrap {display: flex;}
+              margin-bottom: $size-20;
+            }
+          }
+        }
+      }
+    }
+  }
+}
