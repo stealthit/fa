@@ -732,6 +732,14 @@ ul.pagination {
   color: #fff;
   background-color: #0bc890;   
 }
+.btn-s-green {     
+  @include flex_center;          
+  height: $size-34;
+  font-size: $size-13;
+  font-weight: bold;  
+  color: #fff;
+  background-color: #0bc890;   
+}
 .btn-white {    
   @include flex_center;          
   height: $size-56;
