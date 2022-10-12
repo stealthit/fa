@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    #btnSideOpen {display: none !important;}    
+  </style>
 </head>
 <body>
-  <div id="wrapper" class="wrapper menuOpen">
+  <div id="wrapper" class="wrapper">
     <div id="sideMenu" class="sidenav">
-      <ul class="menu-list">
+      <ul id="menuList" class="menu-list">
         <li>
           <div class="menu-item">
             <img class="ic-left-logo" src="" alt="">            
@@ -20,110 +23,102 @@
           <div class="menu-item">
             <img class="ic-menu-dashboard" src="" alt="">
             <div class="menu-name">대시보드</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>          
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-counsel" src="" alt="">
             <div class="menu-name">고객상담</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>        
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-mywork" src="" alt="">
             <div class="menu-name">마이워크</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>        
         </li>
         <li>          
           <div class="menu-item">
             <img class="ic-menu-reward" src="" alt="">
             <div class="menu-name">리워드</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>          
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-customer" src="" alt="">
             <div class="menu-name">고객</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>          
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-product" src="" alt="">
             <div class="menu-name">상품</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>          
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-insight" src="" alt="">
             <div class="menu-name">Insight</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>          
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-my" src="" alt="">
             <div class="menu-name">내정보</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>          
         </li>
       </ul>
     </div>
+    <!-- 클릭한 메뉴의 depth2 list -->
+    <ul id="menu-depth2">
+      <li>depth2-1</li>
+      <li>depth2-2</li>
+      <li>depth2-3</li>
+      <li>depth2-4</li>
+    </ul>
     <!-- sidemenu open/close button (Fixed location) -->
     <button id="btnSideOpen">
-      <img class="ic-left-logo" src="" alt="">
+      <img class="ic-left-fold" src="" alt="">
     </button>
 
+
+    <div id="main" class="main-wrap login">      
+      <div class="contents-wrap">
+        <div class="contents-inner">
+          <div class="contents-header">
+            <h1>로그인</h1>            
+          </div>
+          <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
+          <div class="contents-body">                      
+            <div class="login-box">
+              <div class="input-box">
+                <input type="email" name="" id="" placeholder="이메일">
+                <input type="password" name="" id="" placeholder="비밀번호">
+                <div class="msg-box">비밀번호를 확인해 주세요.</div>            
+              </div>  
+              <div class="checkbox-wrap">
+                <input type="checkbox" name="" id="ck-save">이메일 저장
+              </div>        
+              <button class="btn-login">로그인</button>
+            </div>
+            <ul class="login-find">
+              <li><a href="">이메일 찾기</a></li>
+              <li class="v-seperate"></li>
+              <li><a href="">비밀번호 찾기</a></li>
+              <li class="v-seperate"></li>
+              <li><a href="">회원가입</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer"></footer>  
     </div>
+  </div>
 </body>
 <script src="../scripts/func.js"></script>
 <script src="../scripts/script.js"></script>
-<script>
-
-</script>
 </html>
+
+
+

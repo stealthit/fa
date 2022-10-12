@@ -25,122 +25,81 @@
             <img class="ic-left-logo" src="" alt="">            
           </div>
         </li>
-        <li class="active on">
+        <li class="active">
           <div class="menu-item">
             <img class="ic-menu-dashboard" src="" alt="">
             <div class="menu-name">대시보드</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>          
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-counsel" src="" alt="">
             <div class="menu-name">고객상담</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>        
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-mywork" src="" alt="">
             <div class="menu-name">마이워크</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>        
         </li>
         <li>          
           <div class="menu-item">
             <img class="ic-menu-reward" src="" alt="">
             <div class="menu-name">리워드</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>          
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-customer" src="" alt="">
             <div class="menu-name">고객</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>          
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-product" src="" alt="">
             <div class="menu-name">상품</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>          
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-insight" src="" alt="">
             <div class="menu-name">Insight</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>          
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-my" src="" alt="">
             <div class="menu-name">내정보</div>
-          </div>
-          <ul class="menu-depth2">
-            <li>depth2-1</li>
-            <li>depth2-2</li>
-            <li>depth2-3</li>
-            <li>depth2-4</li>
-          </ul>
+          </div>          
         </li>
       </ul>
     </div>
+    <!-- 클릭한 메뉴의 depth2 list -->
+    <ul id="menu-depth2">
+      <li>depth2-1</li>
+      <li>depth2-2</li>
+      <li>depth2-3</li>
+      <li>depth2-4</li>
+    </ul>
     <!-- sidemenu open/close button (Fixed location) -->
     <button id="btnSideOpen">
-      <img class="ic-left-logo" src="" alt="">
+      <img class="ic-left-fold" src="" alt="">
     </button>
 
-    <div id="main" class="main-wrap">      
+    <div id="main" class="main-wrap dashboard">      
       <div class="contents-wrap">
         <div class="contents-inner">
           <div class="contents-header">
-            <h2>타이틀</h2>
+            <h1>FA 전용</h1>
             <div class="depth-info">
               <div class="depth-1"><a href="">1depth 표시</a></div> >
               <div class="depth-2"><a href="">2depth 표시</a></div>             
             </div>
           </div>
           <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
-          <div class="contents-body card">
-            기본구조
+          <div class="contents-body">
+
           </div>
         </div>
       </div>
@@ -150,9 +109,58 @@
 
 
     <!-- modal area -->
-    <div id="modal-background"></div>
-    <div class=modal-con">      
+    <div class="modal-con modal unstaged">
+      <div class="modal-overlay">
+    
+      </div>
+      <div id="modal-schedule-reg" class="modal-contents">
+        <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
+        <div class="modal-top">
+          <h1>일정등록</h1>
+        </div>
+        <div class="modal-body">
+          <div class="content-edit-wrap">
+            <div class="row">
+              <div class="row-title">제목</div>
+              <div class="row-content"><input type="text" name="" id=""></div>
+            </div>
+            <div class="row">
+              <div class="row-title">장소</div>
+              <div class="row-content"><input type="text" name="" id=""></div>
+            </div>
+            <div class="row">
+              <div class="row-title">시작</div>
+              <div class="row-content">
+                <input type="date" name="" id="" value="2022-09-12">
+                <input type="time" name="" id="" value="14:00">
+                <div class="check-group">
+                  <input type="checkbox" name="" id="ck1"><label for="ck1">종일</label> 
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-title">종료</div>
+              <div class="row-content">
+                <input type="date" name="" id="" value="2022-09-12">
+                <input type="time" name="" id="" value="14:00">
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-title">내용</div>
+              <div class="row-content"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-bottom">
+          <div class="btn-sgroup">
+            <button class="btn-modal-white modal-close">취소</button>
+            <button class="btn-modal-blue">전송</button>
+          </div>
+        </div>
+      </div>
     </div>
+    
+
   </div>
 </body>
 <script src="../scripts/func.js"></script>

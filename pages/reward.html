@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="wrapper" class="wrapper menuOpen">
+    <div id="sideMenu" class="sidenav">
+      <ul id="menuList" class="menu-list">
+        <li>
+          <div class="menu-item">
+            <img class="ic-left-logo" src="" alt="">            
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-dashboard" src="" alt="">
+            <div class="menu-name">대시보드</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-counsel" src="" alt="">
+            <div class="menu-name">고객상담</div>
+          </div>        
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-mywork" src="" alt="">
+            <div class="menu-name">마이워크</div>
+          </div>        
+        </li>
+        <li class="active">          
+          <div class="menu-item">
+            <img class="ic-menu-reward" src="" alt="">
+            <div class="menu-name">리워드</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-customer" src="" alt="">
+            <div class="menu-name">고객</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-product" src="" alt="">
+            <div class="menu-name">상품</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-insight" src="" alt="">
+            <div class="menu-name">Insight</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-my" src="" alt="">
+            <div class="menu-name">내정보</div>
+          </div>          
+        </li>
+      </ul>
+    </div>
+    <!-- 클릭한 메뉴의 depth2 list -->
+    <ul id="menu-depth2">
+      <li>depth2-1</li>
+      <li>depth2-2</li>
+      <li>depth2-3</li>
+      <li>depth2-4</li>
+    </ul>
+    <!-- sidemenu open/close button (Fixed location) -->
+    <button id="btnSideOpen">
+      <img src="" alt="">
+    </button>
+
+    <div id="main" class="main-wrap reward">      
+      <div class="contents-wrap">
+        <div class="contents-inner">
+          <div class="contents-header">
+            <h1>리워드</h1>
+            <div class="depth-info">
+              <div class="depth-1"><a href="">1depth 표시</a></div> >
+              <div class="depth-2"><a href="">2depth 표시</a></div>             
+            </div>
+          </div>
+          <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
+          <div class="contents-body">
+            <ul class="tab-menu">
+              <li class="active" data-tab="tab01">커리어</li>
+              <li data-tab="tab02">보수내역</li>
+              <li data-tab="tab03">보수상세조회</li>              
+            </ul>
+            <div class="tab-content active" id="tab01">
+              <h2>나의 현재 AUM <span>17억</span></h2>
+              <div class="level-box-wrap">
+                <div class="level-box card active">
+                  <div class="level-top">
+                    <div class="img-reward-lv1"></div>                    
+                    <div class="level 1">Level 1</div>
+                    <div class="aum">AUM 0~20억</div>
+                  </div>
+                  <div class="level-bottom">
+                    <div class="reward-item">
+                      <div class="reward-txt">영업 비용 지원</div>
+                      <div class="sub-txt">(월 최대 10만원)</div>
+                    </div>
+                    <div class="reward-item">
+                      <div class="reward-txt">시상금 100만원</div>                      
+                    </div>
+                    <div class="reward-item">
+                      <div class="reward-txt">시상품</div>
+                      <div class="sub-txt">신라 호텔 식사권</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="level-box card">
+                  <div class="level-top">
+                    <div class="img-reward-lv2"></div>                    
+                    <div class="level 2">Level 2</div>
+                    <div class="aum">AUM 20~50억</div>
+                  </div>
+                  <div class="level-bottom">
+                    <div class="reward-item">
+                      <div class="reward-txt">영업 비용 지원</div>
+                      <div class="sub-txt">(월 최대 10만원)</div>
+                    </div>
+                    <div class="reward-item">
+                      <div class="reward-txt">시상금 150만원</div>                      
+                    </div>
+                    <div class="reward-item">
+                      <div class="reward-txt">시상품</div>
+                      <div class="sub-txt">신라 호텔 식사권</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="level-box card">
+                  <div class="level-top">
+                    <div class="img-reward-lv3"></div>                    
+                    <div class="level 3">Level 3</div>
+                    <div class="aum">AUM 50~100억</div>
+                  </div>
+                  <div class="level-bottom">
+                    <div class="reward-item">
+                      <div class="reward-txt">골드만 삭스 해외 연수 참석 지원</div>
+                      <div class="sub-txt">(티켓 및 숙박)</div>
+                    </div>
+                    <div class="reward-item">
+                      <div class="reward-txt">시상금 200만원</div>                      
+                    </div>
+                    <div class="reward-item">
+                      <div class="reward-txt">시상품</div>
+                      <div class="sub-txt">신라 호텔 식사권</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="tab02">
+              <div class="reward-list-box card">
+                <div class="explain">
+                  <p>
+                    · 2009년 1월 이후 지급수수료를 조회할 수 있습니다.<br>
+                    · 수수료지급일자는 매월 15일이며 휴일인 겨우 다음날 지급됩니다.<br>
+                    · 매월 수수료 지급 후 “수수료지급내역”은 조회됩니다.
+                  </p>                    
+                </div>
+                <div class="search-wrap">
+                  <div class="search-box">
+                    <div class="search-item">
+                      <div class="search-title">투자권유대행인 ID</div>
+                      <div class="search-data">
+                        <input type="text" name="" id="" value="2323232313" disabled>
+                      </div>
+                    </div>
+                    <div class="search-item">
+                      <div class="search-title">기준일자</div>
+                      <div class="search-data">
+                        <div class="input-group">
+                          <input type="month" value="2022-02">~
+                          <input type="month" value="2022-02">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn-blue">조회</button>
+                </div>
+                <div class="table-wrap">                  
+                  <table class="gt-table">
+                    <colgroup>
+                      <col style="width: 5%" />
+                      <col style="width: 7%" />
+                      <col />
+                      <col style="width: 7%" />
+                      <col style="width: 7%" />
+                      <col style="width: 7%" />
+                      <col style="width: 7%" />                
+                      <col style="width: 7%" />
+                      <col style="width: 7%" />
+                      <col style="width: 7%" />
+                      <col style="width: 7%" />                      
+                    </colgroup>
+                    <thead>
+                      <tr>                  
+                        <th colspan="8" class="t-bottom">투자권유대행 지급수수료</th>
+                        <th rowspan="2">총 지급액<br>(세전)</th>
+                        <th rowspan="2">사업소득세</th>
+                        <th rowspan="2">주민세</th>
+                        <th rowspan="2">공제후<br>지급액</th>
+                        <th rowspan="2">지급명세서</th>
+                      </tr>
+                      <tr>
+                        <th>지급일자</th>
+                        <th>펀드</th>
+                        <th>증권(On)</th>
+                        <th>증권(Off)</th>
+                        <th>채권</th>
+                        <th>신탁</th>
+                        <th>랩</th>
+                        <th>기타</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-body">
+                      <tr>
+                        <td>22.07.01</td>
+                        <td>999,999</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>998,999</td>
+                        <td>23,000</td>
+                        <td>2,300</td>
+                        <td>998,999</td>
+                        <td><a href="">지급명세서</a></td>
+                      </tr>
+                      <tr>
+                        <td>22.07.01</td>
+                        <td>999,999</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>998,999</td>
+                        <td>23,000</td>
+                        <td>2,300</td>
+                        <td>998,999</td>
+                        <td><a href="">지급명세서</a></td>
+                      </tr>
+                      <tr>
+                        <td>22.07.01</td>
+                        <td>999,999</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>998,999</td>
+                        <td>23,000</td>
+                        <td>2,300</td>
+                        <td>998,999</td>
+                        <td><a href="">지급명세서</a></td>
+                      </tr>
+                      <tr>
+                        <td>22.07.01</td>
+                        <td>999,999</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>998,999</td>
+                        <td>23,000</td>
+                        <td>2,300</td>
+                        <td>998,999</td>
+                        <td><a href="">지급명세서</a></td>
+                      </tr>
+                      <tr>
+                        <td>22.07.01</td>
+                        <td>999,999</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>998,999</td>
+                        <td>23,000</td>
+                        <td>2,300</td>
+                        <td>998,999</td>
+                        <td><a href="">지급명세서</a></td>
+                      </tr>
+                      <tr>
+                        <td>22.07.01</td>
+                        <td>999,999</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>998,999</td>
+                        <td>23,000</td>
+                        <td>2,300</td>
+                        <td>998,999</td>
+                        <td><a href="">지급명세서</a></td>
+                      </tr>
+                      <tr>
+                        <td>22.07.01</td>
+                        <td>999,999</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>998,999</td>
+                        <td>23,000</td>
+                        <td>2,300</td>
+                        <td>998,999</td>
+                        <td><a href="">지급명세서</a></td>
+                      </tr>
+                      <tr>
+                        <td>22.07.01</td>
+                        <td>999,999</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>998,999</td>
+                        <td>23,000</td>
+                        <td>2,300</td>
+                        <td>998,999</td>
+                        <td><a href="">지급명세서</a></td>
+                      </tr>
+                      <tr>
+                        <td>22.07.01</td>
+                        <td>999,999</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>998,999</td>
+                        <td>23,000</td>
+                        <td>2,300</td>
+                        <td>998,999</td>
+                        <td><a href="">지급명세서</a></td>
+                      </tr>
+                      <tr>
+                        <td>22.07.01</td>
+                        <td>999,999</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>998,999</td>
+                        <td>23,000</td>
+                        <td>2,300</td>
+                        <td>998,999</td>
+                        <td><a href="">지급명세서</a></td>
+                      </tr>
+                    </tbody>
+                  </table>    
+                  <div class="table-bottom">
+                    <ul class="pagination">
+                      <li>
+                        <a href="#" class="first"><div class="ic-page-start"></div></a>
+                      </li>
+                      <li>
+                        <a href="#" class="arrow left"><div class="ic-page-prev"></div></a>
+                      </li>
+                      <li><a href="#" class="num">1</a></li>
+                      <li><a href="#" class="num active">2</a></li>
+                      <li><a href="#" class="num">3</a></li>
+                      <li><a href="#" class="num">4</a></li>
+                      <li><a href="#" class="num">5</a></li>
+                      <li><a href="#" class="num">6</a></li>
+                      <li><a href="#" class="num">7</a></li>
+                      <li><a href="#" class="num">8</a></li>
+                      <li><a href="#" class="num">9</a></li>
+                      <li><a href="#" class="num">10</a></li>
+                      <li>
+                        <a href="#" class="arrow right"><div class="ic-page-next"></div></a>
+                      </li>
+                      <li>
+                        <a href="#" class="last"><div class="ic-page-end"></div></a>
+                      </li>
+                    </ul>
+                    <div class="area-right">
+                      <button class="btn-excel"><img>엑셀다운로드</button>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="tab03"></div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer"></footer>  
+    </div>
+    
+  </div>
+</body>
+<script src="../scripts/func.js"></script>
+<script src="../scripts/script.js"></script>
+<script>  
+</script>
+</html>

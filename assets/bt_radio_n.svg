@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+    <g data-name="사각형 12" style="fill:#fff;stroke:#ccc">
+        <rect width="26" height="26" rx="13" style="stroke:none"/>
+        <rect x=".5" y=".5" width="25" height="25" rx="12.5" style="fill:none"/>
+    </g>
+</svg>

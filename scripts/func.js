@@ -1,4 +1,4 @@
-// 형제node
+// 형제node 
 function sSiblings(t) {
   const children = t.parentElement.children;
   const tempArr = [];
@@ -19,15 +19,48 @@ function sRemoveClass(t, removeClass) {
   }  
 }
 
+// 해당요소의 str문자열을 포함한 id가 있는 부모노드찾기
+function sfindParentNode(el, str) {
+  var pNode = el.parentElement;
+  while (pNode!=null) {    
+    const strId = pNode.getAttribute("id");    
+    if (strId!=null && strId.startsWith(str)) return pNode;
+    pNode = pNode.parentElement;
+  }  
+}
+
 // footer load
-function loadFooter() {
-  fetch("footer.html")
+function loadFooter(str) {
+  fetch(str)
   .then(response => {
     return response.text()
   })
   .then(data => {
     document.querySelector("footer").innerHTML = data;
   });
+}
+
+function onlynumber(str) {
+  str = String(str);
+  return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g,'$1');
+}
+
+function inputOnlyNumberFormat(obj) {
+  obj.value = onlynumber(uncomma(obj.value));
+}
+
+function inputNumberFormat(obj) {
+  obj.value = comma(uncomma(obj.value));
+}
+
+function comma(str) {
+  str = String(str);
+  return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+}
+
+function uncomma(str) {
+  str = String(str);
+  return str.replace(/[^\d]+/g, '');
 }
 
 // calendar
@@ -119,3 +152,24 @@ function calendarInit() {
   }) 
 
 } 
+
+// google chart dummy
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Year', 'Sales', 'Expenses'],
+    ['2004',  1000,      400],
+    ['2005',  1170,      460],
+    ['2006',  660,       1120],
+    ['2007',  1030,      540]
+  ]);
+
+  var options = {
+    title: 'Company Performance',
+    curveType: 'function',
+    legend: { position: 'bottom' }
+  };
+
+  var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+  chart.draw(data, options);
+}
