@@ -4,17 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <style>
-    .contents-body {
-      height: 800px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #fff;
-    }
-  </style>
+  <title>고객상담</title>
+  <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
   <div id="wrapper" class="wrapper menuOpen">
@@ -25,13 +16,13 @@
             <img class="ic-left-logo" src="" alt="">            
           </div>
         </li>
-        <li class="active">
+        <li>
           <div class="menu-item">
             <img class="ic-menu-dashboard" src="" alt="">
             <div class="menu-name">대시보드</div>
           </div>          
         </li>
-        <li>
+        <li class="active">
           <div class="menu-item">
             <img class="ic-menu-counsel" src="" alt="">
             <div class="menu-name">고객상담</div>
@@ -84,14 +75,14 @@
     </ul>
     <!-- sidemenu open/close button (Fixed location) -->
     <button id="btnSideOpen">
-      <img class="ic-left-fold" src="" alt="">
+      <img src="" alt="">
     </button>
 
-    <div id="main" class="main-wrap dashboard">      
+    <div id="main" class="main-wrap counsel counsel3">      
       <div class="contents-wrap">
-        <div class="contents-inner">
+        <div class="contents-inner active">
           <div class="contents-header">
-            <h1>FA 전용</h1>
+            <h1>고객 상담</h1>
             <div class="header-right">
               <ul class="connect-info">
                 <li class="time">세션유지시간<div class="cl-skyblue-b"> 09:10</div></li>
@@ -106,73 +97,35 @@
             </div>
           </div>
           <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
-          <div class="contents-body">
-
-          </div>
-        </div>
+          <div class="contents-body card">
+            <div class="order-bar"><div class="current-bar c3"></div> </div>
+            <h2>재무정보 입력</h2>            
+            <div class="content-box">  
+              
+            </div>
+            <div class="btn-group">
+              <button class="btn-white btn-prev">이전</button>            
+              <button class="btn-green btn-next active">다음</button>            
+            </div>
+          </div>          
+        </div>        
       </div>
 
       <footer id="footer"></footer>  
-    </div>
-
-
-    <!-- modal area -->
-    <div class="modal-con modal unstaged">
-      <div class="modal-overlay">
-    
-      </div>
-      <div id="modal-schedule-reg" class="modal-contents">
-        <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
-        <div class="modal-top">
-          <h1>일정등록</h1>
-        </div>
-        <div class="modal-body">
-          <div class="content-edit-wrap">
-            <div class="row">
-              <div class="row-title">제목</div>
-              <div class="row-content"><input type="text" name="" id=""></div>
-            </div>
-            <div class="row">
-              <div class="row-title">장소</div>
-              <div class="row-content"><input type="text" name="" id=""></div>
-            </div>
-            <div class="row">
-              <div class="row-title">시작</div>
-              <div class="row-content">
-                <input type="date" name="" id="" value="2022-09-12">
-                <input type="time" name="" id="" value="14:00">
-                <div class="check-group">
-                  <input type="checkbox" name="" id="ck1"><label for="ck1">종일</label> 
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-title">종료</div>
-              <div class="row-content">
-                <input type="date" name="" id="" value="2022-09-12">
-                <input type="time" name="" id="" value="14:00">
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-title">내용</div>
-              <div class="row-content"><textarea name="" id="" cols="30" rows="10"></textarea></div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-bottom">
-          <div class="btn-sgroup">
-            <button class="btn-modal-white modal-close">취소</button>
-            <button class="btn-modal-blue">전송</button>
-          </div>
-        </div>
-      </div>
     </div>
     
 
   </div>
 </body>
-<script src="../scripts/func.js"></script>
-<script src="../scripts/script.js"></script>
+<script src="../../scripts/func.js"></script>
+<script src="../../scripts/script.js"></script>
 <script>  
+  loadFooter("../footer.html");
+  document.querySelector(".btn-prev").onclick = (e) => {
+    location.href = "counsel2.html";
+  }
+  document.querySelector(".btn-next").onclick = (e) => {
+    location.href = "counsel4.html";
+  }
 </script>
 </html>

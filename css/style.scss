@@ -196,15 +196,7 @@
           gap: $size-10;
           font-size: $size-13;
           text-align: left;
-          color: #999;
-          
-          li {        
-            &.v-seperate {
-              border: 0.3125rem solid #fff;
-              width: 1px; 
-              background-color: #ccc;
-            }      
-          }
+          color: #999;                    
         }
       }
     }

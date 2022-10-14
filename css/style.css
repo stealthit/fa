@@ -348,12 +348,6 @@
   color: #999;
 }
 
-#main.login .contents-wrap .contents-inner .contents-body ul.login-find li.v-seperate {
-  border: 0.3125rem solid #fff;
-  width: 1px;
-  background-color: #ccc;
-}
-
 #main.counsel .contents-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
