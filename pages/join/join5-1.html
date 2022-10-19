@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <style>
-    #btnSideOpen {display: none !important;}    
-  </style>
+  <title>FA가입</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>#btnSideOpen {display: none !important;}</style>
 </head>
 <body>
   <div id="wrapper" class="wrapper">
@@ -19,13 +17,13 @@
             <img class="ic-left-logo" src="" alt="">            
           </div>
         </li>
-        <li class="active">
+        <li>
           <div class="menu-item">
             <img class="ic-menu-dashboard" src="" alt="">
             <div class="menu-name">대시보드</div>
           </div>          
         </li>
-        <li>
+        <li class="active">
           <div class="menu-item">
             <img class="ic-menu-counsel" src="" alt="">
             <div class="menu-name">고객상담</div>
@@ -78,47 +76,44 @@
     </ul>
     <!-- sidemenu open/close button (Fixed location) -->
     <button id="btnSideOpen">
-      <img class="ic-left-fold" src="" alt="">
+      <img src="" alt="">
     </button>
 
-
-    <div id="main" class="main-wrap login">      
+    <div id="main" class="main-wrap join join5">      
       <div class="contents-wrap">
         <div class="contents-inner">
           <div class="contents-header">
-            <h1>FA 로그인</h1>            
+            <h1>FA가입</h1>
           </div>
           <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
-          <div class="contents-body">                      
-            <div class="login-box">
-              <div class="input-box">
-                <input type="email" name="" id="" placeholder="이메일">
-                <input type="password" name="" id="" placeholder="비밀번호">
-                <div class="msg-box err">비밀번호를 확인해 주세요.</div>            
-              </div>  
-              <div class="checkbox-wrap">
-                <input type="checkbox" name="" id="ck-save">이메일 저장
-              </div>        
-              <button class="btn-login">로그인</button>
+          <div class="contents-body card">
+            <div class="order-bar"><div class="current-bar c5"></div> </div>     
+            <h2>서류검토 중</h2>                  
+            <div class="content-box">
+              <div class="complete-box">                
+                <h2 class="txt-c">제출하신 소중한 자료를 검토중입니다.<br>
+                  (1~2 영업일 소요)</h2>
+              </div>                                            
+            </div>            
+            <div class="btn-group">
+              <button class="btn-white btn-cancel">메인으로</button>                          
             </div>
-            <ul class="login-find">
-              <li><a href="">이메일 찾기</a></li>
-              <li class="v-seperate"></li>
-              <li><a href="">비밀번호 찾기</a></li>
-              <li class="v-seperate"></li>
-              <li><a href="">FA가입</a></li>
-            </ul>
-          </div>
-        </div>
+          </div>          
+        </div>        
       </div>
 
       <footer id="footer"></footer>  
     </div>
+    
+
   </div>
 </body>
-<script src="../scripts/func.js"></script>
-<script src="../scripts/script.js"></script>
+<script src="../../scripts/func.js"></script>
+<script src="../../scripts/script.js"></script>
+<script>  
+  loadFooter("../footer.html");
+  document.querySelector(".btn-cancel").onclick = (e) => {
+    location.href = "../main.html";
+  }
+</script>
 </html>
-
-
-

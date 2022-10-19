@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-- <link href='../css/main.min.css' rel='stylesheet' /> -->
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">  
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<!-- <script src="https://code.highcharts.com/modules/export-data.js"></script> -->
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
 </head>
 <body>
   <div id="wrapper" class="wrapper menuOpen">
@@ -111,7 +116,9 @@
                 <div class="tab-content active" id="tab01">
                   <div class="graph-box">                
                     <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
-                    <div id="curve_chart" style="width: 100%;height: 100%;"></div>
+                    <figure class="highcharts-figure">
+                      <div id="container"></div>
+                    </figure>
                   </div>
                 </div>
                 <div class="tab-content" id="tab02">
@@ -123,9 +130,117 @@
               </div>
             </section>
             <section class="section02">
+              <h2>나의 커리어</h2>   
+              <div class="career-wrap card">                
+                <details class="career-con">
+                  <summary>
+                    나의 현재 AUM 31억 <div class="cl-green">Level 2</div>
+                    <img src="" alt="" class="img-career-arrow">
+                    <div class="cl-yellow">Level 3</div>다음 목표 AUM 51억
+                    <div class="ic-open-arrow"></div>
+                  </summary>
+                  <div class="level-box-wrap">
+                    <div class="level-box active">
+                      <div class="level-top">
+                        <div class="img-reward-lv1"></div>                    
+                        <div class="level lv1">Level 1</div>
+                        <div class="aum">AUM 0~20억</div>
+                        <!-- <div class="career-bline"></div> -->
+                      </div>
+                      <div class="level-bottom">
+                        <div class="reward-item">
+                          <div class="reward-txt">영업 비용 지원</div>
+                          <div class="sub-txt">(월 최대 10만원)</div>
+                        </div>
+                        <div class="reward-item">
+                          <div class="reward-txt">시상금 100만원</div>                      
+                        </div>
+                        <div class="reward-item">
+                          <div class="reward-txt">시상품</div>
+                          <div class="sub-txt">신라 호텔 식사권</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="level-arrow-wrap">
+                      <div class="ic-level-arrow"></div>
+                    </div>
+                    <div class="level-box">
+                      <div class="level-top">
+                        <div class="img-reward-lv2"></div>                    
+                        <div class="level lv2">Level 2</div>
+                        <div class="aum">AUM 20~50억</div>
+                        <div class="career-bline"></div>
+                      </div>
+                      <div class="level-bottom">
+                        <div class="reward-item">
+                          <div class="reward-txt">영업 비용 지원</div>
+                          <div class="sub-txt">(월 최대 10만원)</div>
+                        </div>
+                        <div class="reward-item">
+                          <div class="reward-txt">시상금 150만원</div>                      
+                        </div>
+                        <div class="reward-item">
+                          <div class="reward-txt">시상품</div>
+                          <div class="sub-txt">신라 호텔 식사권</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="level-arrow-wrap">
+                      <div class="ic-level-arrow"></div>
+                    </div>
+                    <div class="level-box">
+                      <div class="level-top">
+                        <div class="img-reward-lv3"></div>                    
+                        <div class="level lv3">Level 3</div>
+                        <div class="aum">AUM 50~100억</div>
+                        <div class="career-bline"></div>
+                      </div>
+                      <div class="level-bottom">
+                        <div class="reward-item">
+                          <div class="reward-txt">골드만 삭스 해외 연수 참석 지원</div>
+                          <div class="sub-txt">(티켓 및 숙박)</div>
+                        </div>
+                        <div class="reward-item">
+                          <div class="reward-txt">시상금 200만원</div>                      
+                        </div>
+                        <div class="reward-item">
+                          <div class="reward-txt">시상품</div>
+                          <div class="sub-txt">신라 호텔 식사권</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="level-arrow-wrap">
+                      <div class="ic-level-arrow"></div>
+                    </div>
+                    <div class="level-box">
+                      <div class="level-top">
+                        <div class="img-reward-lv4"></div>                    
+                        <div class="level lv4">Level 4</div>
+                        <div class="aum">AUM 100억 이상</div>
+                        <div class="career-bline"></div>
+                      </div>
+                      <div class="level-bottom">
+                        <div class="reward-item">
+                          <div class="reward-txt">골드만 삭스 해외 연수 참석 지원</div>
+                          <div class="sub-txt">(티켓 및 숙박)</div>
+                        </div>
+                        <div class="reward-item">
+                          <div class="reward-txt">시상금 200만원</div>                      
+                        </div>
+                        <div class="reward-item">
+                          <div class="reward-txt">시상품</div>
+                          <div class="sub-txt">신라 호텔 식사권</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </details>                               
+              </div>
+            </section>
+            <section class="section03">
               <div class="todo-wrap card">
                 <div class="todo-top">
-                  <h2>To-Do</h2>
+                  <h2>2022-08-12~19 일정목록</h2>
                   <button class="btn-s-green btn-reg-sche modal-open">일정등록</button>
                 </div>
                 <div id="todolist">                  
@@ -199,7 +314,7 @@
                 </div>                
               </div>
             </section>
-            <section class="section03">
+            <section class="section04">
               <div class="customer-wrap">
                 <div class="customer-top">
                   <h2>고객 목록</h2>
@@ -531,6 +646,17 @@
               </div>
             </div>
             <div class="row">
+              <div class="row-title">고객</div>
+              <div class="row-content">
+                <input type="text" list="custom-list" id="custom" autocomplete="off" />
+                <datalist id="custom-list">
+                  <option value="김기훈 (1969.05.05/남/%고객상태%)" />
+                  <option value="김민지 (1985.12.01/여/%고객상태%)" />
+                  <option value="김태정 (2000.01.23/남/%고객상태%)" />                      
+                </datalist>
+              </div>
+            </div>
+            <div class="row">
               <div class="row-title">내용</div>
               <div class="row-content"><textarea name="" id="" cols="30" rows="10"></textarea></div>
             </div>
@@ -553,17 +679,23 @@
 <script src="../scripts/script.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script>  
-// google chart dummy
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
-
   calendarInit();
 
   // modal-open
   document.querySelector(".btn-reg-sche").addEventListener("click",function(){
     let el = document.getElementById('modal-schedule-reg');
+    if (el.closest('.modal-con').classList.contains('unstaged')) 
+      document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "unset";
     el.closest('.modal-con').classList.toggle('opaque');
     el.closest('.modal-con').classList.toggle('unstaged');
   })
+
+  // calendar
+  // todolist 내용이 있는 날짜의 경우 .day.current에 on Class 추가
+  document.querySelector(".day.current").classList.add("on");
+  document.querySelector(".day.current.today").classList.add("on");
+
+  
 </script>
 </html>

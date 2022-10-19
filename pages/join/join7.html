@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고객상담</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>#btnSideOpen {display: none !important;}</style>
+</head>
+<body>
+  <div id="wrapper" class="wrapper">
+    <div id="sideMenu" class="sidenav">
+      <ul id="menuList" class="menu-list">
+        <li>
+          <div class="menu-item">
+            <img class="ic-left-logo" src="" alt="">            
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-dashboard" src="" alt="">
+            <div class="menu-name">대시보드</div>
+          </div>          
+        </li>
+        <li class="active">
+          <div class="menu-item">
+            <img class="ic-menu-counsel" src="" alt="">
+            <div class="menu-name">고객상담</div>
+          </div>        
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-mywork" src="" alt="">
+            <div class="menu-name">마이워크</div>
+          </div>        
+        </li>
+        <li>          
+          <div class="menu-item">
+            <img class="ic-menu-reward" src="" alt="">
+            <div class="menu-name">리워드</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-customer" src="" alt="">
+            <div class="menu-name">고객</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-product" src="" alt="">
+            <div class="menu-name">상품</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-insight" src="" alt="">
+            <div class="menu-name">Insight</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-my" src="" alt="">
+            <div class="menu-name">내정보</div>
+          </div>          
+        </li>
+      </ul>
+    </div>
+    <!-- 클릭한 메뉴의 depth2 list -->
+    <ul id="menu-depth2">
+      <li>depth2-1</li>
+      <li>depth2-2</li>
+      <li>depth2-3</li>
+      <li>depth2-4</li>
+    </ul>
+    <!-- sidemenu open/close button (Fixed location) -->
+    <button id="btnSideOpen">
+      <img src="" alt="">
+    </button>
+
+    <div id="main" class="main-wrap join join7">      
+      <div class="contents-wrap">
+        <div class="contents-inner">
+          <div class="contents-header">
+            <h1>FA가입</h1>
+          </div>
+          <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
+          <div class="contents-body card">
+            <div class="order-bar"><div class="current-bar c7"></div> </div>         
+            <h2>계약 등록 완료</h2>              
+            <div class="content-box">
+              <div class="complete-box">
+                <div class="img-complete"></div>
+                <h2 class="txt-c">축하드립니다.<br>
+                  계약등록이 완료되었습니다.</h2>
+              </div>     
+              <h3>이제부터 골든트리 투자자문의 모든 기능을<br>
+                이용하실 수 있습니다.</h3>           
+              <div class="content-desc">
+                <div class="recommend-title">※ 이후 FA 권고사항</div>
+                <div class="recommend-list">
+                  <div class="recommend-item">
+                    <div class="name">보증보험가입</div>
+                    <button class="btn-join">가입하기</button>
+                  </div>
+                  <div class="recommend-item">
+                    <div class="name">네이버카페 등록</div>
+                    <button class="btn-join">등록하기</button>
+                  </div>
+                  <div class="recommend-item">
+                    <div class="name">증권사별 유치자<br>
+                      등록을 위한 정보 필요 안내</div>
+                    <button class="btn-join">상세보기</button>
+                  </div>
+                  <div class="recommend-item">
+                    <div class="name">명함 신청 <span>“FA전용 > 내 정보 > 명함신청”</span> </div>
+                    <button class="btn-join">신청하기</button>
+                  </div>
+                </div>                
+              </div>                   
+            </div>            
+            <div class="btn-group">              
+              <button class="btn-green active">완료</button>            
+            </div>
+          </div>          
+        </div>        
+      </div>
+
+      <footer id="footer"></footer>  
+    </div>
+    
+
+  </div>
+</body>
+<script src="../../scripts/func.js"></script>
+<script src="../../scripts/script.js"></script>
+<script>  
+  loadFooter("../footer.html");
+  document.querySelector(".btn-cancel").onclick = (e) => {
+    location.href = "../main.html";
+  }
+  document.querySelector(".btn-sdoc").onclick = (e) => {
+    location.href = "join4.html";
+  }
+</script>
+</html>

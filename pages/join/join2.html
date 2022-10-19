@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FA가입</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>#btnSideOpen {display: none !important;}</style>
+</head>
+<body>
+  <div id="wrapper" class="wrapper">
+    <div id="sideMenu" class="sidenav">
+      <ul id="menuList" class="menu-list">
+        <li>
+          <div class="menu-item">
+            <img class="ic-left-logo" src="" alt="">            
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-dashboard" src="" alt="">
+            <div class="menu-name">대시보드</div>
+          </div>          
+        </li>
+        <li class="active">
+          <div class="menu-item">
+            <img class="ic-menu-counsel" src="" alt="">
+            <div class="menu-name">고객상담</div>
+          </div>        
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-mywork" src="" alt="">
+            <div class="menu-name">마이워크</div>
+          </div>        
+        </li>
+        <li>          
+          <div class="menu-item">
+            <img class="ic-menu-reward" src="" alt="">
+            <div class="menu-name">리워드</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-customer" src="" alt="">
+            <div class="menu-name">고객</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-product" src="" alt="">
+            <div class="menu-name">상품</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-insight" src="" alt="">
+            <div class="menu-name">Insight</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-my" src="" alt="">
+            <div class="menu-name">내정보</div>
+          </div>          
+        </li>
+      </ul>
+    </div>
+    <!-- 클릭한 메뉴의 depth2 list -->
+    <ul id="menu-depth2">
+      <li>depth2-1</li>
+      <li>depth2-2</li>
+      <li>depth2-3</li>
+      <li>depth2-4</li>
+    </ul>
+    <!-- sidemenu open/close button (Fixed location) -->
+    <button id="btnSideOpen">
+      <img src="" alt="">
+    </button>
+
+    <div id="main" class="main-wrap join join2">      
+      <div class="contents-wrap">
+        <div class="contents-inner">
+          <div class="contents-header">
+            <h1>FA가입</h1>
+          </div>
+          <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
+          <div class="contents-body card">
+            <div class="order-bar"><div class="current-bar c2"></div> </div>            
+            <div class="content-box">
+              <div class="input-box">
+                <div class="input-group">                                    
+                  <input type="text" list="email-list" id="semail" placeholder="이메일"/>
+                  <datalist id="email-list">
+                      <option value="@naver.com" />
+                      <option value="@gmail.com" />
+                      <option value="@kakao.com" />                      
+                  </datalist>
+                  <button class="btn-blue btn-confirm">중복확인</button>
+                </div>
+                <div class="msg-box">사용 가능한 이메일입니다.</div>                                      
+                <input type="password" name="" id="" placeholder="비밀번호 (영문, 숫자, 특수문자 혼합 (8~20자)">
+                <input type="password" name="" id="" placeholder="비밀번호 확인">
+                <div class="msg-box err">비밀번호가 일치하지 않습니다.</div>
+                <input type="text" name="" id="" placeholder="이름">
+                <div class="input-group">
+                  <input type="number" name="" id="" placeholder="휴대폰">
+                  <input type="number" name="" id="">
+                  <input type="number" name="" id="">
+                  <button class="btn-blue btn-confirm">인증</button>
+                </div>
+                <input type="number" name="" id="" placeholder="본인인증">
+                <div class="input-group">
+                  <div class="msg-box err">인증번호가 일치하지 않습니다.</div>
+                  <a href="" class="resend">인증번호 재발송</a>                  
+                </div>
+                <input type="text" name="" id="" placeholder="소속사명">
+              </div> 
+              <div class="msg-box">메세지 노출 영역</div>                                                   
+            </div>            
+            <div class="btn-group">
+              <button class="btn-white btn-prev">이전</button>            
+              <button class="btn-green btn-next active">다음</button>            
+            </div>
+          </div>          
+        </div>        
+      </div>
+
+      <footer id="footer"></footer>  
+    </div>
+    
+
+  </div>
+</body>
+<script src="../../scripts/func.js"></script>
+<script src="../../scripts/script.js"></script>
+<script>  
+  loadFooter("../footer.html");
+  document.querySelector(".btn-prev").onclick = (e) => {
+    location.href = "join1.html";
+  }
+  document.querySelector(".btn-next").onclick = (e) => {
+    location.href = "join3.html";
+  }
+</script>
+</html>

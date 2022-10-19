@@ -1,8 +1,6 @@
 const menuList = document.querySelectorAll('.menu-list > li');
 const tabMenuList = document.querySelectorAll('ul.tab-menu > li');
 
-
-
 // footer load
 loadFooter("footer.html");
 
@@ -73,6 +71,8 @@ document.querySelectorAll('.modal-close').forEach( (list) => {
     $parent = list.closest('.modal-con')
     if ($parent == null) return;
     $parent.classList.toggle('opaque');
+    if (!($parent.classList.contains('opaque'))) 
+      document.body.style.overflow = "overlay";
   
     $parent.addEventListener('transitionend', function(e){
       this.classList.toggle('unstaged');
@@ -80,6 +80,7 @@ document.querySelectorAll('.modal-close').forEach( (list) => {
     });
   });
 });
+
 
 
 
