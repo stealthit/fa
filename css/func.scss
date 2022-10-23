@@ -69,6 +69,7 @@ $size-195: 12.1875rem;
 $size-200: 12.5rem;
 $size-220: 13.75rem;
 $size-225: 14.0625rem;
+$size-230: 14.375rem;
 $size-240: 15rem;
 $size-268: 16.75rem;
 $size-280: 17.5rem;
@@ -88,6 +89,10 @@ $size-535: 33.4375rem;
 $size-560: 35rem;
 $size-1080: 67.5rem;
 $size-1150: 71.875rem;
+
+$gt-green: #0bc890;
+$gt-yellow: #f6c914;
+
 
 @mixin flex_center() {
   display: flex;

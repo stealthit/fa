@@ -229,3 +229,17 @@ Highcharts.chart('container', {
   }
   
   });
+
+  // search input close button display
+  function searchInput() {
+    const formSearchInput = document.querySelector('#search-text');
+    const formSearchClose = document.querySelector('.btn-input-close');
+   
+    formSearchInput.addEventListener('keyup', () => {
+      formSearchClose.style.display =  (formSearchInput.value == '') ? "none":"flex" ;    
+    });
+    
+    formSearchClose.addEventListener('click',(e) => {
+      e.currentTarget.style.display = "none";
+    })
+  } 

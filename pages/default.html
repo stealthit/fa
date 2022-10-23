@@ -8,11 +8,24 @@
   <link rel="stylesheet" href="../css/style.css">
   <style>
     .contents-body {
-      height: 800px;
+      height: 1150px;
       display: flex;
-      align-items: center;
-      justify-content: center;
       background: #fff;
+      padding: 60px;
+    }
+    .unit-wrapper {
+      display: flex;
+    }
+    .unit-list{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .unit-item {
+      display: flex; flex-direction: column; gap: 20px;
+    }
+    .group {
+      display: flex; gap: 20px;
     }
   </style>
 </head>
@@ -107,12 +120,87 @@
           </div>
           <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
           <div class="contents-body">
-
+            <h1>control</h1>     
+            <div class="unit-wrapper">
+              <div class="unit-list">                
+                <div class="unit-item">
+                  <h2>Checkbox</h2>
+                  <div class="check-group">
+                    <input type="checkbox" name="" id="ck1"><label for="ck1">NH</label>
+                    <input type="checkbox" name="" id="ck2"><label for="ck2">NH</label>
+                    <input type="checkbox" name="" id="ck3"><label for="ck3">NH</label>
+                    <input type="checkbox" name="" id="ck4"><label for="ck4">NH</label>
+                    <input type="checkbox" name="" id="ck5"><label for="ck5">NH</label>
+                  </div>
+                </div>
+                <div class="unit-item">
+                  <h2>Radiobox</h2>
+                  <div class="radio-group">
+                    <input type="radio" id="rd1" name="rd" value="1" checked><label for="rd1">펀드</label>
+                    <input type="radio" id="rd2" name="rd" value="2" ><label for="rd2">해외 ETF</label>
+                  </div>
+                </div>
+                <div class="unit-item">
+                  <h2>Message Box</h2>
+                  <div class="msg-box err">오류메세지를 나타내는 박스입니다.</div>
+                </div>                
+                <div class="unit-item">
+                  <h2>Input</h2>
+                  
+                    <input type="text" name="" id="" placeholder="text">
+                    <input type="password" name="" id="" placeholder="password">
+                    <input type="email" name="" id="" placeholder="email">
+                    <input type="date" name="" id="">
+                    <input type="month" name="" id="">
+                    <input type="time" name="" id="">                    
+                  
+                </div>
+                <div class="unit-item">
+                  <h2>Button</h2>
+                  <div class="group">
+                    <button class="btn-circle"><img class="ic-floating-menu1" alt=""></button>
+                    <button class="btn-btn-ic-search"></button>
+                    <button class="btn-excel"><img src="" alt=""> 엑셀</button>
+                    <button class="btn-blue">버튼</button>
+                    <button class="btn-green" style="width: 100px;">버튼</button>
+                    <button class="btn-white" style="width: 100px;">버튼</button>
+                    <button class="btn-s-green">버튼</button>
+                  </div>
+                </div>  
+              </div>
+              <div class="unit-list">      
+                <div class="unit-item">
+                  <h2>Open/Close</h2>
+                  <details>
+                    <summary>접었다 펼쳤다<div class="ic-open-arrow"></div></summary>
+                    펼치면 내용이 나옵니다.
+                  </details>  
+                </div>          
+                <div class="unit-item">
+                  <h2>tab-menu</h2>
+                  <ul class="tab-menu">
+                    <li class="active" data-tab="tab01">메뉴1</li>
+                    <li data-tab="tab02">메뉴2</li>
+                  </ul>
+                </div>
+                <div class="unit-item">
+                  <h2>SelectBox</h2>
+                  <div class="select-wrap" style="width:200px;">
+                    <select class="select-box" name="" id="">
+                      <option value=""></option>
+                      <option value="">옵션1</option>
+                      <option value="">옵션2</option>
+                      <option value="">옵션3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>            
           </div>
         </div>
       </div>
 
-      <footer id="footer"></footer>  
+      <!-- <footer id="footer"></footer>   -->
     </div>
 
 

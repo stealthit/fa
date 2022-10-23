@@ -1,19 +1,36 @@
+const root = window.location.href.substring(0,window.location.href.indexOf("/pages"));
+const menuLink = ['/pages/main.html', //대시보드
+                  '', //고객상담
+                  '', //마이워크
+                  '/pages/reward.html', //보수내역
+                  '/pages/client/client.html', //고객
+                  '', //상품
+                  '', //Insight                  
+                  ''] //내정보
+
 const menuList = document.querySelectorAll('.menu-list > li');
 const tabMenuList = document.querySelectorAll('ul.tab-menu > li');
 
 // footer load
-loadFooter("footer.html");
+// loadFooter("footer.html");
 
 // button event
 document.getElementById("btnSideOpen").onclick = (e) => {
   e.preventDefault();
   document.getElementById("wrapper").classList.toggle("menuOpen");
   sRemoveClass(menuList,'on');
+
+  try {
+    document.getElementById("floating-wrap").classList.toggle("side-open");
+  } catch (error) {
+    
+  }
 };
 
 // side menu click -> depth2 display
-menuList.forEach( (list) => {
+menuList.forEach( (list, index) => {
   list.addEventListener('click', () => {    
+    location.href = root + menuLink[index-1];        
     sRemoveClass(sSiblings(list),'on');
     list.classList.add('on');
 
@@ -23,6 +40,7 @@ menuList.forEach( (list) => {
     if ((depth1Top+elDepth2.offsetHeight) < window.innerHeight)
       elDepth2.style.top = depth1Top < 0 ? 0: depth1Top + 'px';
     else elDepth2.style.top = window.innerHeight - elDepth2.offsetHeight + 'px';
+
   });
 });
 

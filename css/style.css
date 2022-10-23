@@ -577,6 +577,18 @@
   width: 32.5rem;
 }
 
+#main.join .contents-wrap .contents-inner .contents-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #main.join .contents-wrap .contents-inner .contents-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,6 +598,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.875rem;
+  margin-top: 1.875rem;
 }
 
 #main.join .contents-wrap .contents-inner .contents-body .order-bar {
@@ -1280,133 +1293,17 @@
   gap: 1.875rem;
 }
 
-#main.reward .contents-body #tab01 {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1.25rem;
-}
-
-#main.reward .contents-body #tab01 h3 span {
-  color: #1ea5d2;
-}
-
-#main.reward .contents-body #tab01 .level-box-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1.625rem;
-  height: 29.0625rem;
-}
-
-#main.reward .contents-body #tab01 .level-box-wrap .level-box {
-  width: 22.875rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#main.reward .contents-body #tab01 .level-box-wrap .level-box.active {
-  border: solid 2px #2299f4;
-}
-
-#main.reward .contents-body #tab01 .level-box-wrap .level-box .level-top {
-  width: 100%;
-  height: 12.5rem;
-  border-bottom: 1px solid #ccc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#main.reward .contents-body #tab01 .level-box-wrap .level-box .level-top .level {
-  margin-top: 0.9375rem;
-  margin-bottom: 0.1875rem;
-  font-size: 1.375rem;
-  font-weight: bold;
-  line-height: 1.5;
-}
-
-#main.reward .contents-body #tab01 .level-box-wrap .level-box .level-top .level.1 {
-  color: #1ea5d2;
-}
-
-#main.reward .contents-body #tab01 .level-box-wrap .level-box .level-top .level.2 {
-  color: #0bc890;
-}
-
-#main.reward .contents-body #tab01 .level-box-wrap .level-box .level-top .level.3 {
-  color: #fcb909;
-}
-
-#main.reward .contents-body #tab01 .level-box-wrap .level-box .level-top .aum {
-  font-size: 0.875rem;
-  line-height: 1.43;
-  color: #333;
-}
-
-#main.reward .contents-body #tab01 .level-box-wrap .level-box .level-bottom {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-#main.reward .contents-body #tab01 .level-box-wrap .level-box .level-bottom .reward-item .reward-txt {
-  font-size: 1.125rem;
-  line-height: 1.5;
-  text-align: center;
-  color: #111;
-}
-
-#main.reward .contents-body #tab01 .level-box-wrap .level-box .level-bottom .reward-item .sub-txt {
-  font-size: 0.875rem;
-  line-height: 1.43;
-  color: #333;
-  text-align: center;
-}
-
-#main.reward .contents-body #tab02 .reward-list-box {
+#main.reward .contents-body #tab01 .reward-list-box {
   width: 100%;
   padding: 1.875rem;
 }
 
-#main.reward .contents-body #tab02 .reward-list-box .explain {
+#main.reward .contents-body #tab01 .reward-list-box .explain {
   font-size: 0.75rem;
   color: #666;
 }
 
-#main.reward .contents-body #tab02 .reward-list-box .search-wrap {
+#main.reward .contents-body #tab01 .reward-list-box .search-wrap {
   width: 100%;
   height: 5rem;
   margin: 1.25rem 0;
@@ -1423,14 +1320,14 @@
           align-items: center;
 }
 
-#main.reward .contents-body #tab02 .reward-list-box .search-wrap .search-box {
+#main.reward .contents-body #tab01 .reward-list-box .search-wrap .search-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1.875rem;
 }
 
-#main.reward .contents-body #tab02 .reward-list-box .search-wrap .search-box .search-item {
+#main.reward .contents-body #tab01 .reward-list-box .search-wrap .search-box .search-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1440,17 +1337,17 @@
           align-items: center;
 }
 
-#main.reward .contents-body #tab02 .reward-list-box .search-wrap .search-box .search-item .search-title {
+#main.reward .contents-body #tab01 .reward-list-box .search-wrap .search-box .search-item .search-title {
   font-size: 0.8125rem;
   font-weight: 500;
   color: #111;
 }
 
-#main.reward .contents-body #tab02 .reward-list-box .search-wrap .search-box .search-item .search-data input {
+#main.reward .contents-body #tab01 .reward-list-box .search-wrap .search-box .search-item .search-data input {
   width: 8.75rem;
 }
 
-#main.reward .contents-body #tab02 .reward-list-box .table-wrap .table-bottom {
+#main.reward .contents-body #tab01 .reward-list-box .table-wrap .table-bottom {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1637,6 +1534,16 @@
   width: 11.25rem;
 }
 
+#main.client .search-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 1.25rem 0;
+}
+
 #modal-schedule-reg {
   width: 35rem;
 }
@@ -1673,7 +1580,13 @@
   width: 25rem;
 }
 
-#modal-new-pass .input-box {
+#modal-new-pass .login-box ul.tab-menu li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#modal-new-pass .login-box .input-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

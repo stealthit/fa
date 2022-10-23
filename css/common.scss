@@ -141,50 +141,51 @@ input[type=date]:after,input[type=month]:after {
   position: relative; 
   display: flex;
   align-items: center;
+  gap: $size-8;
 
-  input[type="checkbox"]{
-      width:1px; 
-      height:1px; 
-      padding:0; 
-      border:0 none; 
-      margin:0; 
-      position:absolute; 
-      left:0; 
-      top:0; 
-      overflow:hidden;
-      clip:rect(0 0 0 0);
+  // input[type="checkbox"]{
+  //     width:1px; 
+  //     height:1px; 
+  //     padding:0; 
+  //     border:0 none; 
+  //     margin:0; 
+  //     position:absolute; 
+  //     left:0; 
+  //     top:0; 
+  //     overflow:hidden;
+  //     clip:rect(0 0 0 0);
 
-      &:checked + label{ 
-        // background:url(#{$imgPath}bt_checkbox_s.svg) no-repeat;  
-        // background-size: $size-26;
-        content: "";
-        background-image:url(#{$imgPath}bt_checkbox_s.svg) no-repeat;  
-        background-size: 100% 100%;
-        display: inline-block;
+  //     &:checked + label{ 
+  //       // background:url(#{$imgPath}bt_checkbox_s.svg) no-repeat;  
+  //       // background-size: $size-26;
+  //       content: "";
+  //       background-image:url(#{$imgPath}bt_checkbox_s.svg) no-repeat;  
+  //       background-size: 100% 100%;
+  //       display: inline-block;
       
-        /*size of your image*/
-        height: $size-18;
-        width:$size-19;
-      }
-      // &:disabled + label{ background:url(../assets/c_ic_radiobox_disabled.svg) no-repeat;  }
-      // &:disabled:checked + label{ background:url(../assets/c_ic_radiobox_selected_disabled.svg);  }
+  //       /*size of your image*/
+  //       height: $size-18;
+  //       width:$size-19;
+  //     }
+  //     // &:disabled + label{ background:url(../assets/c_ic_radiobox_disabled.svg) no-repeat;  }
+  //     // &:disabled:checked + label{ background:url(../assets/c_ic_radiobox_selected_disabled.svg);  }
       
-  }
+  // }
  
-  label{    
-     height:$size-26;      
-     padding-left:$size-34; 
-     display:flex; 
-     align-items: center;
-     background:url(#{$imgPath}bt_checkbox_n.svg) no-repeat; 
-     background-size: $size-26;
-     vertical-align:middle; 
-     cursor:pointer;
-     &:not(:nth-child(2)) {margin-left: $size-30;}
-     font-size: $size-14;     
-     line-height: 1.2;          
-     color: #222;
-  }
+  // label{    
+  //    height:$size-26;      
+  //    padding-left:$size-34; 
+  //    display:flex; 
+  //    align-items: center;
+  //    background:url(#{$imgPath}bt_checkbox_n.svg) no-repeat; 
+  //    background-size: $size-26;
+  //    vertical-align:middle; 
+  //    cursor:pointer;
+  //    &:not(:nth-child(2)) {margin-left: $size-30;}
+  //    font-size: $size-14;     
+  //    line-height: 1.2;          
+  //    color: #222;
+  // }
 }
 
 // checkbox
@@ -252,7 +253,7 @@ input[type="checkbox"] {
   &::before {
     // content: url("../assets/bt_check_s.png");
     content: '';
-    background-image: url("../assets/bt_check_s.png");
+    background-image: url(#{$imgPath}bt_check_s.png);
     background-size: 100% 100%;
     width: $size-19;
     height: $size-18;
@@ -288,6 +289,21 @@ input[type="checkbox"] {
 
   font-size: $size-14;  
   color: #222;
+}
+
+label.search-input {
+  display: flex;
+  width: $size-220;
+  height: $size-48;
+  border: solid 1px #ccc;
+  background-color: #fff;
+  input[type=text] {outline: none;border: none;height: calc(3rem - 2px);}
+  button.btn-input-close {
+    outline: none;border: none; margin-right: $size-6;
+    @include flex_center;
+    display: none;
+  }
+
 }
 textarea {
   border: solid 1px #ccc;
@@ -399,7 +415,7 @@ ul.pagination {
 .wrapper {
   // min-width: 928px;
   overflow: overlay;
-  // height: 100vh;  
+  min-height: 100%;  
   display: flex;  
   justify-content: space-between;    
   
@@ -469,7 +485,7 @@ ul.pagination {
             border-right: 5px solid #f0c328;
           }
         }
-        .menu-item {
+        .menu-item{
           opacity: 1;
           @include flex_center;
           flex-direction: column;
@@ -511,10 +527,12 @@ ul.pagination {
   }
 
   #main {
-    width: 100%;    
+    width: 100%;   
+    min-height: 100%; 
     // transition: 0.3s;
     
     .contents-wrap {
+      min-height: 100%;
       padding-top: $size-30;
       padding-bottom: $size-100;
       background-color: #f8f9fd;
@@ -545,6 +563,16 @@ ul.pagination {
               li {
                 display: flex;align-items: center;gap:$size-4;
                 &:last-child {cursor: pointer;}
+
+                .btn-session {
+                  height: $size-20;                  
+                  border: solid 1px #ccc;
+                  background-color: #fff;
+                  padding: 0 $size-16;
+                  font-size: $size-11;                  
+                  color: #111;
+                  @include flex_center;
+                }
               }
             }
             .depth-info {
@@ -612,12 +640,12 @@ ul.pagination {
     }
   }
 }
+
 .card {
   border: solid 1px #e5e5e5;
   background-color: #fff;
   padding: $size-30;
 }
-
 
 .content-edit-wrap {  
   .row {
@@ -653,6 +681,11 @@ li {
 }
 // img **************************************
 // ic- ************
+.ic-move {
+  content: url(#{$imgPath}ic_move.png);
+  width: $size-17;
+  height: $size-17;
+}
 .ic-left-logo{
   content: url(#{$imgPath}img_left_logo.png);
   width: $size-38;
@@ -696,7 +729,7 @@ li {
 }
 .ic-menu-my {
   content: url(#{$imgPath}ic_left_my.png);
-}bt_check_s
+}
 .ic-favorite {
   content: url(#{$imgPath}ic_star_n.png);
   &.on {
@@ -762,6 +795,41 @@ li {
   width: $size-14;
   height: $size-26;
 }
+.ic-floating-menu1 {
+  content: url(#{$imgPath}ic_floating_menu_01.png);
+  width: $size-22;
+  height: $size-22;
+}
+.ic-floating-menu2 {
+  content: url(#{$imgPath}ic_floating_menu_02.png);
+  width: $size-23;
+  height: $size-23;
+}
+.ic-floating-menu3 {
+  content: url(#{$imgPath}ic_floating_menu_03.png);
+  width: $size-22;
+  height: $size-22;
+}
+.ic-floating-menu4 {
+  content: url(#{$imgPath}ic_floating_menu_04.png);
+  width: $size-22;
+  height: $size-22;
+}
+.ic-floating-menu4 {
+  content: url(#{$imgPath}ic_floating_menu_04.png);
+  width: $size-22;
+  height: $size-22;
+}
+.ic-floating-close {
+  content: url(#{$imgPath}ic_floating_close.png);
+  width: $size-20;
+  height: $size-20;
+}
+.ic-floating-menu {
+  content: url(#{$imgPath}ic_floating_menu.png);
+  width: $size-24;
+  height: $size-20;
+}
 // img- *************
 .img-user-01 {
   content: url(#{$imgPath}img_user_01.png);
@@ -812,6 +880,11 @@ li {
   content: url(#{$imgPath}ic_complete.png);
   width: $size-72;  
   height: $size-72;
+}
+.img-top-logo {
+  content: url(#{$imgPath}img_top_logo.png);
+  width: $size-240;  
+  height: $size-48;
 }
 // media
 @media (max-width: 1279px) {
@@ -1071,13 +1144,14 @@ ul.customer-list {
     .item-top {
       display: flex;
       justify-content: space-between;      
-      height: $size-24;
+      height: $size-28;
       padding-right: $size-22;
 
       .state {
-        padding: $size-3 $size-20;
-        border-radius: 0 $size-12 $size-12 0;
-        font-size: $size-12;
+        @include flex_center;
+        padding: 0 $size-20;
+        border-radius: 0 $size-14 $size-14 0;
+        font-size: $size-14;
         color: #fff;
 
         &.prospecting{          
@@ -1093,7 +1167,18 @@ ul.customer-list {
         &.telephone {          
           background-color: #f6c914;
         }
-      }
+        &.disagree {
+          background-color: $gt-green;
+        }
+      }      
+
+        .btn-drag{
+          width: $size-34;
+          height: $size-34;       
+          opacity: 0.99;
+          background-color: #f5f5f5;
+        }
+      
     }
     .item-body {
       margin-top: $size-18;
@@ -1124,6 +1209,7 @@ ul.customer-list {
         font-size: $size-15;        
         li {
           display: flex;
+          justify-content: space-between;
           flex: 1 1 auto;
           color: #111;
           span {
@@ -1138,6 +1224,43 @@ ul.customer-list {
       }
     }
   }
+}
+// muuri 고객카드 
+.grid {
+  position: relative;
+}
+.item {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  margin: 5px;
+  z-index: 1;
+}
+.item.muuri-item-hidden {
+  z-index: 0;
+}
+.item.muuri-item-releasing {
+  z-index: 2;
+}
+.item.muuri-item-dragging {
+  z-index: 3;
+}
+.item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: red;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+.item.muuri-item-dragging .item-content {
+  background: blue;
+}
+.item.muuri-item-releasing .item-content {
+  background: blueViolet;
 }
 
 // tab-menu
@@ -1171,6 +1294,9 @@ ul.tab-menu {
 
 // details
 details summary {
+  display: flex;
+  align-items: center;
+  gap: $size-10;
   .ic-open-arrow {
     content: url(#{$imgPath}ic_open_arrow.png);
     width: $size-12;
@@ -1178,7 +1304,7 @@ details summary {
     cursor: pointer;
   }
 }
-details[open] summary {
+details[open] summary {  
   .ic-open-arrow {
     content: url(#{$imgPath}ic_close_arrow.png);
     width: $size-12;
@@ -1317,4 +1443,75 @@ option {
   display: flex;
   gap: $size-8;
   justify-content: center;
+}
+.btn-circle {
+  cursor: pointer;
+  border-radius: 100%;
+  width: $size-60;
+  height: $size-60;        
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #eee;
+  background-color: #fff;
+  @include flex_center;
+}
+#floating-wrap {
+  display: flex;
+  flex-direction: column;  
+  gap: $size-26;
+  align-items: flex-end;
+  position: fixed;
+  right: calc(50% - 35.9375rem);
+  &.side-open {
+    right: calc(50% - 38.9375rem);
+  }
+  bottom: $size-30;  
+  
+  #btn-floating {    
+    img {
+      content: url(#{$imgPath}ic_floating_menu.png);
+      width: $size-24;
+      height: $size-20;
+    }
+    &.open {
+      img {
+        content: url(#{$imgPath}ic_floating_close.png);
+        width: $size-20;
+        height: $size-20;
+      }
+    }
+  }
+  ul.floating-menu {
+    &.open {
+      display: flex;
+    }
+    width: $size-230;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: $size-34;
+    li {
+      display: flex;
+      align-items: center;    
+      justify-content: flex-end;  
+      position: relative;
+      padding-right: $size-35;
+      .menu-title {        
+        right: 0;
+        height: $size-40;        
+        opacity: 0.9;
+        padding: 0.5rem 2rem 0.5rem 1rem;
+        border-radius: $size-18;
+        box-shadow: 0 $size-3 $size-10 0 rgba(0, 0, 0, 0.16);
+        background-color: #fff;   
+        
+        font-size: $size-16;
+        font-weight: bold;                
+        color: #2e3666;
+      }
+      .menu-ic-wrap{        
+        position: absolute;
+        right: 0;        
+      }
+    }
+  }
 }
