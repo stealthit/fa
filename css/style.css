@@ -807,6 +807,26 @@
   margin-top: 0.625rem;
 }
 
+#main.join .contents-wrap .contents-inner .contents-body .content-box .input-box .check-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 0.625rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main.join .contents-wrap .contents-inner .contents-body .content-box .input-box .check-group .check-box {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.375rem;
+}
+
 #main.join .contents-wrap .contents-inner .contents-body .content-box p {
   font-size: 0.875rem;
   color: #666;
@@ -913,6 +933,31 @@
 #main.join .contents-wrap .contents-inner .contents-body .content-box .content-desc .recommend-list .recommend-item .name span {
   font-size: 0.875rem;
   color: #aaa;
+}
+
+#main.join .contents-wrap .contents-inner .contents-body .content-box .auth-box {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 18.75rem;
+  height: 10rem;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+  border: solid 1px #ccc;
+  background-color: #fff;
+  font-size: 0.875rem;
+  color: #111;
 }
 
 #main.counsel .contents-wrap {

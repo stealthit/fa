@@ -483,6 +483,18 @@
               color: #111;
               &:not(:first-child) {margin-top: $size-10;}
             }
+
+            .check-group {
+              display: flex;
+              flex-wrap: wrap;   
+              row-gap: $size-10;  
+              align-items: center;   
+              .check-box {
+                width: 45%;
+                display: flex;
+                gap: $size-6;
+              }
+            }
           }
           p {
             font-size: $size-14;            
@@ -556,7 +568,20 @@
             }
           }
           
-          
+          // auth 
+          .auth-box {
+            cursor: pointer;
+            @include flex_center;
+            flex-direction: column;
+            width: $size-300;
+            height: $size-160;
+            margin: 0 auto;   
+            margin-bottom: $size-20;         
+            border: solid 1px #ccc;
+            background-color: #fff;
+            font-size: $size-14;                        
+            color: #111;
+          }
         }
 
       }
