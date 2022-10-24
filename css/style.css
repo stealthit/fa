@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* change image path  */
 /*10px*/
 /*12px*/
@@ -1643,4 +1644,189 @@
   margin-top: 1.25rem;
   margin-bottom: 0.625rem;
 }
+
+/**start 고객상담 ***************************/
+#main.counsel .contents-wrap .contents-body .input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.625rem;
+  max-width: 28.75rem;
+}
+
+#main.counsel .contents-wrap .contents-body .input-box .input-group {
+  gap: 0;
+}
+
+#main.counsel .contents-wrap .contents-body .input-box .input-group .btn {
+  width: 6.25rem;
+  height: 3rem;
+  border: solid 1px #ccc;
+  border-left: 0;
+  text-align: center;
+}
+
+#main.counsel .contents-wrap .contents-body .input-box.counsel {
+  margin-bottom: 23.1875rem;
+}
+
+#main.counsel input:-moz-read-only {
+  color: #999;
+  background: #f5f5f5;
+}
+
+#main.counsel input:read-only {
+  color: #999;
+  background: #f5f5f5;
+}
+
+#main.counsel .btn-group.cou2 {
+  padding-top: 5.75rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main.counsel .btn-group.cou2 .w100p {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  color: #666;
+}
+
+#main.counsel .btn-group.cou3 {
+  padding-top: 11.25rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main.counsel .btn-group.cou3 .w100p {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  color: #666;
+}
+
+#main.counsel .input-box.cou3 dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
+  border: 1px solid #ccc;
+}
+
+#main.counsel .input-box.cou3 dl dt {
+  line-height: 3rem;
+}
+
+#main.counsel .input-box.cou3 dl dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main.counsel .input-box.cou3 dl dd input {
+  border: 0;
+  padding: 0.875rem 0.625rem;
+  text-align: right;
+}
+
+#main.counsel .input-box.cou3 dl dd span {
+  white-space: nowrap;
+  line-height: 3rem;
+}
+
+#main.counsel.counsel2 .contents-wrap .contents-inner {
+  width: 71.875rem;
+}
+
+#main.counsel.counsel2 .contents-wrap .contents-inner .contents-body .content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+#main.counsel.counsel2 .contents-wrap .contents-inner .contents-body .content-box .item-box {
+  width: calc((100% - 1.25rem) / 2);
+  padding: 1.25rem;
+  border: solid 1px #e5e5e5;
+  background-color: #fff;
+}
+
+#main.counsel.counsel2 .contents-wrap .contents-inner .contents-body .content-box .item-box.active {
+  border: solid 1px #0bc890;
+}
+
+#main.counsel.counsel2 .contents-wrap .contents-inner .contents-body .content-box .item-box .item-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.375rem;
+}
+
+#main.counsel.counsel2 .contents-wrap .contents-inner .contents-body .content-box .item-box .item-top .name-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main.counsel.counsel2 .contents-wrap .contents-inner .contents-body .content-box .item-box .item-top .name-wrap .mp-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2e3666;
+}
+
+#main.counsel.counsel2 .contents-wrap .contents-inner .contents-body .content-box .item-box ul.mp-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 0.8125rem;
+  color: #aaa;
+}
+
+#main.counsel.counsel2 .contents-wrap .contents-inner .contents-body .content-box .item-box ul.mp-list p {
+  padding: 1.25rem 0;
+}
+
+#main.counsel.counsel2 .contents-wrap .contents-inner .contents-body .content-box .item-box ul.mp-list button {
+  width: 6.25rem;
+  height: 3rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+#main.counsel.counsel2 .contents-wrap .contents-inner .btn-group button {
+  max-width: 14.0625rem;
+}
+
+/**end 고객상담 ***************************/
 /*# sourceMappingURL=style.css.map */

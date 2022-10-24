@@ -660,6 +660,7 @@ ul.pagination li a.active {
 }
 
 .wrapper #main .contents-wrap .contents-inner .contents-header .header-right .connect-info li .btn-session {
+  cursor: pointer;
   height: 1.25rem;
   border: solid 1px #ccc;
   background-color: #fff;
@@ -675,6 +676,43 @@ ul.pagination li a.active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.wrapper #main .contents-wrap .contents-inner .contents-header .header-right .connect-info li.name {
+  position: relative;
+}
+
+.wrapper #main .contents-wrap .contents-inner .contents-header .header-right .connect-info li.name ul.mini-menu {
+  height: 5rem;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  padding: 0.875rem 1.25rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 7.5rem;
+  -webkit-box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #e5e5e5;
+  background-color: #fff;
+}
+
+.wrapper #main .contents-wrap .contents-inner .contents-header .header-right .connect-info li.name ul.mini-menu.on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper #main .contents-wrap .contents-inner .contents-header .header-right .connect-info li.name ul.mini-menu li {
+  cursor: pointer;
+  font-size: 0.8125rem;
+  color: #181818;
 }
 
 .wrapper #main .contents-wrap .contents-inner .contents-header .header-right .depth-info {

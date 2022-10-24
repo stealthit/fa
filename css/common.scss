@@ -565,6 +565,7 @@ ul.pagination {
                 &:last-child {cursor: pointer;}
 
                 .btn-session {
+                  cursor: pointer;
                   height: $size-20;                  
                   border: solid 1px #ccc;
                   background-color: #fff;
@@ -572,6 +573,32 @@ ul.pagination {
                   font-size: $size-11;                  
                   color: #111;
                   @include flex_center;
+                }
+
+                &.name {
+                  position: relative;
+                  ul.mini-menu {                    
+                    height: $size-80;
+                    position: absolute;
+                    right: 0;
+                    top: calc(100% + 0.5rem);
+                    padding: $size-14 $size-20;
+                    display: none;
+                    &.on {display: flex;}
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    width: $size-120;                    
+                    box-shadow: 0 $size-5 $size-20 0 rgba(0, 0, 0, 0.1);
+                    border: solid 1px #e5e5e5;
+                    background-color: #fff;
+
+                    li {
+                      cursor: pointer;                      
+                      font-size: $size-13;
+                      color: #181818;
+                    }                    
+                  }
                 }
               }
             }

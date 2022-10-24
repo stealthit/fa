@@ -69,7 +69,13 @@ var body = document.querySelector("body");
 body.addEventListener('click', clickBodyEvent);
  
 function clickBodyEvent(event) {
-  var target = event.target;           
+  var target = event.target;      
+  var miniMenu = document.querySelector(".mini-menu");
+
+  if (target.className == 'name') return;
+  if (miniMenu.classList.contains("on")) miniMenu.classList.remove("on");
+
+  
   if((target.parentNode.id == 'menu-depth2') 
       || (target.parentElement.className == 'menu-list')
       || (target.className == 'menu-item')

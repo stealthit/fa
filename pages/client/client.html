@@ -6,12 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-- <link href='../css/main.min.css' rel='stylesheet' /> -->
-  <link rel="stylesheet" href="../css/style.css">    
-  <script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/series-label.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<!-- <script src="https://code.highcharts.com/modules/export-data.js"></script> -->
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">  
 </head>
 <body>
   <div id="wrapper" class="wrapper menuOpen">
@@ -84,11 +79,11 @@
       <img class="ic-left-fold" src="" alt="">
     </button>
 
-    <div id="main" class="main-wrap dashboard">      
+    <div id="main" class="main-wrap client">      
       <div class="contents-wrap">
         <div class="contents-inner">
           <div class="contents-header">
-            <h1>FA 전용</h1>
+            <h1>고객</h1>
             <div class="header-right">
               <ul class="connect-info">
                 <li class="time">
@@ -96,10 +91,7 @@
                   <div class="btn-session">연장</div>
                 </li>
                 <li class="v-seperate"></li>
-                <li class="name">
-                  <strong>홍길동</strong> 님<img class="ic-user-arrow-down" alt="">
-                  <ul class="mini-menu"><li>내정보</li><li>로그아웃</li></ul>
-                </li>
+                <li class="name"><strong>홍길동</strong> 님<img class="ic-user-arrow-down" alt=""></li>
               </ul>
               <ul class="depth-info">
                 <li><a href="">1depth 표시</a></li>
@@ -109,226 +101,24 @@
             </div>
           </div>
           <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
-          <div class="contents-body">
-            <section class="section01">
-              <div class="graph-wrap card">
-                <div class="graph-top">
-                  <h2>현황</h2>
-                  <ul class="tab-menu">
-                    <li class="active" data-tab="tab01">월단위</li>
-                    <li data-tab="tab02">연단위</li>
-                  </ul>
-                </div>
-                <div class="tab-content active" id="tab01">
-                  <div class="graph-box">                
-                    <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
-                    <figure class="highcharts-figure">
-                      <div id="container"></div>
-                    </figure>
-                  </div>
-                </div>
-                <div class="tab-content" id="tab02">
-                  <div class="graph-box">                
-                    <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
-                    <!-- <div id="curve_chart" style="width: 100%;height: 100%;"></div> -->
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="section02">
-              <h2>나의 커리어</h2>   
-              <div class="career-wrap card">                
-                <details class="career-con">
-                  <summary>
-                    나의 현재 AUM 31억 <div class="cl-green">Level 2</div>
-                    <img src="" alt="" class="img-career-arrow">
-                    <div class="cl-yellow">Level 3</div>다음 목표 AUM 51억
-                    <div class="ic-open-arrow"></div>
-                  </summary>
-                  <div class="level-box-wrap">
-                    <div class="level-box active">
-                      <div class="level-top">
-                        <div class="img-reward-lv1"></div>                    
-                        <div class="level lv1">Level 1</div>
-                        <div class="aum">AUM 0~20억</div>
-                        <!-- <div class="career-bline"></div> -->
-                      </div>
-                      <div class="level-bottom">
-                        <div class="reward-item">
-                          <div class="reward-txt">영업 비용 지원</div>
-                          <div class="sub-txt">(월 최대 10만원)</div>
-                        </div>
-                        <div class="reward-item">
-                          <div class="reward-txt">시상금 100만원</div>                      
-                        </div>
-                        <div class="reward-item">
-                          <div class="reward-txt">시상품</div>
-                          <div class="sub-txt">신라 호텔 식사권</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="level-arrow-wrap">
-                      <div class="ic-level-arrow"></div>
-                    </div>
-                    <div class="level-box">
-                      <div class="level-top">
-                        <div class="img-reward-lv2"></div>                    
-                        <div class="level lv2">Level 2</div>
-                        <div class="aum">AUM 20~50억</div>
-                        <div class="career-bline"></div>
-                      </div>
-                      <div class="level-bottom">
-                        <div class="reward-item">
-                          <div class="reward-txt">영업 비용 지원</div>
-                          <div class="sub-txt">(월 최대 10만원)</div>
-                        </div>
-                        <div class="reward-item">
-                          <div class="reward-txt">시상금 150만원</div>                      
-                        </div>
-                        <div class="reward-item">
-                          <div class="reward-txt">시상품</div>
-                          <div class="sub-txt">신라 호텔 식사권</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="level-arrow-wrap">
-                      <div class="ic-level-arrow"></div>
-                    </div>
-                    <div class="level-box">
-                      <div class="level-top">
-                        <div class="img-reward-lv3"></div>                    
-                        <div class="level lv3">Level 3</div>
-                        <div class="aum">AUM 50~100억</div>
-                        <div class="career-bline"></div>
-                      </div>
-                      <div class="level-bottom">
-                        <div class="reward-item">
-                          <div class="reward-txt">골드만 삭스 해외 연수 참석 지원</div>
-                          <div class="sub-txt">(티켓 및 숙박)</div>
-                        </div>
-                        <div class="reward-item">
-                          <div class="reward-txt">시상금 200만원</div>                      
-                        </div>
-                        <div class="reward-item">
-                          <div class="reward-txt">시상품</div>
-                          <div class="sub-txt">신라 호텔 식사권</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="level-arrow-wrap">
-                      <div class="ic-level-arrow"></div>
-                    </div>
-                    <div class="level-box">
-                      <div class="level-top">
-                        <div class="img-reward-lv4"></div>                    
-                        <div class="level lv4">Level 4</div>
-                        <div class="aum">AUM 100억 이상</div>
-                        <div class="career-bline"></div>
-                      </div>
-                      <div class="level-bottom">
-                        <div class="reward-item">
-                          <div class="reward-txt">골드만 삭스 해외 연수 참석 지원</div>
-                          <div class="sub-txt">(티켓 및 숙박)</div>
-                        </div>
-                        <div class="reward-item">
-                          <div class="reward-txt">시상금 200만원</div>                      
-                        </div>
-                        <div class="reward-item">
-                          <div class="reward-txt">시상품</div>
-                          <div class="sub-txt">신라 호텔 식사권</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </details>                               
-              </div>
-            </section>
-            <section class="section03">
-              <div class="todo-wrap card">
-                <div class="todo-top">
-                  <h2>2022-08-12~19 일정목록</h2>
-                  <button class="btn-s-green btn-reg-sche modal-open">일정등록</button>
-                </div>
-                <div id="todolist">                  
-                  <ul>
-                    <li>
-                      <div class="todo-left">
-                        <div class="todo-marker"></div>
-                      </div>
-                      <div class="todo-center">
-                        <div class="todo-title">김길동 투자컨설팅</div>
-                        <div class="todo-place">2층 대회의실</div>
-                      </div>
-                      <div class="todo-right">종일</div>
-                    </li>
-                    <li class="disabled">
-                      <div class="todo-left">
-                        <div class="todo-marker"></div>
-                      </div>
-                      <div class="todo-center">
-                        <div class="todo-title">킥오프 미팅</div>
-                        <div class="todo-place">2층 대회의실</div>
-                      </div>
-                      <div class="todo-right">오전 09:30<br>오전 10:00</div>
-                    </li>
-                    <li>
-                      <div class="todo-left">
-                        <div class="todo-marker"></div>
-                      </div>
-                      <div class="todo-center">
-                        <div class="todo-title">김이박 투자컨설팅</div>
-                        <div class="todo-place">2층 대회의실</div>
-                      </div>
-                      <div class="todo-right">오전 11:30<br>오후 01:00</div>
-                    </li>
-                    <li>
-                      <div class="todo-left">
-                        <div class="todo-marker"></div>
-                      </div>
-                      <div class="todo-center">
-                        <div class="todo-title">신규 웹페이지 사용법 설명회</div>
-                        <div class="todo-place">2층 대회의실</div>
-                      </div>
-                      <div class="todo-right">오후 03:30<br>오후 05:30</div>
-                    </li>
-                  </ul>
-                </div>                
-              </div>
-              <div class="calendar-wrap card">                
-                <div class="calendar-top">
-                  <h2>캘린더</h2>
-                  <button class="btn-s-green">오늘</button>
-                </div>
-                <div id='calendar'>
-                  <div class="cal_nav">
-                    <a href="javascript:;" class="nav-btn go-prev">prev</a>
-                    <div class="year-month"></div>
-                    <a href="javascript:;" class="nav-btn go-next">next</a>
-                  </div>
-                  <div class="cal_wrap">
-                    <div class="days">
-                      <div class="day">Mo</div>
-                      <div class="day">Tu</div>
-                      <div class="day">We</div>
-                      <div class="day">Th</div>
-                      <div class="day">Fr</div>
-                      <div class="day">Sa</div>
-                      <div class="day">Su</div>
-                    </div>
-                    <div class="dates"></div>
-                  </div>
-                </div>                
-              </div>
-            </section>
-            <section class="section04">
-              <div class="customer-wrap">
-                <div class="customer-top">
-                  <h2>고객 목록</h2>
-                  <div class="search-wrap">
-                    <input type="text" name="" id="" placeholder="이름 또는 전화번호">
-                    <button class="btn-ic-search"></button>
-                  </div>
-                </div>
+          <div class="contents-body">            
+            <ul class="tab-menu">
+              <li class="active" data-tab="tab01">진행고객</li>
+              <li data-tab="tab02">미진행고객</li>
+            </ul>
+            <div class="search-wrap">
+              <form>
+                <label class="search-input">
+                  <input type="text" name="" id="search-text" placeholder="이름 또는 핸드폰 번호">
+                  <button type="reset" class="btn-input-close">
+                    <img class="ic-close" />
+                  </button>
+                </label>              
+              </form>
+              <button class="btn-ic-search"></button>
+            </div>
+            <div class="tab-content active" id="tab01">
+              <div class="customer-wrap">                
                 <ul class="customer-list">
                   <li class="customer-card card">
                     <div class="item-top">                      
@@ -608,129 +398,93 @@
                   </li>                  
                 </ul>
               </div>
-            </section>
-            <section></section>
+            </div>
+            <div class="tab-content" id="tab02">         
+              <div class="box1">
+                <div class="grid">
+                  <div class="item">
+                    <div class="item-content">1</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">2</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">3</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">4</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">5</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">6</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">7</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">8</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">9</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">10</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">11</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">12</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">13</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">14</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">15</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">16</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">17</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">18</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">19</div>
+                  </div>
+                  <div class="item">
+                    <div class="item-content">20</div>
+                  </div>
+                </div>      
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- floating menu -->
-        <div id="floating-wrap" class="side-open">
-          <ul class="floating-menu">
-            <li>
-              <div class="menu-title">네이버 보증보험가입</div>
-              <div class="menu-ic-wrap btn-circle"><img class="ic-floating-menu1" alt="네이버 보증보험가입"></div>
-            </li>
-            <li>
-              <div class="menu-title">골든트리 네이버카페</div>
-              <div class="menu-ic-wrap btn-circle"><img class="ic-floating-menu2" alt="골든트리 네이버카페"></div>
-            </li>
-            <li>
-              <div class="menu-title">유치자 등록 정보 안내</div>
-              <div class="menu-ic-wrap btn-circle"><img class="ic-floating-menu3" alt="유치자 등록 정보 안내"></div>
-            </li>
-            <li>
-              <div class="menu-title">명함 신청</div>
-              <div class="menu-ic-wrap btn-circle"><img class="ic-floating-menu4" alt="명함 신청"></div>
-            </li>
-          </ul>
-          <div id="btn-floating" class="btn-circle"><img alt="메뉴"></div>
         </div>
       </div>
 
       <!-- <footer id="footer"></footer>   -->
     </div>
 
-
-    <!-- modal area -->
-    <div class="modal-con modal unstaged">
-      <div class="modal-overlay"></div>
-      <div id="modal-schedule-reg" class="modal-contents">
-        <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
-        <div class="modal-top">
-          <h1>일정등록</h1>
-        </div>
-        <div class="modal-body">
-          <div class="content-edit-wrap">
-            <div class="row">
-              <div class="row-title">제목</div>
-              <div class="row-content"><input type="text" name="" id=""></div>
-            </div>
-            <div class="row">
-              <div class="row-title">장소</div>
-              <div class="row-content"><input type="text" name="" id=""></div>
-            </div>
-            <div class="row">
-              <div class="row-title">시작</div>
-              <div class="row-content">
-                <input type="date" name="" id="" value="2022-09-12">
-                <input type="time" name="" id="" value="14:00">
-                <input type="checkbox" name="" id="">종일
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-title">종료</div>
-              <div class="row-content">
-                <input type="date" name="" id="" value="2022-09-12">
-                <input type="time" name="" id="" value="14:00">
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-title">고객</div>
-              <div class="row-content">
-                <input type="text" list="custom-list" id="custom" autocomplete="off" />
-                <datalist id="custom-list">
-                  <option value="김기훈 (1969.05.05/남/%고객상태%)" />
-                  <option value="김민지 (1985.12.01/여/%고객상태%)" />
-                  <option value="김태정 (2000.01.23/남/%고객상태%)" />                      
-                </datalist>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-title">내용</div>
-              <div class="row-content"><textarea name="" id="" cols="30" rows="10"></textarea></div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-bottom">
-          <div class="btn-sgroup">
-            <button class="btn-modal-white modal-close">취소</button>
-            <button class="btn-modal-blue">전송</button>
-          </div>
-        </div>
-      </div>
-    </div>    
+  
   </div>
 </body>
 <!-- <script src='../scripts/main.min.js'></script> -->
-<script src="../scripts/func.js"></script>
-<script src="../scripts/script.js"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script>  
-  calendarInit();
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/haltu/muuri@0.9.5/dist/muuri.min.js"></script>
+<script src="../../scripts/func.js"></script>
+<script src="../../scripts/script.js"></script>
+<script>    
+  searchInput();
 
-  document.querySelector(".name").onclick = (e) => {
-    e.currentTarget.querySelector(".mini-menu").classList.add('on');
-  }
-  // modal-open
-  document.querySelector(".btn-reg-sche").addEventListener("click",function(){
-    let el = document.getElementById('modal-schedule-reg');
-    if (el.closest('.modal-con').classList.contains('unstaged')) 
-      document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "unset";
-    el.closest('.modal-con').classList.toggle('opaque');
-    el.closest('.modal-con').classList.toggle('unstaged');
-  })
-
-  // floating button event
-  document.getElementById("btn-floating").onclick = (e) => {
-    e.preventDefault();
-    e.currentTarget.classList.toggle("open");
-    document.querySelector(".floating-menu").classList.toggle("open");
-  };
-  // calendar
-  // todolist 내용이 있는 날짜의 경우 .day.current에 on Class 추가
-  document.querySelector(".day.current").classList.add("on");
-  document.querySelector(".day.current.today").classList.add("on");
-
-  
+  var grid = new Muuri('.grid', {
+  dragEnabled: true
+});
 </script>
 </html>
