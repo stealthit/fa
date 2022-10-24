@@ -1,7 +1,4 @@
 @import "func.scss";
-.contents-inner{
-    width: $size-520;
-}
 .contents-wrap {
     .contents-body{
         .input-box{
@@ -13,8 +10,7 @@
             -ms-flex-direction: column;
             flex-direction: column;
             gap: 0.625rem;
-            margin-bottom: $size-371;
-
+            max-width: $size-460;
             .input-group {
                 gap: 0;
 
@@ -26,6 +22,114 @@
                     text-align: center;
                 }
             }
+        }
+        .input-box.counsel { margin-bottom: $size-371; }
+    }
+}
+
+#main.counsel input:read-only {
+    color: #999;
+    background: #f5f5f5;
+}
+
+#main.counsel .btn-group.cou2 {
+    padding-top: $size-92;
+     flex-wrap: wrap;
+    .w100p{
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+        color: #666;
+    }
+}
+
+#main.counsel .btn-group.cou3 {
+    padding-top: $size-180;
+     flex-wrap: wrap;
+    .w100p{
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+        color: #666;
+    }
+}
+
+#main.counsel .input-box.cou3 dl{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 $size-16;
+    border: 1px solid #ccc;
+    dt {
+        line-height: $size-48;
+    }
+    dd {
+        display: flex;
+        input {
+            border:0;
+            padding: $size-14 $size-10;
+            text-align: right;
+        }
+        span {
+            white-space:nowrap;
+            line-height: $size-48;
+        }
+    }
+}
+
+#main.counsel.counsel2{
+    .contents-wrap .contents-inner{
+        width: $main_width;
+        .contents-body .content-box {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: $size-20;
+
+          .item-box {
+            width: calc((100% - #{$size-20}) / 2);
+            padding: $size-20;
+            border: solid 1px #e5e5e5;
+            background-color: #fff;
+
+            &.active {
+              border: solid 1px #0bc890;
+            }
+            .item-top {
+              display: flex;
+              flex-direction: column;
+              gap: $size-6;
+
+              .name-wrap {
+                display: flex;
+                justify-content: space-between;
+                .mp-name {
+                  font-size: $size-20;
+                  font-weight: bold;
+                  color: #2e3666;
+                }
+              }
+            }
+            ul.mp-list {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              font-size: $size-13;
+              color: #aaa;
+              p{ padding: $size-20 0; }
+              button {
+                  width: $size-100;
+                  height: $size-48;
+                  font-size: $size-14;
+                  text-align: center;
+                  color: #111;
+                  border: 1px solid #ccc;
+              }
+            }
+          }
+        }
+        .btn-group {
+          button { max-width: $size-225;}
         }
     }
 }

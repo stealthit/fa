@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>고객상담</title>
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/counsel.css">
 </head>
 <body>
   <div id="wrapper" class="wrapper menuOpen">
@@ -13,56 +14,56 @@
       <ul id="menuList" class="menu-list">
         <li>
           <div class="menu-item">
-            <img class="ic-left-logo" src="" alt="">            
+            <img class="ic-left-logo" src="" alt="">
           </div>
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-dashboard" src="" alt="">
             <div class="menu-name">대시보드</div>
-          </div>          
+          </div>
         </li>
         <li class="active">
           <div class="menu-item">
             <img class="ic-menu-counsel" src="" alt="">
             <div class="menu-name">고객상담</div>
-          </div>        
+          </div>
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-mywork" src="" alt="">
             <div class="menu-name">마이워크</div>
-          </div>        
+          </div>
         </li>
-        <li>          
+        <li>
           <div class="menu-item">
             <img class="ic-menu-reward" src="" alt="">
             <div class="menu-name">리워드</div>
-          </div>          
+          </div>
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-customer" src="" alt="">
             <div class="menu-name">고객</div>
-          </div>          
+          </div>
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-product" src="" alt="">
             <div class="menu-name">상품</div>
-          </div>          
+          </div>
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-insight" src="" alt="">
             <div class="menu-name">Insight</div>
-          </div>          
+          </div>
         </li>
         <li>
           <div class="menu-item">
             <img class="ic-menu-my" src="" alt="">
             <div class="menu-name">내정보</div>
-          </div>          
+          </div>
         </li>
       </ul>
     </div>
@@ -78,54 +79,81 @@
       <img src="" alt="">
     </button>
 
-    <div id="main" class="main-wrap counsel counsel3">      
+    <div id="main" class="main-wrap counsel counsel1">
       <div class="contents-wrap">
-        <div class="contents-inner active">
+        <div class="contents-inner">
           <div class="contents-header">
             <h1>고객 상담</h1>
-            <div class="header-right">
-              <ul class="connect-info">
-                <li class="time">세션유지시간<div class="cl-skyblue-b"> 09:10</div></li>
-                <li class="v-seperate"></li>
-                <li class="name"><strong>홍길동</strong> 님<img class="ic-user-arrow-down" alt=""></li>
-              </ul>
-              <ul class="depth-info">
-                <li><a href="">1depth 표시</a></li>
-                <li><img src="" alt="" class="ic-navi-arrow"></li>
-                <li><a href="">2depth 표시</a></li>             
-              </ul>
-            </div>
           </div>
           <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
           <div class="contents-body card">
-            <div class="order-bar"><div class="current-bar c3"></div> </div>
-            <h2>재무정보 입력</h2>            
-            <div class="content-box">  
-              
+            <div class="order-bar"><div class="current-bar c1"></div> </div>
+            <h2>재무정보입력</h2>
+            <div class="input-box cou3">
+                <div class="input-group">
+                    <dl>
+                        <dt><span>수입</span></dt>
+                        <dd>
+                            <input type="number" name="" id="" placeholder="0">
+                            <span>만원</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="input-group">
+                    <dl>
+                        <dt><span>지출</span></dt>
+                        <dd>
+                            <input type="number" name="" id="" placeholder="0">
+                            <span>만원</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="input-group">
+                    <dl>
+                        <dt><span>현금자산</span></dt>
+                        <dd>
+                            <input type="number" name="" id="" placeholder="0">
+                            <span>만원</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="input-group">
+                    <dl>
+                        <dt><span>부채현황</span></dt>
+                        <dd>
+                            <input type="number" name="" id="" placeholder="0">
+                            <span>만원</span>
+                        </dd>
+                    </dl>
+                </div>
             </div>
-            <div class="btn-group">
-              <button class="btn-white btn-prev">이전</button>            
-              <button class="btn-green btn-next active">다음</button>            
+            <div class="btn-group cou3">
+              <button class="w100p">임시저장하기</button>
+              <button class="btn-white btn-prev">이전</button>
+              <button class="btn-green btn-next active">완료</button>
             </div>
-          </div>          
-        </div>        
+          </div>
+        </div>
       </div>
-
       <!-- <footer id="footer"></footer>   -->
     </div>
-    
-
   </div>
+    <!-- 발송모달 -->
+    <div class="modal-con modal unstaged">
+    <div class="modal-overlay"></div>
+    <div id="modal-send-result" class="modal-contents">
+      <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
+      <div class="url">
+        <p class="desc">입력하신 번호로 url이 발송되었습니다.<br/>고객 응답완료 후<br/>다음 단계를 진행할 수 있습니다.</p>
+      </div>
+      <div class="modal-bottom">
+        <div class="btn-sgroup">
+          <button class="btn-modal-blue">확인</button>
+        </div>
+      </div>
+    </div>
+    </div>
 </body>
 <script src="../../scripts/func.js"></script>
 <script src="../../scripts/script.js"></script>
-<script>  
-  // loadFooter("../footer.html");
-  document.querySelector(".btn-prev").onclick = (e) => {
-    location.href = "counsel2.html";
-  }
-  document.querySelector(".btn-next").onclick = (e) => {
-    location.href = "counsel4.html";
-  }
-</script>
 </html>
