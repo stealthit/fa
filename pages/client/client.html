@@ -83,7 +83,7 @@
       <div class="contents-wrap">
         <div class="contents-inner">
           <div class="contents-header">
-            <h1>고객</h1>
+            <h1>FA 전용</h1>
             <div class="header-right">
               <ul class="connect-info">
                 <li class="time">
@@ -91,7 +91,10 @@
                   <div class="btn-session">연장</div>
                 </li>
                 <li class="v-seperate"></li>
-                <li class="name"><strong>홍길동</strong> 님<img class="ic-user-arrow-down" alt=""></li>
+                <li class="name">
+                  <strong>홍길동</strong> 님<img class="ic-user-arrow-down" alt="">
+                  <ul class="mini-menu"><li>내정보</li><li>로그아웃</li></ul>
+                </li>
               </ul>
               <ul class="depth-info">
                 <li><a href="">1depth 표시</a></li>
@@ -117,7 +120,7 @@
               </form>
               <button class="btn-ic-search"></button>
             </div>
-            <div class="tab-content active" id="tab01">
+            <div class="tab-content" id="tab01">
               <div class="customer-wrap">                
                 <ul class="customer-list">
                   <li class="customer-card card">
@@ -399,70 +402,365 @@
                 </ul>
               </div>
             </div>
-            <div class="tab-content" id="tab02">         
-              <div class="box1">
-                <div class="grid">
+            <div class="tab-content active" id="tab02">         
+              <div class="box on">
+                <div class="box-header">
+                  <div class="title">기본</div>
+                  <div class="ic-edit"></div>
+                </div>
+                <div class="grid1 grid">
                   <div class="item">
-                    <div class="item-content">1</div>
+                    <div class="item-content">
+                      <div class="customer-card card">
+                        <div class="item-top">                      
+                          <div class="btn-drag"><img class="ic-move" alt=""></div>
+                          <div class="ic-favorite on"></div>
+                        </div>
+                        <div class="item-body">
+                          <div class="customer-info">
+                            <div class="info-txt">
+                              <div class="name">홍길동</div>
+                              <div class="birth">남, 1985 10 13</div>
+                            </div>
+                            <div class="info-img">
+                              <div class="img-user-01"></div>
+                            </div>
+                          </div>
+                          <ul class="customer-desc">
+                            <li><span>자문 계약일</span> <div class="cus-data">2015.9.9</div></li>
+                            <li><span>계좌 수</span> <div class="cus-data"><strong>5</strong> 개</div></li>
+                            <li><span>AUM</span> <div class="cus-data"><strong>0</strong> 원</div></li>
+                            <li><span>고객메모</span> <div class="cus-data"><strong>2</strong> 건</div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="item">
-                    <div class="item-content">2</div>
+                    <div class="item-content">
+                      <div class="customer-card card">
+                        <div class="item-top">                      
+                          <div class="btn-drag"><img class="ic-move" alt=""></div>
+                          <div class="ic-favorite"></div>
+                        </div>
+                        <div class="item-body">
+                          <div class="customer-info">
+                            <div class="info-txt">
+                              <div class="name">홍길동</div>
+                              <div class="birth">남, 1985 10 13</div>
+                            </div>
+                            <div class="info-img">
+                              <div class="img-user-01"></div>
+                            </div>
+                          </div>
+                          <ul class="customer-desc">
+                            <li><span>자문 계약일</span> <div class="cus-data">2015.9.9</div></li>
+                            <li><span>계좌 수</span> <div class="cus-data"><strong>5</strong> 개</div></li>
+                            <li><span>AUM</span> <div class="cus-data"><strong>0</strong> 원</div></li>
+                            <li><span>고객메모</span> <div class="cus-data"><strong>2</strong> 건</div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="item">
-                    <div class="item-content">3</div>
+                    <div class="item-content">
+                      <div class="customer-card card">
+                        <div class="item-top">                      
+                          <div class="btn-drag"><img class="ic-move" alt=""></div>
+                          <div class="ic-favorite"></div>
+                        </div>
+                        <div class="item-body">
+                          <div class="customer-info">
+                            <div class="info-txt">
+                              <div class="name">홍길동</div>
+                              <div class="birth">남, 1985 10 13</div>
+                            </div>
+                            <div class="info-img">
+                              <div class="img-user-01"></div>
+                            </div>
+                          </div>
+                          <ul class="customer-desc">
+                            <li><span>자문 계약일</span> <div class="cus-data">2015.9.9</div></li>
+                            <li><span>계좌 수</span> <div class="cus-data"><strong>5</strong> 개</div></li>
+                            <li><span>AUM</span> <div class="cus-data"><strong>0</strong> 원</div></li>
+                            <li><span>고객메모</span> <div class="cus-data"><strong>2</strong> 건</div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>               
+              </div>    
+              <div class="v-seperate"></div>          
+              <div class="box">
+                <div class="box-header">
+                  <div class="title">주요</div>
+                  <div class="ic-edit"></div>
+                </div>
+                <div class="grid2 grid">
+                  <div class="item">
+                    <div class="item-content">
+                      <div class="customer-card card">
+                        <div class="item-top">                      
+                          <div class="btn-drag"><img class="ic-move" alt=""></div>
+                          <div class="ic-favorite"></div>
+                        </div>
+                        <div class="item-body">
+                          <div class="customer-info">
+                            <div class="info-txt">
+                              <div class="name">홍길동</div>
+                              <div class="birth">남, 1985 10 13</div>
+                            </div>
+                            <div class="info-img">
+                              <div class="img-user-02"></div>
+                            </div>
+                          </div>
+                          <ul class="customer-desc">
+                            <li><span>자문 계약일</span> <div class="cus-data">2015.9.9</div></li>
+                            <li><span>계좌 수</span> <div class="cus-data"><strong>5</strong> 개</div></li>
+                            <li><span>AUM</span> <div class="cus-data"><strong>0</strong> 원</div></li>
+                            <li><span>고객메모</span> <div class="cus-data"><strong>2</strong> 건</div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="item">
-                    <div class="item-content">4</div>
+                    <div class="item-content">
+                      <div class="customer-card card">
+                        <div class="item-top">                      
+                          <div class="btn-drag"><img class="ic-move" alt=""></div>
+                          <div class="ic-favorite"></div>
+                        </div>
+                        <div class="item-body">
+                          <div class="customer-info">
+                            <div class="info-txt">
+                              <div class="name">홍길동</div>
+                              <div class="birth">남, 1985 10 13</div>
+                            </div>
+                            <div class="info-img">
+                              <div class="img-user-01"></div>
+                            </div>
+                          </div>
+                          <ul class="customer-desc">
+                            <li><span>자문 계약일</span> <div class="cus-data">2015.9.9</div></li>
+                            <li><span>계좌 수</span> <div class="cus-data"><strong>5</strong> 개</div></li>
+                            <li><span>AUM</span> <div class="cus-data"><strong>0</strong> 원</div></li>
+                            <li><span>고객메모</span> <div class="cus-data"><strong>2</strong> 건</div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="item">
-                    <div class="item-content">5</div>
+                    <div class="item-content">
+                      <div class="customer-card card">
+                        <div class="item-top">                      
+                          <div class="btn-drag"><img class="ic-move" alt=""></div>
+                          <div class="ic-favorite"></div>
+                        </div>
+                        <div class="item-body">
+                          <div class="customer-info">
+                            <div class="info-txt">
+                              <div class="name">홍길동</div>
+                              <div class="birth">남, 1985 10 13</div>
+                            </div>
+                            <div class="info-img">
+                              <div class="img-user-01"></div>
+                            </div>
+                          </div>
+                          <ul class="customer-desc">
+                            <li><span>자문 계약일</span> <div class="cus-data">2015.9.9</div></li>
+                            <li><span>계좌 수</span> <div class="cus-data"><strong>5</strong> 개</div></li>
+                            <li><span>AUM</span> <div class="cus-data"><strong>0</strong> 원</div></li>
+                            <li><span>고객메모</span> <div class="cus-data"><strong>2</strong> 건</div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+              <div class="v-seperate"></div>          
+              <div class="box">
+                <div class="box-header">
+                  <div class="title">주의</div>
+                  <div class="ic-edit"></div>
+                </div>
+                <div class="grid3 grid">
+                  <div class="item">
+                    <div class="item-content">
+                      <div class="customer-card card">
+                        <div class="item-top">                      
+                          <div class="btn-drag"><img class="ic-move" alt=""></div>
+                          <div class="ic-favorite"></div>
+                        </div>
+                        <div class="item-body">
+                          <div class="customer-info">
+                            <div class="info-txt">
+                              <div class="name">홍길동</div>
+                              <div class="birth">남, 1985 10 13</div>
+                            </div>
+                            <div class="info-img">
+                              <div class="img-user-03"></div>
+                            </div>
+                          </div>
+                          <ul class="customer-desc">
+                            <li><span>자문 계약일</span> <div class="cus-data">2015.9.9</div></li>
+                            <li><span>계좌 수</span> <div class="cus-data"><strong>5</strong> 개</div></li>
+                            <li><span>AUM</span> <div class="cus-data"><strong>0</strong> 원</div></li>
+                            <li><span>고객메모</span> <div class="cus-data"><strong>2</strong> 건</div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="item">
-                    <div class="item-content">6</div>
+                    <div class="item-content">
+                      <div class="customer-card card">
+                        <div class="item-top">                      
+                          <div class="btn-drag"><img class="ic-move" alt=""></div>
+                          <div class="ic-favorite"></div>
+                        </div>
+                        <div class="item-body">
+                          <div class="customer-info">
+                            <div class="info-txt">
+                              <div class="name">홍길동</div>
+                              <div class="birth">남, 1985 10 13</div>
+                            </div>
+                            <div class="info-img">
+                              <div class="img-user-01"></div>
+                            </div>
+                          </div>
+                          <ul class="customer-desc">
+                            <li><span>자문 계약일</span> <div class="cus-data">2015.9.9</div></li>
+                            <li><span>계좌 수</span> <div class="cus-data"><strong>5</strong> 개</div></li>
+                            <li><span>AUM</span> <div class="cus-data"><strong>0</strong> 원</div></li>
+                            <li><span>고객메모</span> <div class="cus-data"><strong>2</strong> 건</div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="item">
-                    <div class="item-content">7</div>
+                    <div class="item-content">
+                      <div class="customer-card card">
+                        <div class="item-top">                      
+                          <div class="btn-drag"><img class="ic-move" alt=""></div>
+                          <div class="ic-favorite"></div>
+                        </div>
+                        <div class="item-body">
+                          <div class="customer-info">
+                            <div class="info-txt">
+                              <div class="name">홍길동</div>
+                              <div class="birth">남, 1985 10 13</div>
+                            </div>
+                            <div class="info-img">
+                              <div class="img-user-01"></div>
+                            </div>
+                          </div>
+                          <ul class="customer-desc">
+                            <li><span>자문 계약일</span> <div class="cus-data">2015.9.9</div></li>
+                            <li><span>계좌 수</span> <div class="cus-data"><strong>5</strong> 개</div></li>
+                            <li><span>AUM</span> <div class="cus-data"><strong>0</strong> 원</div></li>
+                            <li><span>고객메모</span> <div class="cus-data"><strong>2</strong> 건</div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+              <div class="v-seperate"></div>          
+              <div class="box">
+                <div class="box-header">
+                  <div class="title">기타</div>
+                  <div class="ic-edit"></div>
+                </div>
+                <div class="grid4 grid">
+                  <div class="item">
+                    <div class="item-content">
+                      <div class="customer-card card">
+                        <div class="item-top">                      
+                          <div class="btn-drag"><img class="ic-move" alt=""></div>
+                          <div class="ic-favorite"></div>
+                        </div>
+                        <div class="item-body">
+                          <div class="customer-info">
+                            <div class="info-txt">
+                              <div class="name">홍길동</div>
+                              <div class="birth">남, 1985 10 13</div>
+                            </div>
+                            <div class="info-img">
+                              <div class="img-user-04"></div>
+                            </div>
+                          </div>
+                          <ul class="customer-desc">
+                            <li><span>자문 계약일</span> <div class="cus-data">2015.9.9</div></li>
+                            <li><span>계좌 수</span> <div class="cus-data"><strong>5</strong> 개</div></li>
+                            <li><span>AUM</span> <div class="cus-data"><strong>0</strong> 원</div></li>
+                            <li><span>고객메모</span> <div class="cus-data"><strong>2</strong> 건</div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="item">
-                    <div class="item-content">8</div>
+                    <div class="item-content">
+                      <div class="customer-card card">
+                        <div class="item-top">                      
+                          <div class="btn-drag"><img class="ic-move" alt=""></div>
+                          <div class="ic-favorite"></div>
+                        </div>
+                        <div class="item-body">
+                          <div class="customer-info">
+                            <div class="info-txt">
+                              <div class="name">홍길동</div>
+                              <div class="birth">남, 1985 10 13</div>
+                            </div>
+                            <div class="info-img">
+                              <div class="img-user-01"></div>
+                            </div>
+                          </div>
+                          <ul class="customer-desc">
+                            <li><span>자문 계약일</span> <div class="cus-data">2015.9.9</div></li>
+                            <li><span>계좌 수</span> <div class="cus-data"><strong>5</strong> 개</div></li>
+                            <li><span>AUM</span> <div class="cus-data"><strong>0</strong> 원</div></li>
+                            <li><span>고객메모</span> <div class="cus-data"><strong>2</strong> 건</div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="item">
-                    <div class="item-content">9</div>
+                    <div class="item-content">
+                      <div class="customer-card card">
+                        <div class="item-top">                      
+                          <div class="btn-drag"><img class="ic-move" alt=""></div>
+                          <div class="ic-favorite"></div>
+                        </div>
+                        <div class="item-body">
+                          <div class="customer-info">
+                            <div class="info-txt">
+                              <div class="name">홍길동</div>
+                              <div class="birth">남, 1985 10 13</div>
+                            </div>
+                            <div class="info-img">
+                              <div class="img-user-01"></div>
+                            </div>
+                          </div>
+                          <ul class="customer-desc">
+                            <li><span>자문 계약일</span> <div class="cus-data">2015.9.9</div></li>
+                            <li><span>계좌 수</span> <div class="cus-data"><strong>5</strong> 개</div></li>
+                            <li><span>AUM</span> <div class="cus-data"><strong>0</strong> 원</div></li>
+                            <li><span>고객메모</span> <div class="cus-data"><strong>2</strong> 건</div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="item">
-                    <div class="item-content">10</div>
-                  </div>
-                  <div class="item">
-                    <div class="item-content">11</div>
-                  </div>
-                  <div class="item">
-                    <div class="item-content">12</div>
-                  </div>
-                  <div class="item">
-                    <div class="item-content">13</div>
-                  </div>
-                  <div class="item">
-                    <div class="item-content">14</div>
-                  </div>
-                  <div class="item">
-                    <div class="item-content">15</div>
-                  </div>
-                  <div class="item">
-                    <div class="item-content">16</div>
-                  </div>
-                  <div class="item">
-                    <div class="item-content">17</div>
-                  </div>
-                  <div class="item">
-                    <div class="item-content">18</div>
-                  </div>
-                  <div class="item">
-                    <div class="item-content">19</div>
-                  </div>
-                  <div class="item">
-                    <div class="item-content">20</div>
-                  </div>
-                </div>      
+                </div>               
               </div>
             </div>
           </div>
@@ -482,9 +780,25 @@
 <script src="../../scripts/script.js"></script>
 <script>    
   searchInput();
-
-  var grid = new Muuri('.grid', {
-  dragEnabled: true
+  headerMiniMenu();
+  
+  var grid1 = new Muuri('.grid1', {
+  dragEnabled: true,  
+  dragHandle: ".btn-drag"
 });
+var grid2 = new Muuri('.grid2', {
+  dragEnabled: true,  
+  dragHandle: ".btn-drag"
+});
+var grid3 = new Muuri('.grid3', {
+  dragEnabled: true,  
+  dragHandle: ".btn-drag"
+});
+var grid4 = new Muuri('.grid4', {
+  dragEnabled: true,  
+  dragHandle: ".btn-drag"
+});
+document.getElementById('tab01').classList.add('active');
+document.getElementById('tab02').classList.remove('active');
 </script>
 </html>

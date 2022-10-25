@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/style.css">  
+</head>
+<body>
+  <div id="wrapper" class="wrapper menuOpen">
+    <div id="sideMenu" class="sidenav">
+      <ul id="menuList" class="menu-list">
+        <li>
+          <div class="menu-item">
+            <img class="ic-left-logo" src="" alt="">            
+          </div>
+        </li>
+        <li class="active">
+          <div class="menu-item">
+            <img class="ic-menu-dashboard" src="" alt="">
+            <div class="menu-name">대시보드</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">          
+            <img class="ic-menu-counsel" src="" alt="">
+            <div class="menu-name">고객상담</div>
+          </div>        
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-mywork" src="" alt="">
+            <div class="menu-name">마이워크</div>
+          </div>        
+        </li>
+        <li>          
+          <div class="menu-item">            
+            <img class="ic-menu-reward" src="" alt="">
+            <div class="menu-name">리워드</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-customer" src="" alt="">
+            <div class="menu-name">고객</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-product" src="" alt="">
+            <div class="menu-name">상품</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-insight" src="" alt="">
+            <div class="menu-name">Insight</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-my" src="" alt="">
+            <div class="menu-name">내정보</div>
+          </div>          
+        </li>
+      </ul>
+    </div>
+    <!-- 클릭한 메뉴의 depth2 list -->
+    <ul id="menu-depth2">
+      <li>depth2-1</li>
+      <li>depth2-2</li>
+      <li>depth2-3</li>
+      <li>depth2-4</li>
+    </ul>
+    <!-- sidemenu open/close button (Fixed location) -->
+    <button id="btnSideOpen">
+      <img class="ic-left-fold" src="" alt="">
+    </button>
+
+    <div id="main" class="main-wrap client-detail">      
+      <div class="contents-wrap">
+        <div class="contents-inner">
+          <div class="contents-header">            
+            <img src="" alt="" class="ic-title-back">                        
+            <div class="header-right">
+              <ul class="connect-info">
+                <li class="time">
+                  세션유지시간<div class="cl-skyblue-b"> 09:10</div>
+                  <div class="btn-session">연장</div>
+                </li>
+                <li class="v-seperate"></li>
+                <li class="name">
+                  <strong>홍길동</strong> 님<img class="ic-user-arrow-down" alt="">
+                  <ul class="mini-menu"><li>내정보</li><li>로그아웃</li></ul>
+                </li>
+              </ul>
+              <ul class="depth-info">
+                <li><a href="">1depth 표시</a></li>
+                <li><img src="" alt="" class="ic-navi-arrow"></li>
+                <li><a href="">2depth 표시</a></li>             
+              </ul>
+            </div>
+          </div>
+          <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
+          <div class="contents-body">                        
+            <ul class="client-data">
+              <li><div class="title">고객명</div><div class="data">홍길동</div></li>
+              <li class="v-seperate"></li>
+              <li><div class="title">생년월일</div><div class="data">1987.09.09</div></li>
+              <li class="v-seperate"></li>
+              <li><div class="title">성별</div><div class="data">남자</div></li>
+              <li class="v-seperate"></li>
+              <li><div class="title">휴대폰 번호</div><div class="data">010-1234-5678</div></li>
+            </ul>                        
+            <ul class="tab-menu">
+              <li class="active" data-tab="tab01">고객정보</li>
+              <li data-tab="tab02">계약정보</li>
+              <li data-tab="tab03">재무플랜</li>
+              <li data-tab="tab04">재무설계</li>
+              <li data-tab="tab05">이력관리</li>
+            </ul>
+            <div class="tab-content active" id="tab01">
+              <div class="info-box card">
+                <h3>기본정보</h3>
+                <div class="content-edit-wrap">
+                  <div class="row">
+                    <div class="row-title">주민번호</div>
+                    <div class="row-content">870204-1******</div>
+                  </div>
+                  <div class="row">
+                    <div class="row-title">성별</div>
+                    <div class="row-content">남자</div>
+                  </div>
+                  <div class="row">
+                    <div class="row-title">핸드폰</div>
+                    <div class="row-content f-between">
+                      010-4566-1567
+                      <button class="btn-s-white">변경</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="row-title">주소</div>
+                    <div class="row-content f-between">
+                      서울시 강서구 마곡동 456
+                      <button class="btn-s-white">변경</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="row-title">프로필</div>
+                    <div class="row-content f-between">
+                      <img src="" alt="" class="img-user-01">
+                      <button class="btn-s-white">변경</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="info-box card">
+                <h3>고객 재무 정보</h3>
+                <div class="content-edit-wrap">
+                  <div class="row">
+                    <div class="row-title">수입</div>
+                    <div class="row-content">
+                      <input type="text" name="" id="" value="750,045,000"><span>원</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="row-title">지출</div>
+                    <div class="row-content">
+                      <input type="text" name="" id="" value="20,000,000"><span>원</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="row-title">국민연금</div>
+                    <div class="row-content">
+                      <input type="text" name="" id="" value="4,420,704,080"><span>원</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="row-title">연금펀드</div>
+                    <div class="row-content">
+                      <input type="text" name="" id="" placeholder="0"><span>원</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="row-title">금융자산</div>
+                    <div class="row-content">
+                      <input type="text" name="" id="" value="1,290,310,0450"><span>원</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="row-title">기타 자산</div>
+                    <div class="row-content">
+                      <input type="text" name="" id="" placeholder="0"><span>원</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="info-box card">
+                <h3>투자성향분석(KCY)</h3>
+                <div class="content-edit-wrap">
+                  <div class="row">
+                    <div class="row-title">투자성향분석(KCY)</div>
+                    <div class="row-content f-between">
+                      적극투자형
+                      <button class="btn-s-white">URL 발송</button>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              <div class="btn-group">                
+                <button class="btn-green btn-save">저장</button>
+              </div>
+            </div>
+            <div class="tab-content" id="tab02">
+              <div class="contact-info card">
+                <h3>보유 자문상품</h3>
+                <div class="table-wrap">              
+                  <table class="gt-table">
+                    <colgroup>
+                      <col />
+                      <col style="width: 12%" />                      
+                      <col style="width: 8%" />
+                      <col style="width: 12%" />
+                      <col style="width: 10%" />
+                      <col style="width: 8%" />                
+                      <col style="width: 12%" />                                            
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th class="t-bottom">상품명</th>
+                        <th class="t-bottom">매입금액</th>
+                        <th rowspan="2">수익률</th>
+                        <th class="t-bottom">계좌 개설일</th>
+                        <th rowspan="2">자동이체일</th>
+                        <th rowspan="2">성과그래프</th>
+                        <th rowspan="2">성과리포트</th>
+                      </tr>
+                      <tr>
+                        <th>계좌번호</th>
+                        <th>평가금액</th>
+                        <th>만기일</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-body">
+                      <tr class="bg-clbox b-dotline">
+                        <td>전체</td>
+                        <td>5,200,099,776</td>
+                        <td rowspan="2"><div class="cl-red">2.56%</div></td>
+                        <td>-</td>
+                        <td rowspan="2">매월 00일</td>
+                        <td rowspan="2">
+                          <div class="f-center">
+                            <button class="btn-graph-view"><img src="" alt="" class="ic-list-arrow"></button>
+                          </div>
+                        </td>
+                        <td rowspan="2"><button class="btn-s-white">보기</button></td>
+                      </tr>
+                      <tr class="bg-clbox">
+                        <td>-</td>
+                        <td>6,888,964,000</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td colspan="7">
+                          <div class="graph-box">                
+                            <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
+                            <figure class="highcharts-figure">
+                              <div id="container"></div>
+                            </figure>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="b-dotline">
+                        <td>환매조건부채권(개인CMA)</td>
+                        <td>126,166,097</td>
+                        <td rowspan="2">0%</td>
+                        <td>YYYY.MM.DD</td>
+                        <td rowspan="2">매월 00일</td>
+                        <td rowspan="2">
+                          <div class="f-center">
+                            <button class="btn-graph-view"><img src="" alt="" class="ic-list-arrow"></button>
+                          </div>
+                        </td>
+                        <td rowspan="2"><button class="btn-s-white">보기</button></td>
+                      </tr>
+                      <tr>
+                        <td>31819448-300-003</td>
+                        <td>129,390,588</td>
+                        <td>YYYY.MM.DD</td>
+                      </tr>
+                      <tr>
+                        <td colspan="7">
+                          <div class="graph-box">                
+                            <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
+                            <figure class="highcharts-figure">
+                              <div id="container2"></div>
+                            </figure>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="b-dotline">
+                        <td>블랙록월지급미국달러하이일드증권투자신탁 (채권-재간접형)(H)A</td>
+                        <td>126,166,097</td>
+                        <td rowspan="2"><div class="cl-skyblue">-4.12%</div></td>
+                        <td>YYYY.MM.DD</td>
+                        <td rowspan="2">매월 00일</td>
+                        <td rowspan="2">
+                          <div class="f-center">
+                            <button class="btn-graph-view"><img src="" alt="" class="ic-list-arrow"></button>
+                          </div>
+                        </td>
+                        <td rowspan="2"><button class="btn-s-white">보기</button></td>
+                      </tr>
+                      <tr>
+                        <td>31819448-300-001</td>
+                        <td>129,390,588</td>
+                        <td>YYYY.MM.DD</td>
+                      </tr>
+                      <tr>
+                        <td colspan="7">
+                          <div class="graph-box">                
+                            <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
+                            <figure class="highcharts-figure">
+                              <div id="container3"></div>
+                            </figure>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>                 
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="tab03"></div>
+            <div class="tab-content" id="tab04"></div>
+            <div class="tab-content" id="tab05"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <footer id="footer"></footer>   -->
+    </div>
+
+  
+  </div>
+</body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<!-- <script src="https://code.highcharts.com/modules/export-data.js"></script> -->
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="../../scripts/func.js"></script>
+<script src="../../scripts/script.js"></script>
+<script>
+  document.querySelectorAll('.btn-graph-view').forEach( (list) => {
+  list.addEventListener('click', () => {    
+    var $parent = list.closest('tr');
+    if ($parent == null) return;
+    if (list.classList.contains('up')) {
+      $parent.nextElementSibling.nextElementSibling.style.display = 'none';
+    }
+    else {
+      $parent.nextElementSibling.nextElementSibling.style.display = 'table-row';
+    }
+    list.classList.toggle('up');
+  });  
+});
+</script>
+</html>

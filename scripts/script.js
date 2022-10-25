@@ -89,6 +89,12 @@ function clickBodyEvent(event) {
   }
 }
 
+document.querySelectorAll('.ic-favorite').forEach( (list) => {
+  list.addEventListener('click', () => {    
+    list.classList.toggle('on')  ;
+  });  
+});
+
 //close modal
 document.querySelectorAll('.modal-close').forEach( (list) => {
   list.addEventListener('click', () => {    
