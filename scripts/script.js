@@ -5,7 +5,7 @@ const menuLink = ['/pages/main.html', //대시보드
                   '/pages/reward.html', //보수내역
                   '/pages/client/client.html', //고객
                   '', //상품
-                  '', //Insight                  
+                  '/pages/insight.html', //Insight                  
                   ''] //내정보
 
 const menuList = document.querySelectorAll('.menu-list > li');

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Insight</title>
+</head>
+<body>
+  <div id="wrapper" class="wrapper menuOpen">
+    <div id="sideMenu" class="sidenav">
+      <ul id="menuList" class="menu-list">
+        <li>
+          <div class="menu-item">
+            <img class="ic-left-logo" src="" alt="">            
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-dashboard" src="" alt="">
+            <div class="menu-name">대시보드</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-counsel" src="" alt="">
+            <div class="menu-name">고객상담</div>
+          </div>        
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-mywork" src="" alt="">
+            <div class="menu-name">마이워크</div>
+          </div>        
+        </li>
+        <li>          
+          <div class="menu-item">
+            <img class="ic-menu-reward" src="" alt="">
+            <div class="menu-name">리워드</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-customer" src="" alt="">
+            <div class="menu-name">고객</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-product" src="" alt="">
+            <div class="menu-name">상품</div>
+          </div>          
+        </li>
+        <li class="active">
+          <div class="menu-item">
+            <img class="ic-menu-insight" src="" alt="">
+            <div class="menu-name">Insight</div>
+          </div>          
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-my" src="" alt="">
+            <div class="menu-name">내정보</div>
+          </div>          
+        </li>
+      </ul>
+    </div>
+    <!-- 클릭한 메뉴의 depth2 list -->
+    <ul id="menu-depth2">
+      <li>depth2-1</li>
+      <li>depth2-2</li>
+      <li>depth2-3</li>
+      <li>depth2-4</li>
+    </ul>
+    <!-- sidemenu open/close button (Fixed location) -->
+    <button id="btnSideOpen">
+      <img src="" alt="">
+    </button>
+
+    <div id="main" class="main-wrap reward">      
+      <div class="contents-wrap">
+        <div class="contents-inner">
+          <div class="contents-header">
+            <h1>Insight</h1>
+            <div class="header-right">
+              <ul class="connect-info">
+                <li class="time">세션유지시간<div class="cl-skyblue-b"> 09:10</div></li>
+                <li class="v-seperate"></li>
+                <li class="name"><strong>홍길동</strong> 님<img class="ic-user-arrow-down" alt=""></li>
+              </ul>
+              <ul class="depth-info">
+                <li><a href="">1depth 표시</a></li>
+                <li><img src="" alt="" class="ic-navi-arrow"></li>
+                <li><a href="">2depth 표시</a></li>             
+              </ul>
+            </div>
+          </div>
+          <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
+          <div class="insight-wrapper">
+            <div class="container">
+                <ul class="tab-menu">
+                  <li class="active" data-tab="tab01">골든 Latter</li>
+                  <li data-tab="tab02">데일리 브리핑</li>
+                  <li data-tab="tab03">Monthly 투자전략</li>
+                  <li data-tab="tab04">금융시장 이슈분석</li>
+                  <li data-tab="tab05">Monthly 차트북</li>
+                </ul>
+                <div class="tab-content active" id="tab01">
+                  <div class="search-wrapper">
+                    <div class="search-wrap">
+                      <input type="text" name="" id="" placeholder="검색어를 입력해주세요">
+                      <button class="btn-ic-search"></button>
+                    </div>
+                  </div>
+                  <div class="latter-item-wrap">
+                    <a href="./insight_detail.html" class="latter-item">
+                      <div class="latter-item-img"></div>
+                      <div class="latter-item-cont">
+                        <span class="blue-box">카테고리</span>
+                        <h3>(2022년 9월초) 연말로 갈 수록 추가적인 긴축 명분...</h3>
+                        <p>연준의 긴축 우려가 글로벌 증시를 다시
+                           짓누르고 있습니다. 그러나 최근 고조되
+                           고 있는 긴축 우려는 크게 걱정스럽지...</p>
+                      </div>
+                    </a>
+                    <a href="./insight_detail.html" class="latter-item">
+                      <div class="latter-item-img"></div>
+                      <div class="latter-item-cont">
+                        <span class="blue-box">카테고리</span>
+                        <h3>(2022년 8월초) 인플레이션 Peak-Out & Mild...</h3>
+                        <p>연준의 긴축 우려가 글로벌 증시를 다시
+                           짓누르고 있습니다. 그러나 최근 고조되
+                           고 있는 긴축 우려는 크게 걱정스럽지...</p>
+                      </div>
+                    </a>
+                    <a href="./insight_detail.html" class="latter-item">
+                      <div class="latter-item-img"></div>
+                      <div class="latter-item-cont">
+                        <span class="blue-box">카테고리</span>
+                        <h3>(2022년 7월초) 인플레이션 vs 경기침체</h3>
+                        <p>연준의 긴축 우려가 글로벌 증시를 다시
+                           짓누르고 있습니다. 그러나 최근 고조되
+                           고 있는 긴축 우려는 크게 걱정스럽지...</p>
+                      </div>
+                    </a>
+                    <a href="./insight_detail.html" class="latter-item">
+                      <div class="latter-item-img"></div>
+                      <div class="latter-item-cont">
+                        <span class="blue-box">카테고리</span>
+                        <h3>(2022년 6월초) 죽어야 삽니다.</h3>
+                        <p>연준의 긴축 우려가 글로벌 증시를 다시
+                           짓누르고 있습니다. 그러나 최근 고조되
+                           고 있는 긴축 우려는 크게 걱정스럽지...</p>
+                      </div>
+                    </a>
+                    <a href="./insight_detail.html" class="latter-item">
+                      <div class="latter-item-img"></div>
+                      <div class="latter-item-cont">
+                        <span class="blue-box">카테고리</span>
+                        <h3>(2022년 9월초) 연말로 갈 수록 추가적인 긴축 명분...</h3>
+                        <p>연준의 긴축 우려가 글로벌 증시를 다시
+                           짓누르고 있습니다. 그러나 최근 고조되
+                           고 있는 긴축 우려는 크게 걱정스럽지...</p>
+                      </div>
+                    </a>
+                    <a href="./insight_detail.html" class="latter-item">
+                      <div class="latter-item-img"></div>
+                      <div class="latter-item-cont">
+                        <span class="blue-box">카테고리</span>
+                        <h3>(2022년 8월초) 인플레이션 Peak-Out & Mild...</h3>
+                        <p>연준의 긴축 우려가 글로벌 증시를 다시
+                           짓누르고 있습니다. 그러나 최근 고조되
+                           고 있는 긴축 우려는 크게 걱정스럽지...</p>
+                      </div>
+                    </a>
+                    <a href="./insight_detail.html" class="latter-item">
+                      <div class="latter-item-img"></div>
+                      <div class="latter-item-cont">
+                        <span class="blue-box">카테고리</span>
+                        <h3>(2022년 7월초) 인플레이션 vs 경기침체</h3>
+                        <p>연준의 긴축 우려가 글로벌 증시를 다시
+                           짓누르고 있습니다. 그러나 최근 고조되
+                           고 있는 긴축 우려는 크게 걱정스럽지...</p>
+                      </div>
+                    </a>
+                    <a href="./insight_detail.html" class="latter-item">
+                      <div class="latter-item-img"></div>
+                      <div class="latter-item-cont">
+                        <span class="blue-box">카테고리</span>
+                        <h3>(2022년 6월초) 죽어야 삽니다.</h3>
+                        <p>연준의 긴축 우려가 글로벌 증시를 다시
+                           짓누르고 있습니다. 그러나 최근 고조되
+                           고 있는 긴축 우려는 크게 걱정스럽지...</p>
+                      </div>
+                    </a>
+                  </div>
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" class="first"><div class="ic-page-start"></div></a>
+                    </li>
+                    <li>
+                      <a href="#" class="arrow left"><div class="ic-page-prev"></div></a>
+                    </li>
+                    <li><a href="#" class="num">1</a></li>
+                    <li><a href="#" class="num active">2</a></li>
+                    <li><a href="#" class="num">3</a></li>
+                    <li><a href="#" class="num">4</a></li>
+                    <li><a href="#" class="num">5</a></li>
+                    <li><a href="#" class="num">6</a></li>
+                    <li><a href="#" class="num">7</a></li>
+                    <li><a href="#" class="num">8</a></li>
+                    <li><a href="#" class="num">9</a></li>
+                    <li><a href="#" class="num">10</a></li>
+                    <li>
+                      <a href="#" class="arrow right"><div class="ic-page-next"></div></a>
+                    </li>
+                    <li>
+                      <a href="#" class="last"><div class="ic-page-end"></div></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content " id="tab02">
+                  <div class="search-wrapper">
+                    <p><span>'천연가스'</span>에 대한 결과</p>
+                    <div class="search-wrap">
+                      <input type="text" name="" id="" value="천연가스">
+                      <button class="btn-ic-search"></button>
+                    </div>
+                  </div>
+                  <div class="latter-item-wrap">
+                    <div class="no-data">
+                      <div class="ic-search-wrap">
+                        <img alt="검색 결과 없음">
+                      </div>
+                      <p>검색 결과가 없습니다.</p>
+                    </div>
+                  </div>
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" class="first"><div class="ic-page-start"></div></a>
+                    </li>
+                    <li>
+                      <a href="#" class="arrow left"><div class="ic-page-prev"></div></a>
+                    </li>
+                    <li><a href="#" class="num">1</a></li>
+                    <li><a href="#" class="num active">2</a></li>
+                    <li><a href="#" class="num">3</a></li>
+                    <li><a href="#" class="num">4</a></li>
+                    <li><a href="#" class="num">5</a></li>
+                    <li><a href="#" class="num">6</a></li>
+                    <li><a href="#" class="num">7</a></li>
+                    <li><a href="#" class="num">8</a></li>
+                    <li><a href="#" class="num">9</a></li>
+                    <li><a href="#" class="num">10</a></li>
+                    <li>
+                      <a href="#" class="arrow right"><div class="ic-page-next"></div></a>
+                    </li>
+                    <li>
+                      <a href="#" class="last"><div class="ic-page-end"></div></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content" id="tab03">3</div>
+                <div class="tab-content" id="tab04">4</div>
+                <div class="tab-content" id="tab05">5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <footer id="footer"></footer>   -->
+    </div>
+    
+  </div>
+
+</body>
+<script src="../scripts/script.js"></script>
+<script>
+   
+
+
+</script>
+</html>
