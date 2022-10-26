@@ -939,6 +939,17 @@ li {
   body,html {font-size:9px}  
 }
 
+@media (max-width: 768px){
+  .insight-wrapper .container{
+    width:100%;
+    .latter-item-wrap {
+        justify-content: center;
+        .latter-item{
+          width:48%;
+        }
+    }
+  }
+}
 // #calendar {
 //   h2 {
 //     font-size: $size-22;
