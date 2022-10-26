@@ -1,7 +1,7 @@
 $imgPath: "../assets/";  /* change image path  */
 
 $main_width: 71.875rem;
-// font-size 
+// font-size
 $size-10: 0.625rem; /*10px*/
 $size-12: 0.75rem; /*12px*/
 $size-13: 0.8125rem; /*13px*/
@@ -55,15 +55,16 @@ $size-70: 4.375rem;
 $size-71: 4.4375rem;
 $size-72: 4.5rem;
 $size-80: 5rem; /*80px*/
-$size-84: 5.25rem; 
-$size-86: 5.375rem; 
-$size-88: 5.5rem; 
-$size-89: 5.5625rem; 
+$size-84: 5.25rem;
+$size-86: 5.375rem;
+$size-88: 5.5rem;
+$size-89: 5.5625rem;
 $size-90: 5.625em;
 $size-92: 5.75rem;
-$size-96: 6rem; 
-$size-98: 6.125rem; 
+$size-96: 6rem;
+$size-98: 6.125rem;
 $size-100: 6.25rem;
+$size-110: 6.875rem;
 $size-120: 7.5rem;
 $size-130: 8.125rem;
 $size-140: 8.75rem;
@@ -73,6 +74,7 @@ $size-178: 11.125rem;
 $size-180: 11.25rem;
 $size-195: 12.1875rem;
 $size-200: 12.5rem;
+$size-210: 13.125rem;
 $size-220: 13.75rem;
 $size-225: 14.0625rem;
 $size-230: 14.375rem;
@@ -80,10 +82,13 @@ $size-240: 15rem;
 $size-268: 16.75rem;
 $size-280: 17.5rem;
 $size-300: 18.75rem;
+$size-308: 19.25rem;
 $size-310: 19.375rem;
 $size-314: 19.625rem;
+$size-350: 21.875rem;
 $size-366: 22.875rem;
 $size-368: 23rem;
+$size-360: 22.5rem;
 $size-371: 23.1875rem;
 $size-374: 23.375rem;
 $size-395: 24.6875rem;
@@ -95,7 +100,9 @@ $size-465: 29.0625rem;
 $size-500: 31.25rem;
 $size-520: 32.5rem;
 $size-535: 33.4375rem;
+$size-545: 34.063rem;
 $size-560: 35rem;
+$size-580: 36.25rem;
 $size-600: 37.500rem;
 $size-620: 38.750rem;
 $size-700: 43.75rem;

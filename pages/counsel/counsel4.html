@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>고객상담</title>
-  <link rel="stylesheet" href="../../css/style.css">  
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/counsel.css">
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/series-label.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -95,17 +96,37 @@
             <div class="input-box">
                 <div class="input-group">
                     <input type="number" name="" id="" placeholder="재무 목표를 입력해주세요">
-                    <button type="button" class="btn btn-url">url 발송</button>
+                    <div class="tip_box">
+                      <div class="tip_btn"></div>
+                      <div class="tip_con">
+                        1억원 만들기<br/>결혼 자금 만들기<br/>은퇴 전 튼튼한 노후 대비하기
+                      </div>
+                    </div>
                 </div>
             </div>
 
             <div class="graph-box">
+              <div class="result">
+                  <dl>
+                    <dt>초기투자</dt>
+                    <dd>$ 50,000</dd>
+                  </dl>
+                  <div class="order-bar"><div class="current-bar c5"></div> </div>
+                  <dl>
+                    <dt>월간투자</dt>
+                    <dd>+ $607,813</dd>
+                  </dl>
+                  <div class="order-bar"><div class="current-bar c5"></div> </div>
+                  <p>적은 비용으로 수익 창출</p>
+                  <h3></h3>
+              </div>
+
               <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
               <figure class="highcharts-figure">
                 <div id="container"></div>
               </figure>
             </div>
-            
+
             <div class="btn-group cou4">
               <button class="w100p">임시저장하기</button>
               <button class="btn-white btn-prev">이전</button>

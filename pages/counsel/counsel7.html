@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>고객상담</title>
-  <link rel="stylesheet" href="../../css/style.css">  
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/counsel.css">
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/series-label.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -270,10 +271,11 @@
                   </table>
                 </div>
 
-                <div class="table_box">
+                <div class="table_box02">
                   <table class="gt-table">
                     <colgroup>
-                      <col style="" />
+                      <col style="width: 10%" />
+                      <col style="width: 10%" />
                       <col style="width: 10%" />
                       <col style="width: 10%" />
                       <col style="width: 10%" />
@@ -285,60 +287,201 @@
                     </colgroup>
                     <thead>
                       <tr>
-                        <th>구분</th>
-                        <th colspan="6">운용자산 Style</th>
-                        <th colspan="2">비교치</th>
+                        <th>위험 수용성</th>
+                        <th>기대 운용수익률</th>
+                        <th colspan="6">자산 배분율 (%)</th>
+                        <th>예상 적립금</th>
+                        <th>연금액(예상)</th>
                       </tr>
                     </thead>
                     <tbody class="table-body">
                       <tr>
-                        <td>투자대상</td>
-                        <td>ELB/정기예금</td>
-                        <td>채권형</td>
-                        <td>채권혼합형</td>
-                        <td>주식혼합형</td>
-                        <td>국내주식형/ETF</td>
-                        <td>해외주식형/ETF</td>
-                        <td>즉시연금</td>
-                        <td>정기예금</td>
+                        <td>안정형</td>
+                        <td>4.6%</td>
+                        <td>10%</td>
+                        <td>10%</td>
+                        <td class="bo_t bo_l">10%</td>
+                        <td class="bo_t bo_r">10%</td>
+                        <td>10%</td>
+                        <td>10%</td>
+                        <td>2.6억</td>
+                        <td class="bg_red">144만/월</td>
                       </tr>
                       <tr>
-                          <td>상대적 위험도</td>
-                          <td>원리금보존형</td>
-                          <td>원리금보존형</td>
-                          <td>원리금보존형</td>
-                          <td>원리금보존형</td>
-                          <td>원리금보존형</td>
-                          <td>원리금보존형</td>
-                          <td>원리금보존형</td>
-                          <td>원리금보존형</td>
-                      </tr>
-                      <tr class="bg_yellow">
-                          <td>기대수익률 (보수차감후)</td>
-                          <td>1.0%</td>
-                          <td>1.0%</td>
-                          <td>1.0%</td>
-                          <td>1.0%</td>
-                          <td>1.0%</td>
-                          <td>1.0%</td>
-                          <td>1.0%</td>
-                          <td>22.07.01</td>
+                        <td>중립형</td>
+                        <td>4.6%</td>
+                        <td>10%</td>
+                        <td>10%</td>
+                        <td class="bo_l">10%</td>
+                        <td class="bo_r">10%</td>
+                        <td>10%</td>
+                        <td>10%</td>
+                        <td>2.6억</td>
+                        <td class="bg_red">144만/월</td>
                       </tr>
                       <tr>
-                          <td>대표적인 추천상품</td>
-                          <td>추천상품</td>
-                          <td>추천상품</td>
-                          <td>추천상품</td>
-                          <td>추천상품</td>
-                          <td>추천상품</td>
-                          <td>추천상품</td>
-                          <td>추천상품</td>
-                          <td>추천상품</td>
+                        <td>적극형</td>
+                        <td>4.6%</td>
+                        <td>10%</td>
+                        <td>10%</td>
+                        <td class="bo_b bo_l">10%</td>
+                        <td class="bo_b bo_r">10%</td>
+                        <td>10%</td>
+                        <td>10%</td>
+                        <td>2.6억</td>
+                        <td class="bg_red">144만/월</td>
+                      </tr>
+                      <tr>
+                        <td>My 포트폴리오</td>
+                        <td>4.6%</td>
+                        <td class="bg_yellow">10%</td>
+                        <td class="bg_yellow">10%</td>
+                        <td class="bg_yellow">10%</td>
+                        <td class="bg_yellow">10%</td>
+                        <td class="bg_yellow">10%</td>
+                        <td class="bg_yellow">10%</td>
+                        <td>2.6억</td>
+                        <td class="bg_red">144만/월</td>
                       </tr>
                   </tbody>
                 </table>
               </div>
+
+              <div class="table_box03">
+                <table class="gt-table">
+                  <colgroup>
+                    <col style="width: 20%" />
+                    <col style="width: 20%" />
+                    <col style="width: 10%" />
+                    <col style="width: 10%" />
+                    <col style="width: 10%" />
+                    <col style="width: 10%" />
+                    <col style="width: 10%" />
+                    <col style="width: 10%" />
+                  </colgroup>
+                  <tbody class="table-body">
+                    <tr>
+                      <td>희망 수령기간 (연금개시후~)</td>
+                      <td class="co_blue">20 년</td>
+                      <td class="bg_gray">희망 연금액</td>
+                      <td class="co_gray">150만/월</td>
+                      <td class="bg_gray">잔존 연금(인출 후)</td>
+                      <td class="co_blue">0.5억</td>
+                      <td class="bg_gray">총보수(Avg)</td>
+                      <td>1.2%</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+
+              <div class="text_box">
+                예상 연금액은 평가일 현재 준비한 연금자산 1.50억과 ㅎ매년 퇴직연금과 세액공제용으로 추가 적립금으로 1,800만원을 4년간 납입하고 운용할 경우,<br/>
+                연금 개시후 20년간, 매월 수령하고도 잔존자산으로 0.5억을 남기는 조건에서 시뮬레이션한 예상 연금 월액입니다. (연금수령 중에는 안정형 4.6% 또는 My포트폴리오 기대수익률 4.4% 적용, 총보수 감안)
+              </div>
+
+              <div class="info_tt">
+                본 자료는 투자자의 증권투자를 돕기 위하여 배포되는 자료로서 수록된 내용은 신뢰할 만한 자료 및 정보로부터 얻어진 것입니다. 그러나 그 정확성이나 안전성을 보장할 수 없습니다.<br/>
+                따라서, 어떠한 경우에도 본 자료는 고객의 증권투자의 결과에 대한 법적 책임소재에 대한 증빙자료로 사용할 수 없음을 알려드립니다. 과거의 성과가 미래의 성과를 보장하지 않습니다.
+              </div>
+
+            </div>
+
+            <div class="box section04">
+              <div class="title_box">
+                <h1>추천 자문상품 리스트</h1>
+              </div>
+
+              <div class="list">
+                <dl>
+                  <dt></dt>
+                  <dd>
+                      <h5>MP명이 표시됩니다</h5>
+                      <span>해외 Big-tech 주식 위주</span>
+                      <p>- Alphahet Inc</p>
+                      <p>- Amazon</p>
+                      <p>- Microsoft</p>
+                      <p>- PLTR</p>
+                      <p>- 외 n개</p>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                      <h5>MP명이 표시됩니다</h5>
+                      <span>해외 Big-tech 주식 위주</span>
+                      <p>- Alphahet Inc</p>
+                      <p>- Amazon</p>
+                      <p>- Microsoft</p>
+                      <p>- PLTR</p>
+                      <p>- 외 n개</p>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                      <h5>MP명이 표시됩니다</h5>
+                      <span>해외 Big-tech 주식 위주</span>
+                      <p>- Alphahet Inc</p>
+                      <p>- Amazon</p>
+                      <p>- Microsoft</p>
+                      <p>- PLTR</p>
+                      <p>- 외 n개</p>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                      <h5>MP명이 표시됩니다</h5>
+                      <span>해외 Big-tech 주식 위주</span>
+                      <p>- Alphahet Inc</p>
+                      <p>- Amazon</p>
+                      <p>- Microsoft</p>
+                      <p>- PLTR</p>
+                      <p>- 외 n개</p>
+                  </dd>
+                </dl>
+              </div>
+              <div class="info_tt">
+                본 자료는 투자자의 증권투자를 돕기 위하여 배포되는 자료로서 수록된 내용은 신뢰할 만한 자료 및 정보로부터 얻어진 것입니다. 그러나 그 정확성이나 안전성을 보장할 수 없습니다. <br/>
+                따라서, 어떠한 경우에도 본 자료는 고객의 증권투자의 결과에 대한 법적 책임소재에 대한 증빙자료로 사용할 수 없음을 알려드립니다. 과거의 성과가 미래의 성과를 보장하지 않습니다.
+              </div>
+            </div><!-- section04 -->
+
+            <div class="box section05">
+              <div class="in_box">
+                <div>
+                  <div class="title_box">
+                    <h1>김오늘님을 위한<br/>상담리포트입니다.</h1>
+                    <p>YYYY.MM.DD에 권동욱 FA와 함께 상담하였습니다.</p>
+                  </div>
+                  <dl>
+                    <dt>담당 FA</dt>
+                    <dd>권동욱</dd>
+                  </dl>
+                  <dl>
+                    <dt>핸드폰</dt>
+                    <dd>000-0000-0000</dd>
+                  </dl>
+                  <dl>
+                    <dt>Email</dt>
+                    <dd>kdwook@goldentree.com</dd>
+                  </dl>
+                </div>
+                <div class="img_bg"></div>
+              </div>
+
+              <div class="tt_box">
+                <h2>FA 코멘트</h2>
+                <p>이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. 이곳에 코멘트가 노출됩니다. </p>
+              </div>
+
+              <div class="info_tt">
+                <div class="id_card"></div>
+                본 자료는 투자자의 증권투자를 돕기 위하여 배포되는 자료로서 수록된 내용은 신뢰할 만한 자료 및 정보로부터 얻어진 것입니다. 그러나 그 정확성이나 안전성을 보장할 수 없습니다.<br/>
+                따라서, 어떠한 경우에도 본 자료는 고객의 증권투자의 결과에 대한 법적 책임소재에 대한 증빙자료로 사용할 수 없음을 알려드립니다. 과거의 성과가 미래의 성과를 보장하지 않습니다.
+              </div>
+            </div><!-- section05 -->
+
           </div>
         </div>
       </div>
