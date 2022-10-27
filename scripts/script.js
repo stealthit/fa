@@ -6,7 +6,7 @@ const menuLink = ['/pages/main.html', //대시보드
                   '/pages/client/client.html', //고객
                   '', //상품
                   '/pages/insight.html', //Insight                  
-                  ''] //내정보
+                  '/pages/myinfo.html'] //내정보
 
 const menuList = document.querySelectorAll('.menu-list > li');
 const tabMenuList = document.querySelectorAll('ul.tab-menu > li');
