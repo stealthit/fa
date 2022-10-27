@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/note.css">
+</head>
+<body>
+  <div id="wrapper" class="wrapper menuOpen">
+    <div id="sideMenu" class="sidenav">
+      <ul id="menuList" class="menu-list">
+        <li>
+          <div class="menu-item">
+            <img class="ic-left-logo" src="" alt="">
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-dashboard" src="" alt="">
+            <div class="menu-name">대시보드</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-counsel" src="" alt="">
+            <div class="menu-name">고객상담</div>
+          </div>
+        </li>
+        <li class="active">
+          <div class="menu-item">
+            <img class="ic-menu-mywork" src="" alt="">
+            <div class="menu-name">마이워크</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-reward" src="" alt="">
+            <div class="menu-name">리워드</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-customer" src="" alt="">
+            <div class="menu-name">고객</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-product" src="" alt="">
+            <div class="menu-name">상품</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-insight" src="" alt="">
+            <div class="menu-name">Insight</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-my" src="" alt="">
+            <div class="menu-name">내정보</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- 클릭한 메뉴의 depth2 list -->
+    <ul id="menu-depth2">
+      <li>depth2-1</li>
+      <li>depth2-2</li>
+      <li>depth2-3</li>
+      <li>depth2-4</li>
+    </ul>
+    <!-- sidemenu open/close button (Fixed location) -->
+    <button id="btnSideOpen">
+      <img src="" alt="">
+    </button>
+
+    <div id="main" class="main-wrap reward">
+      <div class="contents-wrap">
+        <div class="contents-inner">
+          <div class="contents-header">
+            <a href="./note_list.html"> <img src="" alt="" class="ic-title-back"> </a>
+            <div class="header-right">
+              <ul class="connect-info">
+                <li class="time">세션유지시간<div class="cl-skyblue-b"> 09:10</div></li>
+                <li class="v-seperate"></li>
+                <li class="name"><strong>홍길동</strong> 님<img class="ic-user-arrow-down" alt=""></li>
+              </ul>
+              <ul class="depth-info">
+                <li><a href="">1depth 표시</a></li>
+                <li><img src="" alt="" class="ic-navi-arrow"></li>
+                <li><a href="">2depth 표시</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
+          <div class="contents-tbody note_write">
+            <div class="btn-group">
+              <button class="btn-green">확인</button>
+            </div>
+
+            <div class="write_box card">
+                <div class="name">
+                  <img src="" alt="" class="img-user-01"> 김고객 (1985.12.01/남/%고객상태%)
+                </div>
+                <div>
+                    <textarea placeholder="내용을 입력하세요"></textarea>
+                </div>
+            </div>
+
+            <div class="file_group">
+              <ul>
+                <li>첨부파일 <i>N</i>개</li>
+                <li>
+                  <label>
+                    <input type="file">
+                    <span type="button" class="btn-green">파일첨부</span>
+                  </label>
+                </li>
+              </ul>
+
+              <div class="file_list">
+                <dl>
+                  <dt><img src="" alt=""></dt>
+                  <dd>
+                    <h6>%파일명%.%확장자%</h6>
+                    <p>%용량%</p>
+                    <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button>
+                  </dd>
+                </dl>
+
+                <dl>
+                  <dt><img src="" alt=""></dt>
+                  <dd>
+                    <h6>%파일명%.%확장자%</h6>
+                    <p>%용량%</p>
+                    <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button>
+                  </dd>
+                </dl>
+              </div>
+
+              <div class="progress_bar">
+                <p>업로드중</p>
+                <div class="bar"> <div class="current-bar c1"></div> </div>
+              </div>
+            </div>
+
+          </div><!-- contents-body -->
+        </div>
+      </div>
+      <!-- <footer id="footer"></footer>   -->
+    </div>
+  </div>
+  <!-- 삭제 모달 -->
+  <div class="modal-con modal unstaged">
+      <div class="modal-overlay"></div>
+      <div id="modal-send-result" class="modal-contents">
+          <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
+          <div class="del">
+              <p class="desc">해당 노트를 삭제하시겠습니까?</p>
+          </div>
+          <div class="modal-bottom">
+              <div class="btn-sgroup">
+                  <button class="btn-modal-white modal-close">취소</button>
+                  <button class="btn-modal-blue">확인</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+<script src="../../scripts/func.js"></script>
+<script src="../../scripts/script.js"></script>
+<script>
+  // modal-open
+  document.querySelector(".btn-del").addEventListener("click",function(){
+    let el = document.getElementById('modal-send-result');
+    el.querySelector('.del').style.display = 'block';
+    el.closest('.modal-con').classList.toggle('opaque');
+    el.closest('.modal-con').classList.toggle('unstaged');
+  })
+</script>
+</html>

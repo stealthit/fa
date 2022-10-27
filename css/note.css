@@ -1,0 +1,442 @@
+/* change image path  */
+/*10px*/
+/*12px*/
+/*13px*/
+/*14px*/
+/*15px*/
+/*16px*/
+/*17px*/
+/*18px*/
+/*20px*/
+/*22px*/
+/*22px*/
+/*24px*/
+/*24px*/
+/*26px*/
+/*26px*/
+/*30px*/
+/*32px*/
+/*32px*/
+/*40px*/
+/*42px*/
+/*62px*/
+/*30px*/
+/*21px*/
+/*80px*/
+@import url("reset.css");
+@import url("common.css");
+ul.tab-menu ~ .tab-content.active {
+    flex-direction: column;
+}
+
+.my_calendar {
+    border: 1px solid #e5e5e5;
+    background: #fff;
+}
+
+.my_calendar .cal_nav {
+    padding: 1.125rem 1.25rem;
+}
+
+.my_calendar .cal_nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_calendar .cal_nav ul li:nth-child(1) {
+    display: flex;
+    gap: 0 1.875rem;
+}
+
+.my_calendar .cal_nav ul h1 {
+    display: inline-block;
+    font-size: 1.25rem;
+    color: #8e9599;
+}
+
+.my_calendar .cal_nav ul .btn_box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px #ccc;
+}
+
+.my_calendar .cal_nav ul .btn_box .go_btn {
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border-right: solid 1px #ccc;
+}
+
+.my_calendar .cal_nav ul .btn_box .left_img {
+    content: url(../assets/ic_arrow_Left.png);
+    width: 0.5rem;
+    height: 0.875rem;
+}
+
+.my_calendar .cal_nav ul .btn_box .right_img {
+    content: url(../assets/ic_arrow_Right.png);
+    width: 0.5rem;
+    height: 0.875rem;
+}
+
+.my_calendar .cal_nav ul .btn_box .to_btn {
+    width: 3.875rem;
+    height: 2rem;
+    font-size: 0.8125rem;
+    text-align: center;
+}
+
+.my_calendar .cal_nav ul .select-wrap {
+    height: 2rem;
+}
+
+.my_calendar .cal_box .day {
+    display: flex;
+    align-items: flex-start;
+    width: calc(100% / 7);
+    border-left: 1px solid #ccc;
+    font-size: 0.75rem;
+}
+
+.my_calendar .cal_box .week {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.my_calendar .cal_box .week .day {
+    padding: 0.375rem;
+    color: #404850;
+}
+
+.my_calendar .cal_box .date {
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-start;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.my_calendar .cal_box .date .marker {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 3px;
+    padding: 0.1875rem;
+    text-align: center;
+    color: #fff;
+    background: #1ea5d2;
+}
+
+.my_calendar .cal_box .date .more {
+    position: absolute;
+    z-index: 10;
+    bottom: 0.3125rem;
+    left: 3px;
+    width: calc( 100% - 6px);
+    padding: 0.1875rem;
+    text-align: center;
+}
+
+.my_calendar .cal_box .date .marker.w1 {
+    width: calc(100% - 6px);
+}
+
+.my_calendar .cal_box .date .marker.w2 {
+    width: calc(200% - 6px);
+}
+
+.my_calendar .cal_box .date .marker.h1 {
+    top: 1.875rem;
+}
+
+.my_calendar .cal_box .date .marker.h2 {
+    top: 3.75rem;
+}
+
+.my_calendar .cal_box .date .marker.on {
+    display: block;
+}
+
+.my_calendar .cal_box .date .day {
+    position: relative;
+    height: 7.5rem;
+    padding: 0.375rem;
+    border-top: 1px solid #ccc;
+}
+
+.my_calendar .cal_box .date .disable {
+    color: #ccc;
+}
+
+.my_calendar .cal_box .date .today span {
+    display: inline-block;
+    padding: 0.1875rem 0.3125rem;
+    color: #fff;
+    background: #0bc890;
+    border-radius: 3px;
+}
+
+.note_search {
+    width: 100%;
+    padding-bottom: 1.25rem;
+}
+
+.note_search ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note_search ul a {
+    width: 6.875rem;
+    font-size: 0.875rem;
+}
+
+.note_search ul a:hover {
+    color: #fff;
+    background-color: #0bc890;
+}
+
+.note_search ul .sea_box {
+    display: flex;
+    align-items: center;
+}
+
+.note_search ul p {
+    font-size: 0.8125rem;
+    padding-right: 1.25rem;
+    white-space: nowrap;
+}
+
+.note_search ul p i {
+    color: #0bc890;
+}
+
+.note_list {
+    width: 100%;
+}
+
+.note_list ul {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.125rem 1.625rem;
+}
+
+.note_list ul li {
+    width: calc( 50% - 13px);
+    height: 11.125rem;
+    padding: 1.25rem;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+}
+
+.note_list ul li h5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2e3666;
+}
+
+.note_list ul li h6 {
+    font-size: 0.875rem;
+    color: #666;
+    overflow: hidden;
+    white-space: normal;
+    line-height: 1.3;
+    height: 2.6em;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.note_list ul li p {
+    padding-top: 0.375rem;
+    font-size: 0.8125rem;
+    color: #aaa;
+}
+
+.note_list ul li .name {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding-top: 0.625rem;
+}
+
+.note_list ul li .name img {
+    width: 1.25rem;
+    height: 1.5625rem;
+}
+
+.note_list ul li.icon {
+    position: relative;
+}
+
+.note_list ul li.icon .img_box span {
+    position: absolute;
+    top: 0.3125rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.note_list ul li.icon .img_box .i_01 {
+    left: 0.3125rem;
+}
+
+.note_list ul li.icon .img_box .i_02 {
+    left: 0.625rem;
+}
+
+.note_list ul li.icon .img_box .i_03 {
+    left: 0.9375rem;
+}
+
+.note_list ul li.icon .img_box img {
+    content: url(../assets/ic_excel.png);
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.note_write .btn-group {
+    justify-content: flex-end;
+    padding-bottom: 1.875rem;
+}
+
+.note_write .btn-group button {
+    width: 5.375rem;
+    font-size: 0.875rem;
+}
+
+.note_write .write_box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.note_write .write_box .name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.note_write .write_box .name .img-user-01 {
+    width: 1.875rem;
+    height: 2.25rem;
+}
+
+.note_write .write_box textarea {
+    width: 100%;
+    height: 31.25rem;
+    padding: 0.875rem 1rem;
+    border: solid 1px #ccc;
+}
+
+.note_write .write_box textarea::placeholder {
+    color: #ccc;
+}
+
+.note_write .file_group {
+    padding-top: 1.25rem;
+}
+
+.note_write .file_group ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note_write .file_group ul i {
+    color: #0bc890;
+}
+
+.note_write .file_group ul label {
+    position: relative;
+}
+
+.note_write .file_group ul input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.note_write .file_group ul span {
+    padding: 0 1.25rem;
+}
+
+.note_write .file_group .file_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding-top: 1.25rem;
+}
+
+.note_write .file_group .file_list dl {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem;
+    border: solid 1px #e5e5e5;
+    background: #fff;
+}
+
+.note_write .file_group .file_list dt img {
+    content: url(../assets/ic_excel.png);
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.note_write .file_group .file_list dd button {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+}
+
+.note_write .file_group .progress_bar {
+    padding: 0.625rem;
+    text-align: center;
+}
+
+.note_write .file_group .progress_bar p {
+    font-size: 0.9375rem;
+    font-weight: bold;
+    color: #0bc890;
+    padding: 0.625rem;
+}
+
+.note_write .file_group .progress_bar .bar {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+}
+
+.note_write .file_group .progress_bar .bar .current-bar {
+    position: absolute;
+    width: 5rem;
+    height: 5px;
+    background-color: #0bc890;
+    border-radius: 5px;
+    left: 0;
+    z-index: 1;
+}
