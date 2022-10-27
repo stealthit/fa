@@ -1,7 +1,7 @@
 const root = window.location.href.substring(0,window.location.href.indexOf("/pages"));
 const menuLink = ['/pages/main.html', //대시보드
                   '/pages/counsel/counsel1.html', //고객상담
-                  '', //마이워크
+                  '/pages/mywork/my_work.html', //마이워크
                   '/pages/reward.html', //보수내역
                   '/pages/client/client.html', //고객
                   '', //상품
