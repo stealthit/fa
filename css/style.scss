@@ -2325,6 +2325,11 @@
 }
 
 .myinfo{
+  .price-box{
+    text-align: right;
+    font-size: $size-14;
+    margin-top: $size-20;
+  }
   .basic-info-wrap{
     width:100%;
   }
@@ -2336,6 +2341,7 @@
     font-weight: bold;
     color:#2e3666;
     margin-bottom: $size-20;
+    margin-top: $size-20;
   }
   .table-wrap{
     .gt-table{
@@ -2354,6 +2360,11 @@
     min-width: $size-180;
     margin:$size-30 auto 0;
   }
+ #tab03{
+  .msg-box{
+    margin-top: $size-20;
+  }
+ }
 }
 
 .btn-white{
@@ -2818,4 +2829,31 @@
     }
   }
 }
+}
+
+#modal-deposit-info{
+  width: $size-480;
+  .modal-top{
+    text-align: left;
+  }
+  .gt-table{
+    td{
+      text-align: left;
+      .select-wrap{
+        height: 2.3rem;
+      }
+      .btn-white{
+        width:auto;
+        padding:0 0.5rem
+      }
+    }
+    .flex-wrap{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .msg-box{
+    margin-top: $size-10;
+  }
 }

@@ -166,6 +166,73 @@
               </div>
             </div>
             <div class="tab-content" id="tab02"></div>
+            <div class="tab-content " id="tab03">
+              <div class="basic-info-wrap">
+                <div class="card">
+                  <div style="width:350px;height:200px;background:#ddd;"></div>
+                  <div class="msg-box">
+                    최초 1회는 무료로 인쇄 제공하며 그 이후 유로로 인쇄 신청 가능합니다.<br />
+                    명함은 200매를 기준으로 제작됩니다.<br />
+                    신청 주소로 배송되며 실수령에는 3-4영업일이 소요됩니다.<br />
+                    인쇄 신청 이후 번복이 불가합니다. 꼼꼼히 확인하여 신청해주세요.<br />
+                  </div>
+                  <div class="table-tit">명함 정보</div>
+                  <div class="table-wrap">
+                    <table class="gt-table">
+                      <colgroup>
+                        <col style="width: 15%" />
+                        <col />
+                      </colgroup>
+                      <tbody class="table-body">
+                        <tr>
+                          <td>핸드폰</td>
+                          <td>010-1234-1234</td>
+                        </tr>
+                        <tr>
+                          <td>이메일</td>
+                          <td><input type="text" /></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button class="btn-green">이미지 다운로드</button>
+                  <div class="table-tit">배송 정보</div>
+                  <div class="table-wrap">
+                    <table class="gt-table">
+                      <colgroup>
+                        <col style="width: 15%" />
+                        <col />
+                        <col style="width: 10%" />
+                      </colgroup>
+                      <tbody class="table-body">
+                        <tr>
+                          <td>배송 주소</td>
+                          <td></td>
+                          <td><button class="btn-white">검색</button></td>
+                        </tr>
+                        <tr>
+                          <td>배송 연락처</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>배송 메모</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>최근 신청일</td>
+                          <td>2022.05.03</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <p class="price-box">금액 : 7,000 원</p>
+                <button class="btn-green btn-deposit">인쇄 신청</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -240,6 +307,76 @@
       </div>
     </div>
   </div>
+
+  <!-- 입금 안내 모달 -->
+  <div class="modal-con modal unstaged">
+    <div class="modal-overlay"></div>
+    <div id="modal-deposit-info" class="modal-contents">
+      <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
+      <div class="modal-top">
+        <h1>입금 안내</h1>
+      </div>
+      <div class="modal-body">
+        <div style="width:350px;height:200px;background:#ddd;"></div>
+        <div class="table-wrap">
+          <table class="gt-table">
+            <colgroup>
+              <col style="width: 25%" />
+              <col />
+            </colgroup>
+            <tbody class="table-body">
+              <tr>
+                <td>배송 주소</td>
+                <td>서울시 송파구 백제고분로 456</td>
+              </tr>
+              <tr>
+                <td>배송 연락처</td>
+                <td>010-1234-1234</td>
+              </tr>
+              <tr>
+                <td>입금 은행</td>
+                <td>
+                  <div class="select-wrap">
+                    <select class="select-box" name="" id="">
+                      <option value="">선택</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>계좌번호</td>
+                <td>
+                 <div class="flex-wrap">
+                    <p>15648-45-1458885</p>
+                    <button class="btn-white">문자로 보내기</button>
+                 </div>
+                </td>
+              </tr>
+              <tr>
+                <td>입금 금액</td>
+                <td>7,000원</td>
+              </tr>
+              <tr>
+                <td>입금 기한</td>
+                <td>2022.08.15 자정</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="msg-box">
+            입금기한 내에 입금이 확인되지 않으면 신청이 취소됩니다.<br />
+            신청 내역과 과정이 배송 연락처로 안내됩니다.
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <div class="btn-sgroup">
+          <button class="btn-modal-white">취소</button>
+          <button class="btn-modal-blue">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="../scripts/func.js"></script>
 <script src="../scripts/script.js"></script>
@@ -253,6 +390,12 @@
 
   document.querySelector(".btn-email").addEventListener("click", function () {
     let el = document.getElementById('modal-email-modify');
+    el.closest('.modal-con').classList.toggle('opaque');
+    el.closest('.modal-con').classList.toggle('unstaged');
+  })
+
+  document.querySelector(".btn-deposit").addEventListener("click", function () {
+    let el = document.getElementById('modal-deposit-info');
     el.closest('.modal-con').classList.toggle('opaque');
     el.closest('.modal-con').classList.toggle('unstaged');
   })
