@@ -1,0 +1,202 @@
+/* change image path  */
+/*10px*/
+/*12px*/
+/*13px*/
+/*14px*/
+/*15px*/
+/*16px*/
+/*17px*/
+/*18px*/
+/*20px*/
+/*22px*/
+/*22px*/
+/*24px*/
+/*24px*/
+/*26px*/
+/*26px*/
+/*30px*/
+/*32px*/
+/*32px*/
+/*40px*/
+/*42px*/
+/*62px*/
+/*30px*/
+/*21px*/
+/*80px*/
+@import url("reset.css");
+@import url("common.css");
+#main.mywork .my_calendar .cal_box.weekly_box .day {
+    width: calc(100% / 8);
+}
+
+#main.mywork .my_calendar .cal_box.weekly_box .today {
+    background: #f5f5f5;
+}
+
+#main.mywork .my_calendar .cal_box.weekly_box .date .time {
+    display: flex;
+    justify-content: flex-end;
+    color: #999;
+}
+
+#main.mywork .my_calendar .cal_box.weekly_box .date .time .am {
+    margin-right: auto;
+}
+
+#main.mywork .my_calendar .cal_box.weekly_box .date .day {
+    height: 2.375rem;
+    cursor: pointer;
+}
+
+#main.mywork .my_calendar .cal_box.day_box .day {
+    width: 87%;
+}
+
+#main.mywork .my_calendar .cal_box.day_box .day.time {
+    width: 13%;
+}
+
+#main.mywork .my_calendar .cal_box.day_box .date .time {
+    display: flex;
+    justify-content: flex-end;
+    color: #999;
+}
+
+#main.mywork .my_calendar .cal_box.day_box .date .time .am {
+    margin-right: auto;
+}
+
+#main.mywork .my_calendar .cal_box.day_box .date .day {
+    height: 2.375rem;
+    cursor: pointer;
+}
+
+#main.mywork .my_calendar .list_box table {
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+#main.mywork .my_calendar .list_box table th {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    background: #f7f7f7;
+}
+
+#main.mywork .my_calendar .list_box table th:nth-child(2) {
+    text-align: right;
+}
+
+#main.mywork .my_calendar .list_box table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#main.mywork .my_calendar .list_box table .time {
+    font-size: 0.8125rem;
+    color: #999;
+}
+
+#main.mywork .my_calendar .list_box table .no_data {
+    padding: 1.25rem;
+    text-align: center;
+    color: #999;
+}
+
+#main.mywork .my_calendar .list_box table h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2e3666;
+}
+
+#main.mywork .my_calendar .list_box table p {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+#main.mywork .my_calendar .list_box .today {
+    margin-top: 0;
+    border-top: 0;
+}
+
+#main.mywork .my_calendar .list_box .today th {
+    color: #fff;
+    border-bottom: 1px solid #1ea5d2;
+    background: #1ea5d2;
+}
+
+.modal-contents .ic_edit {
+    content: url(../assets/icon_edit.png);
+    width: 1rem;
+    height: 1rem;
+}
+
+.modal-contents .ic_delete {
+    content: url(../assets/icon_delete.png);
+    width: 1rem;
+    height: 1rem;
+}
+
+.modal-contents .ic_timeline_calendar {
+    content: url(../assets/ic_timeline_calendar.png);
+    width: 1rem;
+    height: 1rem;
+}
+
+.modal-contents .ic_timeline_contract {
+    content: url(../assets/ic_timeline_contract.png);
+    width: 1rem;
+    height: 1rem;
+}
+
+.modal-contents .ic_timeline_memo {
+    content: url(../assets/ic_timeline_memo.png);
+    width: 1rem;
+    height: 1rem;
+}
+
+.modal-contents .modal-edit {
+    position: absolute;
+    top: 0.9375rem;
+    right: 2.5rem;
+}
+
+.modal-contents .modal-delete {
+    position: absolute;
+    top: 0.9375rem;
+    right: 3.75rem;
+}
+
+.modal-contents .my_view {
+    text-align: left;
+}
+
+.modal-contents .my_view .title h6 {
+    font-size: 1.5625rem;
+    font-weight: bold;
+    color: #2e3666;
+}
+
+.modal-contents .my_view .title p {
+    padding: 0.25rem 0 1.25rem 0;
+    font-size: 0.875rem;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-contents .my_view dl {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.625rem;
+    padding: 0.625rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-contents .my_view dt {
+    width: 1.25rem;
+}
+
+.modal-contents .my_view dd {
+    width: 100%;
+}

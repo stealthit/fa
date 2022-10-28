@@ -1,0 +1,182 @@
+@import "func.scss";
+@import url("reset.css");
+@import url("common.css");
+
+#main.mywork .my_calendar .cal_box.weekly_box{
+  .day{
+    width: calc(100% / 8);
+  }
+  .today{
+    background: #f5f5f5;
+  }
+
+  .date{
+    .time{
+      display: flex;
+      justify-content: flex-end;
+      color: #999;
+      .am{
+        margin-right: auto;
+      }
+    }
+    .day{
+      height: $size-38;
+      cursor: pointer;
+    }
+  }
+}
+
+#main.mywork .my_calendar .cal_box.day_box{
+  .day{
+    width: 87% ;
+  }
+  .day.time{
+    width: 13% ;
+  }
+
+  .date{
+    .time{
+      display: flex;
+      justify-content: flex-end;
+      color: #999;
+      .am{
+        margin-right: auto;
+      }
+    }
+    .day{
+      height: $size-38;
+      cursor: pointer;
+    }
+  }
+}
+
+#main.mywork .my_calendar .list_box{
+  table{
+    width: 100%;
+    border-top: 1px solid #ccc;
+    th{
+      padding: $size-8;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+      background: #f7f7f7;
+    }
+    th:nth-child(2){
+      text-align: right;
+    }
+    td{
+      padding: $size-8;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .time{
+      font-size: $size-13;
+      color: #999;
+    }
+
+    .no_data{
+      padding: $size-20;
+      text-align: center;
+      color: #999;
+    }
+
+    h6{
+      font-size: $size-16;
+      font-weight: bold;
+      color: #2e3666;
+    }
+
+    p{
+      font-size: $size-14;
+      color: #666;
+    }
+  }
+
+  .today{
+    margin-top: 0;
+    border-top: 0;
+
+    th{
+      color: #fff;
+      border-bottom: 1px solid #1ea5d2;
+      background: #1ea5d2;
+    }
+  }
+}
+
+.modal-contents{
+  .ic_edit{
+    content: url(#{$imgPath}icon_edit.png);
+    width: $size-16;
+    height: $size-16;
+  }
+
+  .ic_delete{
+    content: url(#{$imgPath}icon_delete.png);
+    width: $size-16;
+    height: $size-16;
+  }
+
+  .ic_timeline_calendar{
+    content: url(#{$imgPath}ic_timeline_calendar.png);
+    width: $size-16;
+    height: $size-16;
+  }
+
+  .ic_timeline_contract{
+    content: url(#{$imgPath}ic_timeline_contract.png);
+    width: $size-16;
+    height: $size-16;
+  }
+
+  .ic_timeline_memo{
+    content: url(#{$imgPath}ic_timeline_memo.png);
+    width: $size-16;
+    height: $size-16;
+  }
+
+  .modal-edit{
+    position: absolute;
+    top: $size-15;
+    right: $size-40;
+  }
+  .modal-delete{
+    position: absolute;
+    top: $size-15;
+    right: $size-60;
+  }
+
+  .my_view{
+    text-align: left;
+
+    .title{
+      h6{
+        font-size: $size-25;
+        font-weight: bold;
+        color: #2e3666;
+      }
+      p{
+        padding: $size-4 0 $size-20 0;
+        font-size: $size-14;
+        color: #666;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+
+    dl{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: $size-10;
+      padding: $size-10 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    dt{
+      width: $size-20;
+    }
+
+    dd{
+      width: 100%;
+    }
+  }
+}

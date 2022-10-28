@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/mywork.css">
+</head>
+<body>
+  <div id="wrapper" class="wrapper menuOpen">
+    <div id="sideMenu" class="sidenav">
+      <ul id="menuList" class="menu-list">
+        <li>
+          <div class="menu-item">
+            <img class="ic-left-logo" src="" alt="">
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-dashboard" src="" alt="">
+            <div class="menu-name">대시보드</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-counsel" src="" alt="">
+            <div class="menu-name">고객상담</div>
+          </div>
+        </li>
+        <li class="active">
+          <div class="menu-item">
+            <img class="ic-menu-mywork" src="" alt="">
+            <div class="menu-name">마이워크</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-reward" src="" alt="">
+            <div class="menu-name">리워드</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-customer" src="" alt="">
+            <div class="menu-name">고객</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-product" src="" alt="">
+            <div class="menu-name">상품</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-insight" src="" alt="">
+            <div class="menu-name">Insight</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-my" src="" alt="">
+            <div class="menu-name">내정보</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- 클릭한 메뉴의 depth2 list -->
+    <ul id="menu-depth2">
+      <li>depth2-1</li>
+      <li>depth2-2</li>
+      <li>depth2-3</li>
+      <li>depth2-4</li>
+    </ul>
+    <!-- sidemenu open/close button (Fixed location) -->
+    <button id="btnSideOpen">
+      <img src="" alt="">
+    </button>
+
+    <div id="main" class="main-wrap mywork">
+      <div class="contents-wrap">
+        <div class="contents-inner">
+          <div class="contents-header">
+            <h1>마이워크</h1>
+            <div class="header-right">
+              <ul class="connect-info">
+                <li class="time">세션유지시간<div class="cl-skyblue-b"> 09:10</div></li>
+                <li class="v-seperate"></li>
+                <li class="name"><strong>홍길동</strong> 님<img class="ic-user-arrow-down" alt=""></li>
+              </ul>
+              <ul class="depth-info">
+                <li><a href="">1depth 표시</a></li>
+                <li><img src="" alt="" class="ic-navi-arrow"></li>
+                <li><a href="">2depth 표시</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
+          <div class="contents-body">
+            <ul class="tab-menu">
+                <li class="active" data-tab="tab01">Calendar</li>
+                <li data-tab="tab02">note</li>
+            </ul>
+            <div class="tab-content active" id="tab01">
+              <div class="my_calendar">
+                <div class="cal_nav">
+                  <ul>
+                    <li>
+                      <h1>2020년 10월 13~20일</h1>
+                      <div class="btn_box">
+                        <button class="go_btn" type="button">
+                          <img src="" alt="" class="left_img">
+                        </button>
+                        <button class="go_btn" type="button">
+                          <img src="" alt="" class="right_img">
+                        </button>
+                        <button class="to_btn" type="button">오늘</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="select-wrap">
+                        <select class="select-box" name="" id="">
+                          <option value="">주간</option>
+                          <option value="">월간</option>
+                          <option value="">일간</option>
+                          <option value="">리스트</option>
+                        </select>
+                      </div>
+                    </li>
+                  </ul>
+                </div><!-- cal_nav -->
+
+                <div class="cal_box weekly_box">
+                  <div class="week">
+                    <div class="day"> &nbsp; </div>
+                    <div class="day">26 Mo</div>
+                    <div class="day today">27 Tu</div>
+                    <div class="day">28 We</div>
+                    <div class="day">29 Th</div>
+                    <div class="day">30 Fr</div>
+                    <div class="day">1 Sa</div>
+                    <div class="day">2 Su</div>
+                  </div>
+                  <div class="date">
+                    <div class="day time"><span class="am">오전</span><span>12시</span></div>
+                    <div class="day">
+                      <div class="marker on w1 btn_view">투자 컨설팅</div>
+                    </div>
+                    <div class="day today">
+                      <div class="marker on w2">킥오프미팅</div>
+                    </div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>01시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>02시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>03시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>04시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>05시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>06시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>07시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>08시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>09시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>10시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>11시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span class="am">오후</span><span>12시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>01시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>02시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>03시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>04시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>05시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>06시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>07시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>08시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>09시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>10시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+
+                    <div class="day time"><span>11시</span></div>
+                    <div class="day"></div>
+                    <div class="day today"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                  </div>
+                </div><!-- cal_wrap -->
+              </div>
+            </div><!-- tab01 -->
+
+            <div class="tab-content" id="tab02">
+            </div><!-- tab02 -->
+          </div>
+        </div>
+      </div>
+      <!-- <footer id="footer"></footer>   -->
+    </div>
+  </div>
+  <!-- 일정보기 -->
+  <div class="modal-con modal unstaged">
+    <div class="modal-overlay"></div>
+    <div id="modal-schedule-reg" class="modal-contents">
+      <button class="modal-edit"><img class="ic_edit" alt=""></button>
+      <button class="modal-delete"><img class="ic_delete" alt=""></button>
+      <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
+      <div class="modal-body my_view">
+        <div class="title">
+          <h6>투자 컨설팅</h6>
+          <p>8월 17일(토요일) / 오전 10:~10:30</p>
+        </div>
+        <dl>
+          <dt> <img class="ic_timeline_calendar" alt=""> </dt>
+          <dd>여의도 투섬 플레이스</dd>
+        </dl>
+        <dl>
+          <dt> <img class="ic_timeline_contract" alt=""> </dt>
+          <dd>김민지 (1985.12.01/여/%고객상태%)</dd>
+        </dl>
+        <dl>
+          <dt> <img class="ic_timeline_memo" alt=""> </dt>
+          <dd>이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <!-- 삭제 모달 -->
+  <div class="modal-con modal unstaged">
+      <div class="modal-overlay"></div>
+      <div id="modal-send-result" class="modal-contents">
+          <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
+          <div class="del">
+              <p class="desc">해당 노트를 삭제하시겠습니까?</p>
+          </div>
+          <div class="modal-bottom">
+              <div class="btn-sgroup">
+                  <button class="btn-modal-white modal-close">취소</button>
+                  <button class="btn-modal-blue">확인</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+<script src="../../scripts/func.js"></script>
+<script src="../../scripts/script.js"></script>
+<script>
+  // modal-open
+   document.querySelector(".btn_view").addEventListener("click",function(){
+     let el = document.getElementById('modal-schedule-reg');
+     if (el.closest('.modal-con').classList.contains('unstaged'))
+       document.body.style.overflow = "hidden";
+     else document.body.style.overflow = "unset";
+     el.closest('.modal-con').classList.toggle('opaque');
+     el.closest('.modal-con').classList.toggle('unstaged');
+   })
+  // modal-open
+  document.querySelector(".btn-del").addEventListener("click",function(){
+    let el = document.getElementById('modal-send-result');
+    el.querySelector('.del').style.display = 'block';
+    el.closest('.modal-con').classList.toggle('opaque');
+    el.closest('.modal-con').classList.toggle('unstaged');
+  })
+</script>
+</html>

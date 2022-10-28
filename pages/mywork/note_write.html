@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../../css/style.css">  
+  <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
   <div id="wrapper" class="wrapper menuOpen">
@@ -99,7 +99,7 @@
           <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
           <div class="contents-tbody note_write">
             <div class="btn-group">
-              <button class="btn-green">확인</button>
+              <button class="btn-green">완료</button>
             </div>
 
             <div class="write_box card">
@@ -117,32 +117,25 @@
                 <li>
                   <label>
                     <input type="file">
-                    <span type="button" class="btn-green">파일첨부</span>
+                    <span type="button" class="btn-s-green">파일 추가</span>
                   </label>
                 </li>
               </ul>
 
               <div class="file_list">
-                <dl>
-                  <dt><img src="" alt=""></dt>
-                  <dd>
-                    <h6>%파일명%.%확장자%</h6>
-                    <p>%용량%</p>
-                    <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button>
-                  </dd>
-                </dl>
-
-                <dl>
-                  <dt><img src="" alt=""></dt>
-                  <dd>
-                    <h6>%파일명%.%확장자%</h6>
-                    <p>%용량%</p>
-                    <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button>
-                  </dd>
-                </dl>
+                <div class="card">
+                  <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button>
+                  <h6><img src="" alt="">파일명이 표시 됩니다.pdf</h6>
+                  <p>123MB</p>
+                </div>
+                <div class="card">
+                  <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button>
+                  <h6><img src="" alt="">파일명이 표시 됩니다.pdf</h6>
+                  <p>123MB</p>
+                </div>
               </div>
 
-              <div class="progress_bar">
+              <div class="progress_bar card">
                 <p>업로드중</p>
                 <div class="bar"> <div class="current-bar c1"></div> </div>
               </div>
