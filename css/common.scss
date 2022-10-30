@@ -410,6 +410,16 @@ ul.pagination {
 .width-240 {width: $size-240 !important;}
 .width-140 {width: $size-140 !important;}
 .width-60 {width: $size-60 !important;}
+.bg-1 {background-color: #f4718c;}
+.bg-2 {background-color: #f9ba26;}
+.bg-3 {background-color: #f1dc2c;}
+.bg-4 {background-color: #56cf99;}
+.bg-5 {background-color: #50d3d6;}
+.bg-6 {background-color: #98adce;}
+.bg-7 {background-color: #548cd0;}
+.bg-8 {background-color: #957ccd;}
+.bg-9 {background-color: #e37fd3;}
+.bg-10 {background-color: #e5e5e5;}
 
 // 기본구조
 .wrapper {
@@ -434,16 +444,18 @@ ul.pagination {
     position: fixed;
     top: 0;
     left: 0;
-    width: $size-60;
+    width: $size-30;
     height: $size-60;
     background: #2299f4;
-    border-radius: 0 100% 100% 0;
+    border-radius: 0 $size-6 $size-6 0;
     z-index: 1;
     // transition: 0.3s;
     @include flex_center;
     img {
       content: url(#{$imgPath}ic_left_fold.png);  
       transform: rotateY( 180deg );
+      width: $size-12;
+      height: $size-12;
     }
   }
   &.menuOpen {
@@ -455,6 +467,8 @@ ul.pagination {
       img {
         content: url(#{$imgPath}ic_left_fold.png);
         transform: rotateY( 0 );
+        width: $size-12;
+        height: $size-12;
       }
     }   
   }
@@ -716,6 +730,44 @@ li {
 //   width: $size-14;
 //   height: $size-8; 
 // }
+.ic-file {
+  content: url(#{$imgPath}ic_file.png);
+  width: $size-18;
+  height: $size-18;  
+}
+.ic-timeline-memo {
+  content: url(#{$imgPath}ic_timeline_memo.png);
+  width: $size-14;
+  height: $size-14;
+}
+.ic-timeline-calendar {
+  content: url(#{$imgPath}ic_timeline_calendar.png);
+  width: $size-14;
+  height: $size-14;
+}
+.ic-timeline-contract {
+  content: url(#{$imgPath}ic_timeline_contract.png);
+  width: $size-14;
+  height: $size-14;
+}
+.ic-model-left {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: url(#{$imgPath}ic_model_left.png);
+  width: $size-19;
+  height: $size-35;
+}
+.ic-model-right {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  content: url(#{$imgPath}ic_model_right.png);
+  width: $size-19;
+  height: $size-35;
+}
 .ic-edit {
   content: url(#{$imgPath}ic_tooltip.png);
   width: $size-20;
@@ -780,6 +832,8 @@ li {
 }
 .ic-close {
   content: url(#{$imgPath}ic_close.png);
+  width: $size-15;
+  height: $size-15;
 }
 .ic-page-start {
   content: url(#{$imgPath}ico-page-start-n.png);
@@ -873,6 +927,11 @@ li {
   height: $size-20;
 }
 // img- *************
+.img-model-01 {
+  content: url(#{$imgPath}img_model_01.png);
+  width: $size-230;
+  height: $size-230;
+}
 .img-user-01 {
   content: url(#{$imgPath}img_user_01.png);
   width: $size-61;
@@ -928,6 +987,10 @@ li {
   width: $size-240;  
   height: $size-48;
 }
+
+// profile character images
+@include user_images;
+
 // media
 @media (max-width: 1279px) {
   body,html {font-size:13px}  
@@ -1044,7 +1107,11 @@ button.btn-ic-search {
     @include flex_center;
   }
 }
-
+button.btn-ic-close {
+  position: absolute;
+  top: $size-15;
+  right: $size-15;
+}
 button.btn-blue {
   padding: $size-14 $size-30;  
   height: $size-48;
@@ -1461,11 +1528,6 @@ option {
     margin-bottom: $size-20;
   }
   h2 {font-size: $size-20;}
-  .btn-ic-close {
-    position: absolute;
-    top: $size-15;
-    right: $size-15;
-  }
   
   .btn-modal-white {
     @include flex_center;

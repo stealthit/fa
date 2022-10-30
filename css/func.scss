@@ -46,6 +46,7 @@ $size-50: 3.125rem;
 $size-52: 3.25rem;
 $size-55: 3.4375rem;
 $size-56: 3.5rem;
+$size-58: 3.625rem;
 $size-60: 3.75rem;
 $size-61: 3.8125rem;
 $size-63: 3.9375rem;
@@ -67,9 +68,12 @@ $size-100: 6.25rem;
 $size-110: 6.875rem;
 $size-120: 7.5rem;
 $size-130: 8.125rem;
+$size-135: 8.4375rem;
+$size-136: 8.5rem;
 $size-140: 8.75rem;
 $size-150: 9.375rem;
 $size-160: 10rem;
+$size-165: 10.3125rem;
 $size-178: 11.125rem;
 $size-180: 11.25rem;
 $size-195: 12.1875rem;
@@ -96,6 +100,7 @@ $size-400: 25rem;
 $size-436: 27.25rem;
 $size-450: 28.125rem;
 $size-460: 28.750rem;
+$size-462: 28.875rem;
 $size-465: 29.0625rem;
 $size-480: 30rem;
 $size-500: 31.25rem;
@@ -103,9 +108,11 @@ $size-520: 32.5rem;
 $size-535: 33.4375rem;
 $size-545: 34.063rem;
 $size-560: 35rem;
+$size-570: 35.625rem;
 $size-580: 36.25rem;
 $size-600: 37.500rem;
 $size-620: 38.750rem;
+$size-640: 40rem;
 $size-700: 43.75rem;
 $size-735: 45.938rem;
 $size-850: 53.125em;
@@ -144,5 +151,21 @@ $gt-yellow: #f6c914;
     @if $direction == 'H' { height: 6px; } @else { width: 6px; }
     border-radius: 6px;
     background: #0bc890;
+  }
+}
+
+
+@mixin user_images {
+  $strnum : "";
+  @for $i from 1 to 11{    
+    @if ($i < 10) { $strnum : 0#{$i}; }
+    @else {$strnum : #{$i};}
+    
+    .img-user#{$strnum}{    
+      content:url(#{$imgPath}img_user#{$strnum}.png);              
+    }    
+    .img-user#{$strnum}-l{      
+      content:url(#{$imgPath}img_user#{$strnum}@3x.png);             
+    }   
   }
 }
