@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고객상담</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/counsel.css">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+</head>
+<body>
+  <div id="wrapper" class="wrapper menuOpen">
+    <div id="sideMenu" class="sidenav">
+      <ul id="menuList" class="menu-list">
+        <li>
+          <div class="menu-item">
+            <img class="ic-left-logo" src="" alt="">
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-dashboard" src="" alt="">
+            <div class="menu-name">대시보드</div>
+          </div>
+        </li>
+        <li class="active">
+          <div class="menu-item">
+            <img class="ic-menu-counsel" src="" alt="">
+            <div class="menu-name">고객상담</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-mywork" src="" alt="">
+            <div class="menu-name">마이워크</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-reward" src="" alt="">
+            <div class="menu-name">리워드</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-customer" src="" alt="">
+            <div class="menu-name">고객</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-product" src="" alt="">
+            <div class="menu-name">상품</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-insight" src="" alt="">
+            <div class="menu-name">Insight</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-my" src="" alt="">
+            <div class="menu-name">내정보</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- 클릭한 메뉴의 depth2 list -->
+    <ul id="menu-depth2">
+      <li>depth2-1</li>
+      <li>depth2-2</li>
+      <li>depth2-3</li>
+      <li>depth2-4</li>
+    </ul>
+    <!-- sidemenu open/close button (Fixed location) -->
+    <button id="btnSideOpen">
+      <img src="" alt="">
+    </button>
+
+    <div id="main" class="main-wrap counsel counsel6">
+      <div class="contents-wrap">
+        <div class="contents-inner">
+          <div class="contents-header">
+            <h1>고객 상담</h1>
+            <div class="header-right">
+              <ul class="connect-info">
+                <li class="time">세션유지시간<div class="cl-skyblue-b"> 09:10</div></li>
+                <li class="v-seperate"></li>
+                <li class="name"><strong>홍길동</strong> 님<img class="ic-user-arrow-down" alt=""></li>
+              </ul>
+              <ul class="depth-info">
+                <li><a href="">1depth 표시</a></li>
+                <li><img src="" alt="" class="ic-navi-arrow"></li>
+                <li><a href="">2depth 표시</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
+          <div class="contents-body card">
+            <div class="order-bar"><div class="current-bar c1"></div> </div>
+
+            <h2>조건 설정</h2>
+
+            <div class="set_box">
+                <dl>
+                  <dt>기초자산</dt>
+                  <dd>
+                    <span>80,000,000</span>&nbsp;만 원
+                    <button>편집</button>
+                  </dd>
+                </dl>
+                <div class="order-bar"><div class="current-bar c6"></div> </div>
+                <dl>
+                  <dt>운용기간</dt>
+                  <dd>
+                    <span>20</span>&nbsp;년
+                    <button>편집</button>
+                  </dd>
+                </dl>
+                <div class="order-bar"><div class="current-bar c5"></div> </div>
+                <dl>
+                  <dt>연 추가 적립액</dt>
+                  <dd>
+                    <span>1,500,000</span>만 원
+                    <button>편집</button>
+                  </dd>
+                </dl>
+                <div class="order-bar"><div class="current-bar c5"></div> </div>
+            </div>
+
+
+            <h2>시뮬레이팅 분석 결과</h2>
+            <div class="result_box">
+              <ul class="tab-menu">
+                <li class="active" data-tab="tab01">연금액</li>
+                <li data-tab="tab02">인출 예상 기간</li>
+              </ul>
+              <div class="tab-content active" id="tab01">
+                <h6>희망 수령 기간 <i>20</i>년, 예상 수령 금액 월 <i>1,400,000</i>원</h6>
+              </div>
+              <div class="tab-content" id="tab02">
+                <h6>인출 예상 기간 <i>20</i>년, 예상 수령 금액 월 <i>1,400,000</i>원</h6>
+              </div>
+            </div>
+
+            <div class="graph-box">
+              <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
+              <figure class="highcharts-figure">
+                <div id="container"></div>
+              </figure>
+            </div>
+
+            <div class="table_box">
+              <table class="gt-table type01">
+                <colgroup>
+                  <col style="" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>구분</th>
+                    <th colspan="6">운용자산 Style</th>
+                    <th colspan="2">비교치</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td>투자대상</td>
+                    <td>ELB/정기예금</td>
+                    <td>채권형</td>
+                    <td>채권혼합형</td>
+                    <td>주식혼합형</td>
+                    <td>국내주식형/ETF</td>
+                    <td>해외주식형/ETF</td>
+                    <td>즉시연금</td>
+                    <td>정기예금</td>
+                  </tr>
+                  <tr>
+                      <td>상대적 위험도</td>
+                      <td>원리금보존형</td>
+                      <td>원리금보존형</td>
+                      <td>원리금보존형</td>
+                      <td>원리금보존형</td>
+                      <td>원리금보존형</td>
+                      <td>원리금보존형</td>
+                      <td>원리금보존형</td>
+                      <td>원리금보존형</td>
+                  </tr>
+                  <tr class="bg_yellow">
+                      <td>기대수익률 (보수차감후)</td>
+                      <td>1.0%</td>
+                      <td>1.0%</td>
+                      <td>1.0%</td>
+                      <td>1.0%</td>
+                      <td>1.0%</td>
+                      <td>1.0%</td>
+                      <td>1.0%</td>
+                      <td>22.07.01</td>
+                  </tr>
+                  <tr>
+                      <td>대표적인 추천상품</td>
+                      <td>추천상품</td>
+                      <td>추천상품</td>
+                      <td>추천상품</td>
+                      <td>추천상품</td>
+                      <td>추천상품</td>
+                      <td>추천상품</td>
+                      <td>추천상품</td>
+                      <td>추천상품</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="gt-table type02">
+                <colgroup>
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>위험 수용성</th>
+                    <th>기대 운용수익률</th>
+                    <th colspan="6">자산 배분율 (%)</th>
+                    <th>예상 적립금</th>
+                    <th>연금액(예상)</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td>안정형</td>
+                    <td>4.6%</td>
+                    <td>10%</td>
+                    <td>10%</td>
+                    <td class="bo_t bo_l">10%</td>
+                    <td class="bo_t bo_r">10%</td>
+                    <td>10%</td>
+                    <td>10%</td>
+                    <td>2.6억</td>
+                    <td class="bg_red">144만/월</td>
+                  </tr>
+                  <tr>
+                    <td>중립형</td>
+                    <td>4.6%</td>
+                    <td>10%</td>
+                    <td>10%</td>
+                    <td class="bo_l">10%</td>
+                    <td class="bo_r">10%</td>
+                    <td>10%</td>
+                    <td>10%</td>
+                    <td>2.6억</td>
+                    <td class="bg_red">144만/월</td>
+                  </tr>
+                  <tr>
+                    <td>적극형</td>
+                    <td>4.6%</td>
+                    <td>10%</td>
+                    <td>10%</td>
+                    <td class="bo_b bo_l">10%</td>
+                    <td class="bo_b bo_r">10%</td>
+                    <td>10%</td>
+                    <td>10%</td>
+                    <td>2.6억</td>
+                    <td class="bg_red">144만/월</td>
+                  </tr>
+                  <tr>
+                    <td>My 포트폴리오</td>
+                    <td>4.6%</td>
+                    <td class="bg_yellow">10%</td>
+                    <td class="bg_yellow">10%</td>
+                    <td class="bg_yellow">10%</td>
+                    <td class="bg_yellow">10%</td>
+                    <td class="bg_yellow">10%</td>
+                    <td class="bg_yellow">10%</td>
+                    <td>2.6억</td>
+                    <td class="bg_red">144만/월</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="gt-table type03">
+                <colgroup>
+                  <col style="width: 20%" />
+                  <col style="width: 20%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                </colgroup>
+                <tbody class="table-body">
+                  <tr>
+                    <td>희망 수령기간 (연금개시후~)</td>
+                    <td class="co_blue">20 년</td>
+                    <td class="bg_gray">희망 연금액</td>
+                    <td class="co_gray">150만/월</td>
+                    <td class="bg_gray">잔존 연금(인출 후)</td>
+                    <td class="co_blue">0.5억</td>
+                    <td class="bg_gray">총보수(Avg)</td>
+                    <td>1.2%</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="text_box">
+                예상 연금액은 평가일 현재 준비한 연금자산 1.50억과 매년 퇴직연금과 세액공제용으로 추가 적립금으로 1,800만원을 4년간 납입하고 운용할 경우,<br/>
+                연금 개시후 20년간, 매월 수령하고도 잔존자산으로 0.5억을 남기는 조건에서 시뮬레이션한 예상 연금 월액입니다. (연금수령 중에는 안정형 4.6% 또는 My포트폴리오 기대수익률 4.4% 적용, 총보수 감안)
+              </div>
+            </div>
+
+            <div class="cou_btn">
+              <button class="btn_text" >임시저장하기</button>
+              <div class="btn-group">
+                <button class="btn-white btn-prev">이전</button>
+                <button class="btn-green btn-next active">시뮬레이팅</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <footer id="footer"></footer>   -->
+    </div>
+  </div>
+</body>
+<script src="../../scripts/func.js"></script>
+<script src="../../scripts/script.js"></script>
+</html>

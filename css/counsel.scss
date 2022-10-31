@@ -1,0 +1,282 @@
+@import "func.scss";
+@import url("reset.css");
+@import url("common.css");
+
+#main.counsel{
+  .cou_btn {
+    text-align: center;
+      .btn_text{
+        padding-bottom: $size-20;
+        text-align: center;
+        text-decoration: underline;
+        color: #666;
+    }
+  }
+}
+
+#main.counsel.counsel6 {
+  .contents-inner {
+    width: $main_width;
+    .contents-body {
+      .input-box {
+        position: relative;
+          .tip_box:hover .tip_con {
+            display: block;
+          }
+
+        .tip_btn {
+          content: url(#{$imgPath}ic_tooltip.png);
+          width: $size-20;
+          height: $size-20;
+          margin-left: $size-10;
+          cursor: pointer;
+        }
+        .tip_con {
+          display: none;
+          position: absolute;
+          top: 0;
+          right: -$size-220;
+          z-index: 10;
+          width: $size-210;
+          padding: $size-14 $size-20;
+          font-size: $size-14;
+          border: 1px solid #111;
+          background: #fff;
+        }
+      }
+      .set_box{
+        display: flex;
+        flex-direction: column;
+        gap: $size-10;
+        width: $size-340;
+
+        dl{
+          display: flex;
+          justify-content: space-between;
+          margin-top: $size-10;
+
+          dt{
+            font-size: $size-18;
+          }
+
+          input{
+            width: $size-100;
+            height: $size-25;
+            padding: $size-5;
+          }
+
+          span{
+            font-size: $size-18;
+            font-weight: bold;
+            color: #0bc890;
+          }
+
+          button{
+            font-size: $size-11;
+            margin-left: $size-10;
+            padding: $size-3 $size-16;
+            text-align: center;
+            border: solid 1px #ccc;
+          }
+
+        }
+
+        dl:nth-of-type(1) {
+          margin-top: 0;
+        }
+
+        .order-bar{
+          width: 100%;
+        }
+      }
+
+      .result_box{
+        text-align: center;
+        padding: $size-30;
+        background: #f8f9fd;
+        .tab-menu{
+          justify-content: center;
+          border-bottom: 0;
+          margin-bottom: $size-20;
+        }
+
+        .tab-content{
+          justify-content: center;
+        }
+
+        h6{
+          font-weight: bold;
+          font-size: $size-20;
+          color: #2e3666;
+
+          i{
+            color: #1ea5d2;
+          }
+        }
+
+        .table_box{
+          display: flex;
+          gap: $size-20;
+
+          li:nth-child(1){
+            width: $size-600;
+          }
+          li:nth-child(2){
+            width: $size-400;
+          }
+
+          td.bg_red{
+            font-size: $size-18;
+            text-align: center;
+            font-weight: bold;
+            color: #fd345d;
+            background: #fff7f9;
+          }
+
+          td{
+            padding: 0;
+            background: #fff;
+          }
+        }
+      }
+
+      .scr_col{
+        width: 100%;
+        overflow-x: scroll;
+      }
+
+      .table_box{
+        th{
+          border-left: 1px solid #2e3666;
+          background: #f7f7f7;
+        }
+        td{
+          padding: 0;
+          border-left: 1px solid #ccc;
+        }
+        th:nth-child(1){
+          border-left: 0;
+        }
+        td:nth-child(1){
+          border-left: 0;
+        }
+        .bo_t {
+          border-top: 2px solid #1ea5d2;
+        }
+        .bo_r {
+          border-right: 2px solid #1ea5d2;
+        }
+        .bo_b {
+          border-bottom: 2px solid #1ea5d2;
+        }
+        .bo_l {
+          border-left: 2px solid #1ea5d2;
+        }
+        .bg_red{
+          font-weight: bold;
+          color: #fd345d;
+          background: #fff7f9;
+        }
+        .bg_gray{
+          font-weight: bold;
+          background: #f7f7f7;
+        }
+        .bg_yellow{
+          background: #fffae5;
+        }
+        .co_blue{
+          font-size: $size-16;
+          font-weight: bold;
+          color: #1ea5d2;
+        }
+        .co_gray{
+          color: #999999;
+          background: #e5e5e5;
+        }
+
+        table.type01{
+          td:nth-child(1){
+            border-right: 1px solid #2e3666;
+            background: #f7f7f7;
+          }
+          td:nth-child(8){
+            border-left: 1px solid #2e3666;
+          }
+        }
+
+        table.type02{
+          margin-top: $size-20;
+          td:nth-child(1){
+            border-right: 1px solid #2e3666;
+            background: #f7f7f7;
+          }
+          td:nth-child(9){
+            border-left: 1px solid #2e3666;
+          }
+          td:nth-child(2){
+            border-right: 1px solid #2e3666;
+            background: #f7f7f7;
+          }
+          td:nth-child(9){
+            border-left: 1px solid #2e3666;
+          }
+          td:nth-child(10){
+            border-left: 1px solid #2e3666;
+          }
+        }
+
+        table.type03{
+          margin-top: $size-10;
+          border-top: solid 1px #ccc;
+
+          td:nth-child(1){
+            border-right: 1px solid #2e3666;
+            background: #f7f7f7;
+          }
+          td:nth-child(7){
+            border-left: 1px solid #2e3666;
+          }
+          td:nth-child(8){
+            border-left: 1px solid #2e3666;
+          }
+        }
+
+        table.type04{
+          border-top: solid 1px #ccc;
+          width: max-content;
+
+          th{
+            border-right: 1px solid #2e3666;
+            background: #f7f7f7;
+            width: $size-80;
+          }
+
+          td{
+            border-right: 1px solid #2e3666;
+            background: #f7f7f7;
+            width: $size-80;
+            padding: $size-3;
+            text-align: right;
+          }
+
+          th:nth-child(1){
+            border-right: 1px solid #2e3666;
+            background: #f7f7f7;
+            width: $size-80;
+          }
+
+          td:nth-child(1){
+            border-right: 1px solid #2e3666;
+            background: #f7f7f7;
+            width: $size-80;
+            text-align: center;
+          }
+        }
+
+        .text_box{
+          padding: $size-10; font-size: $size-14; color: #666;
+        }
+      }
+    }
+  }
+}
