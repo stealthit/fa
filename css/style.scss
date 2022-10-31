@@ -3210,6 +3210,8 @@
     text-align: left;
   }
   .gt-table{
+    border-top: 2px solid #2e3666;
+    margin-top: $size-20;
     td{
       text-align: left;
       .select-wrap{
