@@ -668,4 +668,24 @@
 #modal-deposit-info .gt-table .flex-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 #modal-deposit-info .msg-box { margin-top: 0.625rem; }
 
+#modal-share { width: 21.5rem; height: 18.25rem; padding-top: 2.375rem; padding-bottom: 1.875rem; border: solid 1px #111; }
+#modal-share .modal-body { margin-bottom: 0; }
+#modal-share .share-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 1.875rem 1.25rem; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+#modal-share .share-wrap li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 0.25rem; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 3rem; }
+#modal-share .share-wrap li p { font-size: 0.8125rem; color: #111; }
+#modal-share .share-wrap li div { width: 2.25rem; height: 2.25rem; }
+#modal-share .btn-kakao img { content: url(../assets/ic_share_kakao.png); }
+#modal-share .btn-facebook img { content: url(../assets/ic_share_facebook.png); }
+#modal-share .btn-twitter img { content: url(../assets/ic_share_twitter.png); }
+#modal-share .btn-band img { content: url(../assets/ic_share_band.png); }
+#modal-share .btn-line img { content: url(../assets/ic_share_line.png); }
+#modal-share .btn-blog img { content: url(../assets/ic_share_blog.png); }
+#modal-share .btn-tstory img { content: url(../assets/ic_share_tstory.png); }
+#modal-share .btn-brunch img { content: url(../assets/ic_share_brunch.png); }
+#modal-share .search-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 1.25rem; }
+#modal-share .search-wrap input { width: 12.375rem; }
+#modal-share .search-wrap .btn-url { width: 5.375rem; height: 3rem; background-color: #0bc890; font-size: 0.875rem; font-weight: bold; color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+@media (max-width: 879px) { #modal-email-modify, #modal-phone-modify { width: 30rem; } }
+
 /*# sourceMappingURL=style.css.map */
