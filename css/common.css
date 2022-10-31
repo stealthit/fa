@@ -332,8 +332,7 @@ li.v-seperate { border: 0.3125rem solid #f8f9fd; width: 1px; background-color: #
 @media (max-width: 879px) { body, html { font-size: 9px; }
   .insight-wrapper .container { width: 100%; }
   .insight-wrapper .container .latter-item-wrap { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-  .insight-wrapper .container .latter-item-wrap .latter-item { width: 48%; }
-  #modal-email-modify, #modal-phone-modify { width: 30rem; } }
+  .insight-wrapper .container .latter-item-wrap .latter-item { width: 48%; } }
 .btn-green { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 3.5rem; font-size: 1rem; font-weight: bold; color: #fff; background-color: #0bc890; }
 
 .btn-s-green { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 2.125rem; font-size: 0.8125rem; padding: 0 1.25rem; font-weight: bold; color: #fff; background-color: #0bc890; }
