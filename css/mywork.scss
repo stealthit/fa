@@ -2,7 +2,7 @@
 @import url("reset.css");
 @import url("common.css");
 
-#work_view{
+#modal-schedule-view{
   .ic_edit{
     content: url(#{$imgPath}icon_edit.png);
     width: $size-16;

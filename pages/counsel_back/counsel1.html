@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고객상담</title>
+  <link rel="stylesheet" href="../../css/style.css">  
+</head>
+<body>
+  <div id="wrapper" class="wrapper menuOpen">
+    <div id="sideMenu" class="sidenav">
+      <ul id="menuList" class="menu-list">
+        <li>
+          <div class="menu-item">
+            <img class="ic-left-logo" src="" alt="">
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-dashboard" src="" alt="">
+            <div class="menu-name">대시보드</div>
+          </div>
+        </li>
+        <li class="active">
+          <div class="menu-item">
+            <img class="ic-menu-counsel" src="" alt="">
+            <div class="menu-name">고객상담</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-mywork" src="" alt="">
+            <div class="menu-name">마이워크</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-reward" src="" alt="">
+            <div class="menu-name">리워드</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-customer" src="" alt="">
+            <div class="menu-name">고객</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-product" src="" alt="">
+            <div class="menu-name">상품</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-insight" src="" alt="">
+            <div class="menu-name">Insight</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-my" src="" alt="">
+            <div class="menu-name">내정보</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- 클릭한 메뉴의 depth2 list -->
+    <ul id="menu-depth2">
+      <li>depth2-1</li>
+      <li>depth2-2</li>
+      <li>depth2-3</li>
+      <li>depth2-4</li>
+    </ul>
+    <!-- sidemenu open/close button (Fixed location) -->
+    <button id="btnSideOpen">
+      <img src="" alt="">
+    </button>
+
+    <div id="main" class="main-wrap counsel counsel1">
+      <div class="contents-wrap">
+        <div class="contents-inner">
+          <div class="contents-header">
+            <h1>고객 상담</h1>
+          </div>
+          <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
+          <div class="contents-body card">
+            <div class="order-bar"><div class="current-bar c1"></div> </div>
+            <h2>약관 동의 및 본인인증</h2>
+            <div class="input-box counsel">
+                <div class="input-group">
+                    <input type="number" name="" id="" placeholder="휴대폰번호">
+                    <button type="button" class="btn btn-url">url 발송</button>
+                </div>
+                <div class="msg-box err">비밀번호를 확인해 주세요.</div>
+            </div>
+            <div class="btn-group">
+              <button class="btn-white btn-next">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <footer id="footer"></footer>   -->
+    </div>
+  </div>
+    <!-- 발송모달 -->
+    <div class="modal-con modal unstaged">
+    <div class="modal-overlay"></div>
+    <div id="modal-send-result" class="modal-contents">
+      <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
+      <div class="url">
+        <p class="desc">입력하신 번호로 url이 발송되었습니다.<br/>고객 응답완료 후<br/>다음 단계를 진행할 수 있습니다.</p>
+      </div>
+      <div class="modal-bottom">
+        <div class="btn-sgroup">
+          <button class="btn-modal-blue">확인</button>
+        </div>
+      </div>
+    </div>
+    </div>
+</body>
+<script src="../../scripts/func.js"></script>
+<script src="../../scripts/script.js"></script>
+<script>
+  // modal-open
+  document.querySelector(".btn-url").addEventListener("click",function(){
+    let el = document.getElementById('modal-send-result');
+    el.querySelector('.url').style.display = 'block';
+    el.closest('.modal-con').classList.toggle('opaque');
+    el.closest('.modal-con').classList.toggle('unstaged');
+  })
+</script>
+</html>

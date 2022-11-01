@@ -25,66 +25,66 @@
 /*80px*/
 @import url("reset.css");
 @import url("common.css");
-#work_view .ic_edit {
+#modal-schedule-view .ic_edit {
     content: url(../assets/icon_edit.png);
     width: 1rem;
     height: 1rem;
 }
 
-#work_view .ic_delete {
+#modal-schedule-view .ic_delete {
     content: url(../assets/icon_delete.png);
     width: 1rem;
     height: 1rem;
 }
 
-#work_view .ic_timeline_calendar {
+#modal-schedule-view .ic_timeline_calendar {
     content: url(../assets/ic_timeline_calendar.png);
     width: 1rem;
     height: 1rem;
 }
 
-#work_view .ic_timeline_contract {
+#modal-schedule-view .ic_timeline_contract {
     content: url(../assets/ic_timeline_contract.png);
     width: 1rem;
     height: 1rem;
 }
 
-#work_view .ic_timeline_memo {
+#modal-schedule-view .ic_timeline_memo {
     content: url(../assets/ic_timeline_memo.png);
     width: 1rem;
     height: 1rem;
 }
 
-#work_view .modal-edit {
+#modal-schedule-view .modal-edit {
     position: absolute;
     top: 0.9375rem;
     right: 2.5rem;
 }
 
-#work_view .modal-delete {
+#modal-schedule-view .modal-delete {
     position: absolute;
     top: 0.9375rem;
     right: 3.75rem;
 }
 
-#work_view .my_view {
+#modal-schedule-view .my_view {
     text-align: left;
 }
 
-#work_view .my_view .title h6 {
+#modal-schedule-view .my_view .title h6 {
     font-size: 1.5625rem;
     font-weight: bold;
     color: #2e3666;
 }
 
-#work_view .my_view .title p {
+#modal-schedule-view .my_view .title p {
     padding: 0.25rem 0 1.25rem 0;
     font-size: 0.875rem;
     color: #666;
     border-bottom: 1px solid #ccc;
 }
 
-#work_view .my_view dl {
+#modal-schedule-view .my_view dl {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -93,10 +93,10 @@
     border-bottom: 1px solid #ccc;
 }
 
-#work_view .my_view dt {
+#modal-schedule-view .my_view dt {
     width: 1.25rem;
 }
 
-#work_view .my_view dd {
+#modal-schedule-view .my_view dd {
     width: 100%;
 }

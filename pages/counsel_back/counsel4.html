@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>고객상담</title>
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/counsel.css">
+  <link rel="stylesheet" href="../../css/style.css">  
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/series-label.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -92,91 +91,53 @@
           <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
           <div class="contents-body card">
             <div class="order-bar"><div class="current-bar c1"></div> </div>
-
-            <div class="title_box">
-              <h2>상담 리포트명</h2>
-              <button class="btn-s-green btn-reg-sche btn-tib">참고자료</button>
-            </div>
-
-
-            <div class="set_box">
-              <table>
-                <tr>
-                  <td><p>초기투자</p></td>
-                  <td><span>50,000</span>&nbsp;만 원<button>편집</button></td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="bar-box">
-                    <div class="order-bar"><div class="current-bar c6"></div></div>
-                  </td>
-                </tr>
-              </table>
-              <table>
-                <tr>
-                  <td><p>월간투자</p></td>
-                  <td><input type="number" placeholder="50,000">&nbsp;만 원<button>편집</button></td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="bar-box">
-                    <div class="order-bar"><div class="current-bar c5"></div> </div>
-                  </td>
-                </tr>
-              </table>
+            <h2>목표 설정</h2>
+            <div class="input-box">
+                <div class="input-group">
+                    <input type="number" name="" id="" placeholder="재무 목표를 입력해주세요">
+                    <div class="tip_box">
+                      <div class="tip_btn"></div>
+                      <div class="tip_con">
+                        1억원 만들기<br/>결혼 자금 만들기<br/>은퇴 전 튼튼한 노후 대비하기
+                      </div>
+                    </div>
+                </div>
             </div>
 
             <div class="graph-box">
+              <div class="result">
+                  <dl>
+                    <dt>초기투자</dt>
+                    <dd>$ 50,000</dd>
+                  </dl>
+                  <div class="order-bar"><div class="current-bar c5"></div> </div>
+                  <dl>
+                    <dt>월간투자</dt>
+                    <dd>+ $607,813</dd>
+                  </dl>
+                  <div class="order-bar"><div class="current-bar c5"></div> </div>
+                  <p>적은 비용으로 수익 창출</p>
+                  <h3></h3>
+              </div>
+
               <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
               <figure class="highcharts-figure">
                 <div id="container"></div>
               </figure>
             </div>
 
-            <h2>상담메모</h2>
-            <div class="memo_box">
-              고객 리포트에 함께 전달할 코멘트를 작성해주세요. 고객이 보는 내용으로 작성에 주의를 기울여주세요.
+            <div class="btn-group cou4">
+              <button class="w100p">임시저장하기</button>
+              <button class="btn-white btn-prev">이전</button>
+              <button class="btn-green btn-next active">완료</button>
             </div>
-
-            <div class="btn-group">
-              <button class="btn-green btn-next active">다음</button>
-            </div>
-
           </div>
         </div>
       </div>
       <!-- <footer id="footer"></footer>   -->
     </div>
   </div>
-  <!-- 발송모달 -->
-  <div class="modal-con modal unstaged">
-      <div class="modal-overlay"></div>
-      <div id="modal-send-result" class="modal-contents">
-          <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
-          <div class="tib">
-            <p class="desc">
-              결혼 비용_통계청(2020년) : 4,532만(주택마련 비용제외)<br/>
-              주택마련비용_한국감정원(2020년) : 8억7천만원(서울 평균)<br/>
-              기대여명_통계청(2020)  남성 80.5세 / 여성 86.5세<br/>
-              은퇴비용(적정) _ 국민연금관리공단(2019),60세기준<br/>부부 275만원(월) <br/>1인  167만원(월)
-            </p>
-          </div>
-          <div class="modal-bottom">
-              <div class="btn-sgroup">
-                  <button class="btn-modal-white modal-close">취소</button>
-                  <button class="btn-modal-blue">확인</button>
-              </div>
-          </div>
-      </div>
-  </div>
 </body>
 <script src="../../scripts/func.js"></script>
 <script src="../../scripts/script.js"></script>
-<script>
-  // modal-open
-  document.querySelector(".btn-tib").addEventListener("click",function(){
-    let el = document.getElementById('modal-send-result');
-    el.querySelector('.tib').style.display = 'block';
-    el.closest('.modal-con').classList.toggle('opaque');
-    el.closest('.modal-con').classList.toggle('unstaged');
-  })
-</script>
 </html>

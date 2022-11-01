@@ -2339,7 +2339,7 @@
           color:#0bc890;
           font-weight: 500;
         }
-  
+
       }
       .search-wrap {
         width: $size-314;
@@ -2347,7 +2347,7 @@
         height: $size-48;
       }
     }
-  
+
     .ic-search-wrap{
       width:54px;
       height:54px;
@@ -2414,7 +2414,7 @@
       width: 75rem;
       margin: 0 auto;
       padding: 0 $size-25;
-  
+
       > a {
         display: inline-block;
         width: $size-16;
@@ -2424,7 +2424,7 @@
         }
       }
     }
-  
+
     .insight-dtl-inner {
       margin-bottom: $size-100;
       padding: $size-22 0 $size-40 0;
@@ -2454,7 +2454,7 @@
           height: $size-48;
           @include flex_center();
           gap: $size-10;
-  
+
           &.btn-recommend {
             img {
               content: url(#{$imgPath}ic_like_n.png);
@@ -2491,7 +2491,7 @@
         }
       }
       .insdtl-foot{
-  
+
       }
       // .insdtl-foot {
       //   display: flex;
@@ -2530,7 +2530,7 @@
       // }
     }
   }
-  
+
   // attach
   .attach-wrap{
     margin-top: $size-30;
