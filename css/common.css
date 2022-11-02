@@ -1631,6 +1631,7 @@ ul.customer-list {
 }
 
 ul.customer-list li.customer-card {
+  cursor: pointer;
   width: 16.75rem;
   padding: 1.25rem 0;
 }

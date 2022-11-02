@@ -800,5 +800,11 @@ var grid4 = new Muuri('.grid4', {
 });
 document.getElementById('tab01').classList.add('active');
 document.getElementById('tab02').classList.remove('active');
+
+  document.querySelectorAll('li.customer-card').forEach( (list) => {
+    list.addEventListener('click', () => {    
+      location.href = "client_detail.html";
+    })
+  })
 </script>
 </html>
