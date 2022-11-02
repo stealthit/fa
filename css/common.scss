@@ -544,6 +544,7 @@ ul.pagination {
     width: 100%;   
     min-height: 100%; 
     // transition: 0.3s;
+    background-color: #f8f9fd;
     
     .contents-wrap {
       min-height: 100%;
@@ -1271,6 +1272,7 @@ ul.customer-list {
   flex-wrap: wrap;
   gap: $size-26;
   li.customer-card {
+    cursor: pointer;
     width: $size-268;
     padding: $size-20 0;
     .item-top {

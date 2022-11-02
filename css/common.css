@@ -141,7 +141,7 @@ ul.pagination li a.active { background-color: #0bc890; color: white; border-radi
 .wrapper #sideMenu ul.menu-list > li.on ul.menu-depth2 { display: block; }
 .wrapper ul#menu-depth2 { display: none; z-index: 5; width: 150px; padding: 10px; position: fixed; left: 6rem; top: 0; background: #4773d3; color: #fff; }
 .wrapper ul#menu-depth2 li { height: 30px; cursor: pointer; }
-.wrapper #main { width: 100%; min-height: 100%; }
+.wrapper #main { width: 100%; min-height: 100%; background-color: #f8f9fd; }
 .wrapper #main .contents-wrap { min-height: 100%; padding-top: 1.875rem; padding-bottom: 6.25rem; background-color: #f8f9fd; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 .wrapper #main .contents-wrap .contents-inner { width: 71.875rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 1.875rem; }
 .wrapper #main .contents-wrap .contents-inner .contents-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
@@ -380,7 +380,7 @@ button.btn-excel img { content: url(../assets/ic_excel.png); width: 0.875rem; he
 #calendar .cal_wrap .dates .day.current.today.on .marker { display: block; background-color: #fff; }
 
 ul.customer-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 1.625rem; }
-ul.customer-list li.customer-card { width: 16.75rem; padding: 1.25rem 0; }
+ul.customer-list li.customer-card { cursor: pointer; width: 16.75rem; padding: 1.25rem 0; }
 ul.customer-list li.customer-card .item-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 1.75rem; padding-right: 1.375rem; }
 ul.customer-list li.customer-card .item-top .state { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 0 1.25rem; border-radius: 0 0.875rem 0.875rem 0; font-size: 0.875rem; color: #fff; }
 ul.customer-list li.customer-card .item-top .state.prospecting { opacity: 0.99; background-color: #8d63ab; }
