@@ -25,78 +25,18 @@
 /*80px*/
 @import url("reset.css");
 @import url("common.css");
-#modal-schedule-view .ic_edit {
-    content: url(../assets/icon_edit.png);
-    width: 1rem;
-    height: 1rem;
-}
+#modal-schedule-view .ic_edit { content: url(../assets/icon_edit.png); width: 1rem; height: 1rem; }
+#modal-schedule-view .ic_delete { content: url(../assets/icon_delete.png); width: 1rem; height: 1rem; }
+#modal-schedule-view .ic_timeline_calendar { content: url(../assets/ic_timeline_calendar.png); width: 1rem; height: 1rem; }
+#modal-schedule-view .ic_timeline_contract { content: url(../assets/ic_timeline_contract.png); width: 1rem; height: 1rem; }
+#modal-schedule-view .ic_timeline_memo { content: url(../assets/ic_timeline_memo.png); width: 1rem; height: 1rem; }
+#modal-schedule-view .modal-edit { position: absolute; top: 0.9375rem; right: 2.5rem; }
+#modal-schedule-view .modal-delete { position: absolute; top: 0.9375rem; right: 3.75rem; }
+#modal-schedule-view .my_view { text-align: left; }
+#modal-schedule-view .my_view .title h6 { font-size: 1.5625rem; font-weight: bold; color: #2e3666; }
+#modal-schedule-view .my_view .title p { padding: 0.25rem 0 1.25rem 0; font-size: 0.875rem; color: #666; border-bottom: 1px solid #ccc; }
+#modal-schedule-view .my_view dl { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; gap: 0.625rem; padding: 0.625rem 0; border-bottom: 1px solid #ccc; }
+#modal-schedule-view .my_view dt { width: 1.25rem; }
+#modal-schedule-view .my_view dd { width: 100%; }
 
-#modal-schedule-view .ic_delete {
-    content: url(../assets/icon_delete.png);
-    width: 1rem;
-    height: 1rem;
-}
-
-#modal-schedule-view .ic_timeline_calendar {
-    content: url(../assets/ic_timeline_calendar.png);
-    width: 1rem;
-    height: 1rem;
-}
-
-#modal-schedule-view .ic_timeline_contract {
-    content: url(../assets/ic_timeline_contract.png);
-    width: 1rem;
-    height: 1rem;
-}
-
-#modal-schedule-view .ic_timeline_memo {
-    content: url(../assets/ic_timeline_memo.png);
-    width: 1rem;
-    height: 1rem;
-}
-
-#modal-schedule-view .modal-edit {
-    position: absolute;
-    top: 0.9375rem;
-    right: 2.5rem;
-}
-
-#modal-schedule-view .modal-delete {
-    position: absolute;
-    top: 0.9375rem;
-    right: 3.75rem;
-}
-
-#modal-schedule-view .my_view {
-    text-align: left;
-}
-
-#modal-schedule-view .my_view .title h6 {
-    font-size: 1.5625rem;
-    font-weight: bold;
-    color: #2e3666;
-}
-
-#modal-schedule-view .my_view .title p {
-    padding: 0.25rem 0 1.25rem 0;
-    font-size: 0.875rem;
-    color: #666;
-    border-bottom: 1px solid #ccc;
-}
-
-#modal-schedule-view .my_view dl {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 0.625rem;
-    padding: 0.625rem 0;
-    border-bottom: 1px solid #ccc;
-}
-
-#modal-schedule-view .my_view dt {
-    width: 1.25rem;
-}
-
-#modal-schedule-view .my_view dd {
-    width: 100%;
-}
+/*# sourceMappingURL=mywork.css.map */

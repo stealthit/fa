@@ -2502,6 +2502,9 @@
 //** Insight detail ***********
 #main.insight{
   .insight-detail-wrapper {
+    // modal-share
+
+
     .container {
       width: 75rem;
       margin: 0 auto;
@@ -2669,6 +2672,111 @@
     @include flex_center;
     img{
       content: url(#{$imgPath}ic_file.png);
+    }
+  }
+}
+// modal-share
+#modal-share {
+  width: $size-344;
+  height: $size-292;
+  padding-top: $size-38;
+  padding-bottom: $size-30;
+  border: solid 1px #111;
+
+  .modal-body {
+    margin-bottom: 0;
+  }
+
+  .share-wrap {
+    @include flex_center();
+    gap: $size-30 $size-20;
+    flex-wrap: wrap;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: $size-4;
+      align-items: center;
+      width: $size-48;
+
+      p {
+        font-size: $size-13;
+        color: #111;
+      }
+
+      div {
+        width: $size-36;
+        height: $size-36;
+      }
+    }
+  }
+
+  .btn {
+    &-kakao {
+      img {
+        content: url(#{$imgPath}ic_share_kakao.png);
+      }
+    }
+
+    &-facebook {
+      img {
+        content: url(#{$imgPath}ic_share_facebook.png);
+      }
+    }
+
+    &-twitter {
+      img {
+        content: url(#{$imgPath}ic_share_twitter.png);
+      }
+    }
+
+    &-band {
+      img {
+        content: url(#{$imgPath}ic_share_band.png);
+      }
+    }
+
+    &-line {
+      img {
+        content: url(#{$imgPath}ic_share_line.png);
+      }
+    }
+
+    &-blog {
+      img {
+        content: url(#{$imgPath}ic_share_blog.png);
+      }
+    }
+
+    &-tstory {
+      img {
+        content: url(#{$imgPath}ic_share_tstory.png);
+      }
+    }
+
+    &-brunch {
+      img {
+        content: url(#{$imgPath}ic_share_brunch.png);
+      }
+    }
+  }
+
+  .search-wrap {
+    display: flex;
+    margin-top: $size-20;
+
+    input {
+      width: $size-198;
+    }
+
+    .btn-url {
+      width: $size-86;
+      height: $size-48;
+      background-color: #0bc890;
+      font-size: $size-14;
+      font-weight: bold;
+      color: #fff;
+      @include flex_center();
     }
   }
 }
@@ -3312,7 +3420,10 @@
       }
       .btn-white{
         width:auto;
-        padding:0 0.5rem
+        height: 2.25rem;
+        padding:0 0.5rem;
+        font-size: $size-14;
+        font-weight: normal;
       }
     }
     .flex-wrap{
