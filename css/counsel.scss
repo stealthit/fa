@@ -2,22 +2,14 @@
 @import url("reset.css");
 @import url("common.css");
 
-#main.counsel{
+#main.advice{
     .contents-inner {
         width: $main_width;
     }
-  .cou_btn {
-    text-align: center;
-      .btn_text{
-        padding-bottom: $size-20;
-        text-align: center;
-        text-decoration: underline;
-        color: #666;
-    }
-  }
+  
   .btn-group{
     button{
-      max-width: 14.0625rem;
+      max-width: $size-225;
     }
   }
 }

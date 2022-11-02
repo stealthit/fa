@@ -1639,6 +1639,9 @@
 /**start 고객상담 ***************************/
 #main.counsel {
   .contents-wrap {
+      .contents-inner {
+          width: $main_width;
+      }
       .contents-body{
           .input-box{
               display: flex;
@@ -1658,6 +1661,15 @@
               }
           }
           .input-box.counsel { margin-bottom: $size-371; }
+          .cou_btn {
+            text-align: center;
+              .btn_text{
+                padding-bottom: $size-20;
+                text-align: center;
+                text-decoration: underline;
+                color: #666;
+            }
+          }
       }
   }
 
@@ -1686,6 +1698,9 @@
               color: #666;
           }
       }
+      button{
+        max-width: $size-225;
+      }
   }
   .input-box.cou3 dl{
       display: flex;
@@ -1707,6 +1722,106 @@
               white-space:nowrap;
               line-height: $size-48;
           }
+      }
+  }
+  &.counsel1{
+      .contents-inner{
+        .contents-body{
+          .content-box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: $size-20;
+
+          .item-box {
+            width: calc((100% - #{$size-20}) / 2);
+            padding: $size-20;
+            border: solid 1px #e5e5e5;
+            background-color: #fff;
+
+              &.active {
+                border: solid 1px #0bc890;
+              }
+
+              .item-top {
+                display: flex;
+                flex-direction: column;
+                gap: $size-6;
+
+                .name-wrap {
+                  display: flex;
+                  justify-content: space-between;
+                  .mp-name {
+                  font-size: $size-20;
+                  font-weight: bold;
+                  color: #2e3666;
+                  }
+                }
+              }
+              ul.mp-list {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                font-size: $size-13;
+                color: #aaa;
+
+                p{ padding: $size-20 0; }
+
+                button {
+                width: $size-100;
+                height: $size-48;
+                font-size: $size-14;
+                text-align: center;
+                color: #111;
+                border: 1px solid #ccc;
+                }
+              }
+            }
+          }
+
+          .info-box{
+            display: flex;
+            gap: $size-30;
+
+            .profile{
+              width: 50%;
+            }
+            .input-box{
+              width: 50%;
+              max-width: 100%;
+            }
+
+            .customer-info{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .name{
+                font-size: $size-20;
+                font-weight: bold;
+                color: #111;
+              }
+              .birth{
+                padding-top: $size-6;
+                font-size: $size-14;
+                color: #aaa;
+              }
+            }
+
+            .etc-info{
+              padding-top: $size-15;
+
+              dt{
+                padding: $size-3;
+                font-size: $size-14;
+                color: #aaa;
+              }
+              dd{
+                font-size: $size-14;
+              }
+            }
+          }
+        }
       }
   }
   &.counsel2{
@@ -1766,111 +1881,88 @@
       }
   }
   &.counsel4 {
-    .contents-wrap .contents-inner {
-      width: $size-1150;
-      .input-box {
-          position: relative;
-          .tip_box:hover .tip_con {
-            display: block;
-          }
+      .contents-wrap{
+         .contents-inner{
+            .contents-body{
+              .title_box{
+                display: flex;
+                justify-content: space-between;
+              }
 
-          .tip_btn {
-            content: url(#{$imgPath}ic_tooltip.png);
-            width: $size-20;
-            height: $size-20;
-            margin-left: $size-10;
-            cursor: pointer;
-          }
-          .tip_con {
-            display: none;
-            position: absolute;
-            top: 0;
-            right: -$size-220;
-            z-index: 10;
-            width: $size-210;
-            padding: $size-14 $size-20;
-            font-size: $size-14;
-            border: 1px solid #111;
-            background: #fff;
-          }
-      }
+              .set_box{
+                display: flex;
+                justify-content: space-between;
+                gap: $size-40;
 
-      .graph-box {
-        position: relative;
-        .order-bar {
-          width: 100%;
-        }
-        .current-bar {
-          position: relative;
-        }
-        .current-bar:before {
-          content: "";
-          position: absolute;
-          top: -$size-10;
-          right: -$size-10;
-          display: block;
-          width: $size-20;
-          height: $size-20;
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-          border: solid 1px #dedfdf;
-          border-radius: $size-20;
-          background: #fff;
-          z-index: 1;
-        }
-        .result {
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 999;
-          width: $size-300;
-          padding: $size-10 $size-25;
-          border: 1px solid #e5e5e5;
-          background: #fff;
+                table{
+                  width: 50%;
 
-          dl{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: $size-15 0;
+                  td{
+                    width: 50%;
+                  }
+                  td:nth-child(2){
+                    text-align: right;
+                  }
 
-            dt{
-              font-size: $size-15;
+                  p{
+                    font-size: $size-18;
+                  }
+
+                  input{
+                    width: $size-100;
+                    height: $size-25;
+                    padding: $size-5;
+                    text-align: right;
+                  }
+
+                  span{
+                    font-size: $size-18;
+                    font-weight: bold;
+                    color: #0bc890;
+                  }
+
+                  button{
+                    font-size: $size-11;
+                    margin-left: $size-10;
+                    padding: $size-3 $size-16;
+                    text-align: center;
+                    border: solid 1px #ccc;
+                  }
+
+                }
+
+                .bar-box{
+                  padding-top: $size-20;
+                  .order-bar{
+                    position: relative;
+                    width: 100%;
+                  }
+                  .current-bar:before{
+                    content: "";
+                    position: absolute;
+                    top: -0.625rem;
+                    right: -0.625rem;
+                    display: block;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    border: solid 1px #dedfdf;
+                    border-radius: 1.25rem;
+                    background: #fff;
+                    z-index: 1;
+                  }
+                }
+              }
+
+              .memo_box{
+                height: $size-140;
+                padding: $size-16;
+                font-size: $size-14;
+                color: #ccc;
+                border: solid 1px #ccc;
+              }
             }
-
-            dd{
-              font-size: $size-15;
-              font-weight: bold;
-              color: #0bc890;
-            }
-          }
-        }
-        p {
-          text-align: right;
-          padding-top: $size-30;
-          font-size: $size-15;
-        }
-        h3 {
-          padding-bottom: $size-15;
-          font-size: $size-28;
-          text-align: right;
-          color: #1ea5d2;
-        }
+         }
       }
-      .btn-group {
-        flex-wrap: wrap;
-        width: $size-460;
-        margin: 0 auto;
-        padding-top: $size-30;
-
-        .w100p{
-            width: 100%;
-            padding-bottom: $size-10;
-            text-align: center;
-            text-decoration: underline;
-            color: #666;
-        }
-      }
-    }
   }
 
   &.counsel7 .contents-wrap .contents-inner {
