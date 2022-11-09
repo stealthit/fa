@@ -25,18 +25,113 @@
 /*80px*/
 @import url("reset.css");
 @import url("common.css");
-#modal-schedule-view .ic_edit { content: url(../assets/icon_edit.png); width: 1rem; height: 1rem; }
-#modal-schedule-view .ic_delete { content: url(../assets/icon_delete.png); width: 1rem; height: 1rem; }
-#modal-schedule-view .ic_timeline_calendar { content: url(../assets/ic_timeline_calendar.png); width: 1rem; height: 1rem; }
-#modal-schedule-view .ic_timeline_contract { content: url(../assets/ic_timeline_contract.png); width: 1rem; height: 1rem; }
-#modal-schedule-view .ic_timeline_memo { content: url(../assets/ic_timeline_memo.png); width: 1rem; height: 1rem; }
-#modal-schedule-view .modal-edit { position: absolute; top: 0.9375rem; right: 2.5rem; }
-#modal-schedule-view .modal-delete { position: absolute; top: 0.9375rem; right: 3.75rem; }
-#modal-schedule-view .my_view { text-align: left; }
-#modal-schedule-view .my_view .title h6 { font-size: 1.5625rem; font-weight: bold; color: #2e3666; }
-#modal-schedule-view .my_view .title p { padding: 0.25rem 0 1.25rem 0; font-size: 0.875rem; color: #666; border-bottom: 1px solid #ccc; }
-#modal-schedule-view .my_view dl { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; gap: 0.625rem; padding: 0.625rem 0; border-bottom: 1px solid #ccc; }
-#modal-schedule-view .my_view dt { width: 1.25rem; }
-#modal-schedule-view .my_view dd { width: 100%; }
+.my_work {
+    margin-top: 1.875rem;
+    background: #fff;
+}
 
-/*# sourceMappingURL=mywork.css.map */
+.my_work .fc .fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_work .fc .fc-toolbar.fc-header-toolbar {
+    padding: 1.125rem 1.25rem;
+}
+
+.my_work .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk {
+    display: flex;
+    gap: 0 1.875rem;
+}
+
+.my_work .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk .fc-toolbar-title {
+    font-size: 1.25rem;
+    color: #8e9599;
+}
+
+.my_work .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk .fc-icon-chevron-left {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border: solid 1px #ccc;
+    background: url(../assets/ic_arrow_Left.png) center no-repeat;
+}
+
+.my_work .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk .fc-icon-chevron-right {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border: solid 1px #ccc;
+    background: url(../assets/ic_arrow_Right.png) center no-repeat;
+}
+
+.my_work .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk .fc-today-button {
+    width: 3.875rem;
+    height: 2rem;
+    font-size: 0.8125rem;
+    text-align: center;
+    vertical-align: top;
+    border: solid 1px #ccc;
+}
+
+.my_work .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk .fc-dayGridMonth-button {
+    width: 3.75rem;
+    height: 2rem;
+    text-align: center;
+    border: solid 1px #ccc;
+}
+
+.my_work .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk .fc-timeGridWeek-button {
+    width: 3.75rem;
+    height: 2rem;
+    text-align: center;
+    border: solid 1px #ccc;
+}
+
+.my_work .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk .fc-timeGridDay-button {
+    width: 3.75rem;
+    height: 2rem;
+    text-align: center;
+    border: solid 1px #ccc;
+}
+
+.my_work .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk .fc-listWeek-button {
+    width: 3.75rem;
+    height: 2rem;
+    text-align: center;
+    border: solid 1px #ccc;
+}
+
+.my_work .fc .fc-button-primary {
+    color: #000;
+    background-color: #fff;
+    border-color: initial;
+}
+
+.my_work .fc .fc-button {
+    padding: 0;
+    font-size: 0.8125rem;
+    border: 0;
+    border-radius: 0;
+}
+
+.my_work .fc .fc-icon:before {
+    display: none;
+}
+
+.my_work .fc .fc-button-primary:not(:disabled):active:focus {
+    box-shadow: none;
+}
+
+.my_work .fc .fc-button-primary:not(:disabled).fc-button-active:focus {
+    box-shadow: none;
+}
+
+.my_work .fc .fc-button-primary:focus {
+    box-shadow: none;
+}
+
+/* my_work */
