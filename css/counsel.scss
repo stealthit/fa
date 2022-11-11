@@ -1,0 +1,320 @@
+@import "func.scss";
+@import url("reset.css");
+@import url("common.css");
+#main.counsel {
+  .contents-wrap {
+    @include flex_center;
+    min-height: $size-1080;
+    .contents-inner {
+      display: flex;
+      width: $main_width;
+
+      .contents-body {
+        display: flex;
+        flex-direction: column;
+        gap: $size-30;
+
+        // 신청 진행바
+        .order-bar {
+          position: relative;
+          width: $size-98;
+          height: 5px;
+          background-color: #e5e5e5;
+          border-radius: 5px;
+
+          .current-bar {
+            position: absolute;
+            height: 5px;
+            background-color: #0bc890;
+            border-radius: 5px;
+            left: 0;
+            z-index: 1;
+
+            &.c1 {
+              width: $size-14;
+            }
+            &.c2 {
+              width: $size-28;
+            }
+            &.c3 {
+              width: $size-42;
+            }
+            &.c4 {
+              width: $size-56;
+            }
+            &.c5 {
+              width: $size-70;
+            }
+            &.c6 {
+              width: $size-84;
+            }
+            &.c7 {
+              width: $size-98;
+            }
+          }
+        }
+
+        .btn-ck-agree {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: $size-10;
+          width: 100%;
+          height: $size-60;
+          padding: 0 $size-20;
+          border: solid 1px #ccc;
+          background-color: #fff;
+          font-size: $size-16;;
+          font-weight: bold;
+          line-height: 1.05;
+          color: #aaa;
+
+          img {
+            content: url(#{$imgPath}bt_check_n.png);
+            width: $size-19;
+            height: $size-18;
+          }
+
+          &.checked {
+            border: solid 1px #0bc890;
+            color: #0bc890;
+            img {
+              content: url(#{$imgPath}bt_check_s.png);
+            }
+          }
+        }
+        .agree-box {
+          display: flex;
+          flex-direction: column;
+          gap: $size-20;
+          details.agree-check {
+            summary {
+              display: flex;
+              align-items: center;
+              gap: $size-10;
+              height: $size-26;
+              font-size: $size-14;
+              line-height: 1.2;
+              color: #222;
+            }
+            .item-desc {
+              @include scrollbar('V');
+              height: $size-180;
+              margin-top: $size-10;
+              border: solid 1px #e5e5e5;
+              background-color: #fff;
+              padding: $size-20;
+              font-size: $size-14;
+              color: #666;
+            }
+          }
+        }
+        .btn-green {
+          flex: 1;
+          cursor: default;
+          opacity: 0.2;
+          &.active {
+            cursor: pointer;
+            opacity: 1;
+          }
+        }
+        .btn-white {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
+
+#main.counsel {
+  .btn-group{
+    button {
+      max-width: $size-180;
+    }
+  }
+  &.counsel1{
+    .content-box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: $size-20;
+
+      .item-box {
+        position: relative;
+        width: calc((100% - #{$size-20}) / 2);
+        padding: $size-20;
+        border: solid 1px #e5e5e5;
+        background-color: #fff;
+
+        &.active {
+          border: solid 1px #0bc890;
+        }
+
+        .item-top {
+          display: flex;
+          flex-direction: column;
+          gap: $size-6;
+
+          .name-wrap {
+            display: flex;
+            justify-content: space-between;
+            .mp-name {
+              font-size: $size-20;
+              font-weight: bold;
+              color: #2e3666;
+            }
+          }
+        }
+        ul.mp-list {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          font-size: $size-13;
+          color: #aaa;
+
+          p{ padding: $size-20 0; }
+
+          button {
+            width: $size-100;
+            height: $size-48;
+            font-size: $size-14;
+            text-align: center;
+            color: #111;
+            border: 1px solid #ccc;
+          }
+        }
+      }
+    }
+
+    .box01 {
+      display: flex;
+      align-items: flex-start;
+      gap: $size-20;
+
+      .input-box {
+        display: flex;
+        flex-direction: column;
+        gap: $size-10;
+        width: $size-460;
+        .input-group{
+          gap:0;
+        }
+        .btn{
+          width: $size-100;
+          height: $size-48;
+          border: solid 1px #ccc;
+          border-left: 0;
+          text-align: center;
+        }
+      }
+
+      .radio-group{
+        margin-top: $size-10;
+      }
+    }
+
+    .info-box{
+      display: flex;
+      gap: $size-30;
+
+      .profile{
+        width: calc((100% - #{$size-15}) / 2);
+      }
+      .input-box{
+        width: calc((100% - #{$size-15}) / 2);
+        max-width: 100%;
+      }
+
+      .customer-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .name{
+          font-size: $size-20;
+          font-weight: bold;
+          color: #111;
+        }
+        .birth{
+          padding-top: $size-6;
+          font-size: $size-14;
+          color: #aaa;
+        }
+      }
+
+      .etc-info{
+        padding-top: $size-15;
+        dt{
+          padding: $size-3 0;
+          font-size: $size-14;
+          color: #aaa;
+        }
+        dd{
+          font-size: $size-14;
+        }
+      }
+
+      h5{
+        padding: $size-5 0;
+        font-size: $size-16;
+        font-weight: bold;
+        color: #2e3666;
+        border-bottom: 2px solid #ccc;
+      }
+
+      .cor-info{
+        width: 100%;
+        tr{
+          border-bottom: 1px solid #e5e5e5;
+        }
+        th{
+          text-align: left;
+          padding: $size-5 0;
+          color: #aaa;
+        }
+        td{
+          padding: $size-5;
+        }
+      }
+
+      .input-box{
+        display: flex;
+        flex-direction: column;
+        gap: $size-10;
+        h5{
+          font-size: $size-18;
+          font-weight: bold;
+          color: #2e3666;
+          padding: $size-5;
+          border-bottom: 1px solid #2e3666;
+        }
+        dl{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding: 0 $size-16;
+          border: 1px solid #ccc;
+        }
+
+        .input-group{
+          dt{
+            line-height: $size-48;
+          }
+
+          dd{
+            display: flex;
+            input{
+              border: 0;
+              padding: $size-14 $size-10;
+              text-align: right;
+            }
+            span{
+              white-space: nowrap;
+              line-height: $size-48;
+            }
+          }
+        }
+      }
+    }
+  }
+}

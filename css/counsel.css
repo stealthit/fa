@@ -1,0 +1,381 @@
+/* change image path  */
+/*10px*/
+/*12px*/
+/*13px*/
+/*14px*/
+/*15px*/
+/*16px*/
+/*17px*/
+/*18px*/
+/*20px*/
+/*22px*/
+/*22px*/
+/*24px*/
+/*24px*/
+/*26px*/
+/*26px*/
+/*30px*/
+/*32px*/
+/*32px*/
+/*40px*/
+/*42px*/
+/*62px*/
+/*30px*/
+/*21px*/
+/*80px*/
+@import url("reset.css");
+@import url("common.css");
+#main.counsel .contents-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 67.5rem;
+}
+
+#main.counsel .contents-wrap .contents-inner {
+    display: flex;
+    width: 71.875rem;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .order-bar {
+    position: relative;
+    width: 6.125rem;
+    height: 5px;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .order-bar .current-bar {
+    position: absolute;
+    height: 5px;
+    background-color: #0bc890;
+    border-radius: 5px;
+    left: 0;
+    z-index: 1;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .order-bar .current-bar.c1 {
+    width: 0.875rem;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .order-bar .current-bar.c2 {
+    width: 1.75rem;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .order-bar .current-bar.c3 {
+    width: 2.625rem;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .order-bar .current-bar.c4 {
+    width: 3.5rem;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .order-bar .current-bar.c5 {
+    width: 4.375rem;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .order-bar .current-bar.c6 {
+    width: 5.25rem;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .order-bar .current-bar.c7 {
+    width: 6.125rem;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .btn-ck-agree {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+    height: 3.75rem;
+    padding: 0 1.25rem;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.05;
+    color: #aaa;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .btn-ck-agree img {
+    content: url(../assets/bt_check_n.png);
+    width: 1.1875rem;
+    height: 1.125rem;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .btn-ck-agree.checked {
+    border: solid 1px #0bc890;
+    color: #0bc890;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .btn-ck-agree.checked img {
+    content: url(../assets/bt_check_s.png);
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .agree-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .agree-box details.agree-check summary {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    height: 1.625rem;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    color: #222;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .agree-box details.agree-check .item-desc {
+    overflow-x: overlay;
+    scroll-behavior: smooth;
+    height: 11.25rem;
+    margin-top: 0.625rem;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+    padding: 1.25rem;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .agree-box details.agree-check .item-desc::-webkit-scrollbar {
+    width: 6px;
+    display: inline;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .agree-box details.agree-check .item-desc::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .agree-box details.agree-check .item-desc::-webkit-scrollbar-thumb {
+    width: 6px;
+    border-radius: 6px;
+    background: #0bc890;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .btn-green {
+    flex: 1;
+    cursor: default;
+    opacity: 0.2;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .btn-green.active {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#main.counsel .contents-wrap .contents-inner .contents-body .btn-white {
+    flex: 1;
+}
+
+#main.counsel .btn-group button {
+    max-width: 11.25rem;
+}
+
+#main.counsel.counsel1 .content-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+#main.counsel.counsel1 .content-box .item-box {
+    position: relative;
+    width: calc((100% - 1.25rem) / 2);
+    padding: 1.25rem;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+}
+
+#main.counsel.counsel1 .content-box .item-box.active {
+    border: solid 1px #0bc890;
+}
+
+#main.counsel.counsel1 .content-box .item-box .item-top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+}
+
+#main.counsel.counsel1 .content-box .item-box .item-top .name-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main.counsel.counsel1 .content-box .item-box .item-top .name-wrap .mp-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2e3666;
+}
+
+#main.counsel.counsel1 .content-box .item-box ul.mp-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.8125rem;
+    color: #aaa;
+}
+
+#main.counsel.counsel1 .content-box .item-box ul.mp-list p {
+    padding: 1.25rem 0;
+}
+
+#main.counsel.counsel1 .content-box .item-box ul.mp-list button {
+    width: 6.25rem;
+    height: 3rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #111;
+    border: 1px solid #ccc;
+}
+
+#main.counsel.counsel1 .box01 {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+#main.counsel.counsel1 .box01 .input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    width: 28.75rem;
+}
+
+#main.counsel.counsel1 .box01 .input-box .input-group {
+    gap: 0;
+}
+
+#main.counsel.counsel1 .box01 .input-box .btn {
+    width: 6.25rem;
+    height: 3rem;
+    border: solid 1px #ccc;
+    border-left: 0;
+    text-align: center;
+}
+
+#main.counsel.counsel1 .box01 .radio-group {
+    margin-top: 0.625rem;
+}
+
+#main.counsel.counsel1 .info-box {
+    display: flex;
+    gap: 1.875rem;
+}
+
+#main.counsel.counsel1 .info-box .profile {
+    width: calc((100% - 0.9375rem) / 2);
+}
+
+#main.counsel.counsel1 .info-box .input-box {
+    width: calc((100% - 0.9375rem) / 2);
+    max-width: 100%;
+}
+
+#main.counsel.counsel1 .info-box .customer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main.counsel.counsel1 .info-box .customer-info .name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111;
+}
+
+#main.counsel.counsel1 .info-box .customer-info .birth {
+    padding-top: 0.375rem;
+    font-size: 0.875rem;
+    color: #aaa;
+}
+
+#main.counsel.counsel1 .info-box .etc-info {
+    padding-top: 0.9375rem;
+}
+
+#main.counsel.counsel1 .info-box .etc-info dt {
+    padding: 0.1875rem 0;
+    font-size: 0.875rem;
+    color: #aaa;
+}
+
+#main.counsel.counsel1 .info-box .etc-info dd {
+    font-size: 0.875rem;
+}
+
+#main.counsel.counsel1 .info-box h5 {
+    padding: 0.3125rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2e3666;
+    border-bottom: 2px solid #ccc;
+}
+
+#main.counsel.counsel1 .info-box .cor-info {
+    width: 100%;
+}
+
+#main.counsel.counsel1 .info-box .cor-info tr {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#main.counsel.counsel1 .info-box .cor-info th {
+    text-align: left;
+    padding: 0.3125rem 0;
+    color: #aaa;
+}
+
+#main.counsel.counsel1 .info-box .cor-info td {
+    padding: 0.3125rem;
+}
+
+#main.counsel.counsel1 .info-box .input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+#main.counsel.counsel1 .info-box .input-box h5 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #2e3666;
+    padding: 0.3125rem;
+    border-bottom: 1px solid #2e3666;
+}
+
+#main.counsel.counsel1 .info-box .input-box dl {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    border: 1px solid #ccc;
+}
+
+#main.counsel.counsel1 .info-box .input-box .input-group dt {
+    line-height: 3rem;
+}
+
+#main.counsel.counsel1 .info-box .input-box .input-group dd {
+    display: flex;
+}
+
+#main.counsel.counsel1 .info-box .input-box .input-group dd input {
+    border: 0;
+    padding: 0.875rem 0.625rem;
+    text-align: right;
+}
+
+#main.counsel.counsel1 .info-box .input-box .input-group dd span {
+    white-space: nowrap;
+    line-height: 3rem;
+}
