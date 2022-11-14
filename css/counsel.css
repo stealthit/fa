@@ -229,9 +229,11 @@
     padding: 1.25rem 0;
 }
 
-#main.counsel.counsel1 .content-box .item-box ul.mp-list button {
+#main.counsel.counsel1 .content-box .item-box ul.mp-list a {
+    display: block;
     width: 6.25rem;
     height: 3rem;
+    line-height: 3rem;
     font-size: 0.875rem;
     text-align: center;
     color: #111;
@@ -314,7 +316,7 @@
 }
 
 #main.counsel.counsel1 .info-box h5 {
-    padding: 0.3125rem 0;
+    padding-bottom: 0.9375rem;
     font-size: 1rem;
     font-weight: bold;
     color: #2e3666;
@@ -331,12 +333,11 @@
 
 #main.counsel.counsel1 .info-box .cor-info th {
     text-align: left;
-    padding: 0.3125rem 0;
-    color: #aaa;
+    padding: 0.3125rem;
 }
 
 #main.counsel.counsel1 .info-box .cor-info td {
-    padding: 0.3125rem;
+    padding: 0.625rem 0.3125rem;
 }
 
 #main.counsel.counsel1 .info-box .input-box {
@@ -378,4 +379,87 @@
 #main.counsel.counsel1 .info-box .input-box .input-group dd span {
     white-space: nowrap;
     line-height: 3rem;
+}
+
+#main.counsel.counsel2 .box01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#main.counsel.counsel2 .box01 .inv {
+    display: flex;
+    align-items: center;
+    width: 37.5rem;
+    height: 3rem;
+    background: #000;
+}
+
+#main.counsel.counsel2 .box01 .inv .inv_01 {
+    background: #fe0000;
+}
+
+#main.counsel.counsel2 .box01 .inv .inv_02 {
+    background: #ff8a00;
+}
+
+#main.counsel.counsel2 .box01 .inv .inv_03 {
+    background: #f4c900;
+}
+
+#main.counsel.counsel2 .box01 .inv .inv_04 {
+    background: #51d600;
+}
+
+#main.counsel.counsel2 .box01 .inv .inv_05 {
+    background: #6096ff;
+}
+
+#main.counsel.counsel2 .box01 .inv li {
+    width: calc(100% / 5);
+    line-height: 3rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    opacity: 0.6;
+}
+
+#main.counsel.counsel2 .box01 .inv li.on {
+    opacity: 1;
+}
+
+#main.counsel.counsel2 .box01 .btn {
+    width: 6.25rem;
+    height: 3rem;
+    border: solid 1px #ccc;
+    text-align: center;
+}
+
+#main.counsel.counsel2 .box02 {
+    padding: 1.875rem;
+    text-align: center;
+    background: #f8f9fd;
+}
+
+#main.counsel.counsel2 .box02 h6 {
+    padding: 0 0 1.25rem 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2e3666;
+}
+
+#main.counsel.counsel2 .box02 h6 i {
+    color: #1ea5d2;
+}
+
+#main.counsel.counsel2 .box02 p {
+    font-size: 1rem;
+    color: #2e3666;
+}
+
+#main.counsel.counsel2 .box03 {
+    min-height: 18.75rem;
+    padding: 1.25rem;
+    border: 1px solid #f5f5f5;
 }

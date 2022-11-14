@@ -79,7 +79,7 @@
       <img src="" alt="">
     </button>
 
-    <div id="main" class="main-wrap counsel counsel1">
+    <div id="main" class="main-wrap counsel counsel2">
       <div class="contents-wrap">
         <div class="contents-inner">
           <div class="contents-header">
@@ -87,78 +87,78 @@
           </div>
           <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
           <div class="contents-body card">
-            <div class="order-bar"><div class="current-bar c1"></div> </div>
+            <div class="order-bar"><div class="current-bar c2"></div></div>
 
-            <div class="info-box">
-                <div class="profile">
-                  <div class="customer-info">
-                    <div class="info-txt">
-                      <div class="name">홍길동</div>
-                      <div class="birth">남, 1985 10 13</div>
-                    </div>
-                    <div class="info-img">
-                      <div class="img-user-01"></div>
-                    </div>
-                  </div>
-                  <dl class="etc-info">
-                      <dt>연락처</dt>
-                      <dd> 010-0000-0000</dd>
-                      <dt>이메일</dt>
-                      <dd> cleancyon@naver.com</dd>
-                      <dt>주소 </dt>
-                      <dd>서울시 도봉구 도봉로 119, ㅇㅇ아파트 111동 111호</dd>
-                  </dl>
+            <div class="box01">
+              <ul class="inv">
+                <li class="inv_01">적극수익추구형</li>
+                <li class="inv_02 on">수익추구형</li>
+                <li class="inv_03">안정수익추구형</li>
+                <li class="inv_04">안정추구형</li>
+                <li class="inv_05">보수안정형</li>
+              </ul>
+
+              <div class="input-box">
+                <button type="button" class="btn btn-url">URL재발송</button>
               </div>
-              <div class="input-box cou3">
-                    <div class="input-group">
-                        <dl>
-                            <dt><span>수입</span></dt>
-                            <dd>
-                                <input type="number" name="" id="" placeholder="0">
-                                <span>만원</span>
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="input-group">
-                        <dl>
-                            <dt><span>지출</span></dt>
-                            <dd>
-                                <input type="number" name="" id="" placeholder="0">
-                                <span>만원</span>
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="input-group">
-                        <dl>
-                            <dt><span>현금자산</span></dt>
-                            <dd>
-                                <input type="number" name="" id="" placeholder="0">
-                                <span>만원</span>
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="input-group">
-                        <dl>
-                            <dt><span>부채현황</span></dt>
-                            <dd>
-                                <input type="number" name="" id="" placeholder="0">
-                                <span>만원</span>
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
+            </div><!-- box01 -->
+
+            <div class="box02">
+              <h6>홍길동 고객님의 투자성향은 <i>수익추구형</i>입니다.</h6>
+              <p>투자환경 변화를 예측하여 투자수익 가능성이 높으면 상품의 유형에 상관 없으며, <br/>상당한 수준의 원금손실 가능성을 충분히 감수하면서 적극적으로 투자하는 유형입니다.  <br/><br/>
+                최종 추천 투자 상품은 고객님의 투자성향과 재무설계 후 보다 정확히 추천 받을 수 있습니다.</p>
             </div>
+
+            <div class="box03">
+              질문 및 답변 확인 하는 곳
+            </div>
+
             <div class="btn-group">
-              <button class="btn-white btn-cancel">이전</button>
               <button class="btn-green btn-next active">다음</button>
             </div>
-          </div>
+          </div><!-- card -->
         </div>
       </div>
       <!-- <footer id="footer"></footer>   -->
     </div>
   </div>
+  <!-- 발송모달 -->
+  <div class="modal-con modal unstaged">
+    <div class="modal-overlay"></div>
+    <div id="modal-send-result" class="modal-contents">
+      <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
+      <div class="url">
+        <p class="desc">입력하신 번호로 url이 발송되었습니다.<br/>고객 응답완료 후<br/>다음 단계를 진행할 수 있습니다.</p>
+      </div>
+      <div class="del">
+        <p class="desc">해당 고객 응답정보를<br/>삭제하시겠습니까</p>
+      </div>
+      <div class="modal-bottom">
+        <div class="btn-sgroup">
+          <button class="btn-modal-white modal-close">취소</button>
+          <button class="btn-modal-blue">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="../../scripts/func.js"></script>
 <script src="../../scripts/script.js"></script>
+<script>
+// modal-open
+document.querySelector(".btn-url").addEventListener("click",function(){
+  let el = document.getElementById('modal-send-result');
+  el.querySelector('.del').style.display = 'none';
+  el.querySelector('.url').style.display = 'block';
+  el.closest('.modal-con').classList.toggle('opaque');
+  el.closest('.modal-con').classList.toggle('unstaged');
+})
+document.querySelector(".btn-del").addEventListener("click",function(){
+  let el = document.getElementById('modal-send-result');
+  el.querySelector('.url').style.display = 'none';
+  el.querySelector('.del').style.display = 'block';
+  el.closest('.modal-con').classList.toggle('opaque');
+  el.closest('.modal-con').classList.toggle('unstaged');
+})
+</script>
 </html>

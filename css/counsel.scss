@@ -174,9 +174,11 @@
 
           p{ padding: $size-20 0; }
 
-          button {
+          a {
+            display: block;
             width: $size-100;
             height: $size-48;
+            line-height: $size-48;
             font-size: $size-14;
             text-align: center;
             color: #111;
@@ -255,7 +257,7 @@
       }
 
       h5{
-        padding: $size-5 0;
+        padding-bottom: $size-15;
         font-size: $size-16;
         font-weight: bold;
         color: #2e3666;
@@ -269,11 +271,10 @@
         }
         th{
           text-align: left;
-          padding: $size-5 0;
-          color: #aaa;
+          padding: $size-5;
         }
         td{
-          padding: $size-5;
+          padding: $size-10 $size-5;
         }
       }
 
@@ -315,6 +316,87 @@
           }
         }
       }
+    }
+  }
+
+  &.counsel2{
+    .box01{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .inv{
+        display: flex;
+        align-items: center;
+        width: $size-600;
+        height: $size-48;
+        background: #000;
+
+        .inv_01{
+          background: #fe0000;
+        }
+        .inv_02{
+          background: #ff8a00;
+        }
+        .inv_03{
+          background: #f4c900;
+        }
+        .inv_04{
+          background: #51d600;
+        }
+        .inv_05{
+          background: #6096ff;
+        }
+
+        li{
+          width: calc(100% / 5);
+          line-height: $size-48;
+          font-size: $size-14;
+          font-weight: 500;
+          text-align: center;
+          color: #fff;
+          opacity: 0.6;
+        }
+
+        li.on{
+          opacity: 1;
+        }
+      }
+
+      .btn{
+        width: $size-100;
+        height: $size-48;
+        border: solid 1px #ccc;
+        text-align: center;
+      }
+    }
+
+    .box02{
+      padding: $size-30;
+      text-align: center;
+      background: #f8f9fd;
+
+      h6{
+        padding: 0 0 $size-20 0;
+        font-size: $size-20;
+        font-weight: bold;
+        color: #2e3666;
+
+        i{
+          color: #1ea5d2;
+        }
+      }
+
+      p{
+        font-size: $size-16;
+        color: #2e3666;
+      }
+    }
+
+    .box03{
+      min-height: $size-300;
+      padding: $size-20;
+      border: 1px solid #f5f5f5;
     }
   }
 }
