@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/mywork02.css">
+</head>
+<body>
+  <div id="wrapper" class="wrapper menuOpen">
+    <div id="sideMenu" class="sidenav">
+      <ul id="menuList" class="menu-list">
+        <li>
+          <div class="menu-item">
+            <img class="ic-left-logo" src="" alt="">
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-dashboard" src="" alt="">
+            <div class="menu-name">대시보드</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-counsel" src="" alt="">
+            <div class="menu-name">고객상담</div>
+          </div>
+        </li>
+        <li class="active">
+          <div class="menu-item">
+            <img class="ic-menu-mywork" src="" alt="">
+            <div class="menu-name">마이워크</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-reward" src="" alt="">
+            <div class="menu-name">리워드</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-customer" src="" alt="">
+            <div class="menu-name">고객</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-product" src="" alt="">
+            <div class="menu-name">상품</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-insight" src="" alt="">
+            <div class="menu-name">Insight</div>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item">
+            <img class="ic-menu-my" src="" alt="">
+            <div class="menu-name">내정보</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- 클릭한 메뉴의 depth2 list -->
+    <ul id="menu-depth2">
+      <li>depth2-1</li>
+      <li>depth2-2</li>
+      <li>depth2-3</li>
+      <li>depth2-4</li>
+    </ul>
+    <!-- sidemenu open/close button (Fixed location) -->
+    <button id="btnSideOpen">
+      <img src="" alt="">
+    </button>
+
+    <div id="main" class="main-wrap mywork">
+      <div class="contents-wrap">
+        <div class="contents-inner">
+          <div class="contents-header">
+            <h1>마이워크</h1>
+            <div class="header-right">
+              <ul class="connect-info">
+                <li class="time">세션유지시간<div class="cl-skyblue-b"> 09:10</div></li>
+                <li class="v-seperate"></li>
+                <li class="name"><strong>홍길동</strong> 님<img class="ic-user-arrow-down" alt=""></li>
+              </ul>
+              <ul class="depth-info">
+                <li><a href="">1depth 표시</a></li>
+                <li><img src="" alt="" class="ic-navi-arrow"></li>
+                <li><a href="">2depth 표시</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
+          <div class="contents-body">
+            <ul class="tab-menu">
+                <li class="active" data-tab="tab01">Calendar</li>
+                <li data-tab="tab02">note</li>
+            </ul>
+            <div class="tab-content active" id="tab01">
+              <div class="my_calendar">
+                <div class="cal_nav">
+                  <ul>
+                    <li>
+                      <h1>August 2022</h1>
+                      <div class="btn_box">
+                        <button class="go_btn" type="button">
+                          <img src="" alt="" class="left_img">
+                        </button>
+                        <button class="go_btn" type="button">
+                          <img src="" alt="" class="right_img">
+                        </button>
+                        <button class="to_btn" type="button">오늘</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="select-wrap">
+                        <select class="select-box" name="" id="">
+                          <option value="">월간</option>
+                          <option value="">주간</option>
+                          <option value="">일간</option>
+                          <option value="">리스트</option>
+                        </select>
+                      </div>
+                    </li>
+                  </ul>
+                </div><!-- cal_nav -->
+
+                <div class="cal_box">
+                  <div class="week">
+                    <div class="day">Mo</div>
+                    <div class="day">Tu</div>
+                    <div class="day">We</div>
+                    <div class="day">Th</div>
+                    <div class="day">Fr</div>
+                    <div class="day">Sa</div>
+                    <div class="day">Su</div>
+                  </div>
+                  <div class="date">
+                    <div class="day prev disable"><span>26</span></div>
+                    <div class="day prev disable"><span>27</span></div>
+                    <div class="day prev disable"><span>28</span></div>
+                    <div class="day prev disable"><span>29</span></div>
+                    <div class="day prev disable"><span>30</span></div>
+                    <div class="day current"><span>1</span><div class="marker"></div></div>
+                    <div class="day current"><span>2</span><div class="marker"></div></div>
+                    <div class="day current"><span>3</span><div class="marker"></div></div>
+                    <div class="day current">
+                      <span>4</span>
+                      <div class="marker on h1 w1 btn_view">투자 컨설팅</div>
+                      <div class="marker on h2 w2">킥오프미팅</div>
+                      <div class="more">+ 2일정</div>
+                    </div>
+                    <div class="day current"><span>5</span><div class="marker"></div></div>
+                    <div class="day current"><span>6</span><div class="marker"></div></div>
+                    <div class="day current"><span>7</span><div class="marker"></div></div>
+                    <div class="day current"><span>8</span><div class="marker"></div></div>
+                    <div class="day current"><span>9</span><div class="marker"></div></div>
+                    <div class="day current"><span>10</span><div class="marker"></div></div>
+                    <div class="day current"><span>11</span><div class="marker"></div></div>
+                    <div class="day current"><span>12</span><div class="marker"></div></div>
+                    <div class="day current"><span>13</span><div class="marker"></div></div>
+                    <div class="day current"><span>14</span><div class="marker"></div></div>
+                    <div class="day current"><span>15</span><div class="marker"></div></div>
+                    <div class="day current"><span>16</span><div class="marker"></div></div>
+                    <div class="day current"><span>17</span><div class="marker"></div></div>
+                    <div class="day current"><span>18</span><div class="marker"></div></div>
+                    <div class="day current"><span>19</span><div class="marker"></div></div>
+                    <div class="day current"><span>20</span><div class="marker"></div></div>
+                    <div class="day current"><span>21</span><div class="marker"></div></div>
+                    <div class="day current"><span>22</span><div class="marker"></div></div>
+                    <div class="day current"><span>23</span><div class="marker"></div></div>
+                    <div class="day current"><span>24</span><div class="marker"></div></div>
+                    <div class="day current"><span>25</span><div class="marker"></div></div>
+                    <div class="day current"><span>26</span><div class="marker"></div></div>
+                    <div class="day current today"><span class="btn_wrate">27</span><div class="marker"></div></div>
+                    <div class="day current"><span>28</span><div class="marker"></div></div>
+                    <div class="day current"><span>29</span><div class="marker"></div></div>
+                    <div class="day current"><span>30</span><div class="marker"></div></div>
+                    <div class="day current"><span>31</span><div class="marker"></div></div>
+                    <div class="day next disable"><span>1</span></div>
+                    <div class="day next disable"><span>2</span></div>
+                    <div class="day next disable"><span>3</span></div>
+                    <div class="day next disable"><span>4</span></div>
+                    <div class="day next disable"><span>5</span></div>
+                    <div class="day next disable"><span>6</span></div>
+                  </div>
+                </div><!-- cal_wrap -->
+              </div>
+            </div><!-- tab01 -->
+
+            <div class="tab-content" id="tab02">
+                <div class="note_search">
+                  <ul>
+                    <li>
+                      <a class="btn-green" href="./note_write.html">+ 노트추가</a>
+                    </li>
+                    <li class="sea_box">
+                      <p>노트 총 <i>n</i>개</p>
+                      <input type="text" placeholder="이름 또는 전화번호"> <button class="btn-ic-search"></button>
+                    </li>
+                  </ul>
+                </div><!-- note_search -->
+
+                <div class="note_list">
+                  <ul>
+                    <li class="icon">
+                      <div>
+                        <div class="img_box">
+                          <span><img src="" alt=""></span>
+                          <i>2</i>
+                        </div>
+                        <h5>제목이 표시됩니다 <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button></h5>
+                        <h6>고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다. </h6>
+                        <p>2022-09-09</p>
+                      </div>
+
+                      <a href="#none" class="name">
+                        <img class="user img-user-01">&nbsp;
+                        김고객
+                        <img class="icon">
+                      </a>
+                    </li>
+
+                    <li class="icon">
+                      <div>
+                        <div class="img_box">
+                          <span><img src="" alt=""></span>
+                          <i>2</i>
+                        </div>
+                        <h5>제목이 표시됩니다 <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button></h5>
+                        <h6>고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.</h6>
+                        <p>2022-09-09</p>
+                      </div>
+
+                      <a href="#none" class="name">
+                        <img class="user img-user-01">&nbsp;
+                        김고객
+                        <img class="icon">
+                      </a>
+                    </li>
+
+                    <li class="icon">
+                      <div>
+                        <div class="img_box">
+                          <span><img src="" alt=""></span>
+                          <i>2</i>
+                        </div>
+                        <h5>제목이 표시됩니다 <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button></h5>
+                        <h6>고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.</h6>
+                        <p>2022-09-09</p>
+                      </div>
+
+                      <a href="#none" class="name">
+                        <img class="user img-user-01">&nbsp;
+                        김고객
+                        <img class="icon">
+                      </a>
+                    </li>
+
+                    <li class="icon">
+                      <div>
+                        <div class="img_box">
+                          <span><img src="" alt=""></span>
+                          <i>2</i>
+                        </div>
+                        <h5>제목이 표시됩니다 <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button></h5>
+                        <h6>고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.</h6>
+                        <p>2022-09-09</p>
+                      </div>
+
+                      <a href="#none" class="name">
+                        <img class="user img-user-01">&nbsp;
+                        김고객
+                        <img class="icon">
+                      </a>
+                    </li>
+
+                    <li>
+                      <div>
+                        <h5>제목이 표시됩니다 <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button></h5>
+                        <h6>고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.</h6>
+                        <p>2022-09-09</p>
+                      </div>
+                    </li>
+
+                    <li class="icon">
+                      <div>
+                        <div class="img_box">
+                          <span><img src="" alt=""></span>
+                        </div>
+                        <h5>제목이 표시됩니다 <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button></h5>
+                        <h6>고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.</h6>
+                        <p>2022-09-09</p>
+                      </div>
+
+                      <a href="#none" class="name">
+                        <img class="user img-user-01">&nbsp;
+                        김고객
+                        <img class="icon">
+                      </a>
+                    </li>
+
+                    <li>
+                      <div>
+                        <h5>제목이 표시됩니다 <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button></h5>
+                        <h6>고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.</h6>
+                        <p>2022-09-09</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div>
+                        <h5>제목이 표시됩니다 <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button></h5>
+                        <h6>고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.</h6>
+                        <p>2022-09-09</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div>
+                        <h5>제목이 표시됩니다 <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button></h5>
+                        <h6>고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.</h6>
+                        <p>2022-09-09</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div>
+                        <h5>제목이 표시됩니다 <button class="btn-ic-close btn-del"><img class="ic-close" alt=""></button></h5>
+                        <h6>고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.고객 데이터는 이렇게 작성해야 합니다. 고객 데이터는 이렇게 작성해야 합니다.</h6>
+                        <p>2022-09-09</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </div><!-- tab02 -->
+          </div>
+        </div>
+      </div>
+      <!-- <footer id="footer"></footer>   -->
+    </div>
+  </div>
+  <!-- 일정추가 -->
+  <div class="modal-con modal unstaged">
+    <div class="modal-overlay"></div>
+    <div id="modal-schedule-reg" class="modal-contents">
+      <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
+      <div class="modal-top">
+        <h1>일정등록</h1>
+      </div>
+      <div class="modal-body">
+        <div class="content-edit-wrap">
+          <div class="row">
+            <div class="row-title">제목</div>
+            <div class="row-content"><input type="text" name="" id=""></div>
+          </div>
+          <div class="row">
+            <div class="row-title">장소</div>
+            <div class="row-content"><input type="text" name="" id=""></div>
+          </div>
+          <div class="row">
+            <div class="row-title">시작</div>
+            <div class="row-content">
+              <input type="date" name="" id="" value="2022-09-12">
+              <input type="time" name="" id="" value="14:00">
+              <input type="checkbox" name="" id="">종일
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-title">종료</div>
+            <div class="row-content">
+              <input type="date" name="" id="" value="2022-09-12">
+              <input type="time" name="" id="" value="14:00">
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-title">고객</div>
+            <div class="row-content">
+              <input type="text" list="custom-list" id="custom" autocomplete="off" />
+              <datalist id="custom-list">
+                <option value="김기훈 (1969.05.05/남/%고객상태%)" />
+                <option value="김민지 (1985.12.01/여/%고객상태%)" />
+                <option value="김태정 (2000.01.23/남/%고객상태%)" />
+              </datalist>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-title">내용</div>
+            <div class="row-content"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <div class="btn-sgroup">
+          <button class="btn-modal-white modal-close">취소</button>
+          <button class="btn-modal-blue">저장</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 일정보기 -->
+  <div class="modal-con modal unstaged">
+    <div class="modal-overlay"></div>
+    <div id="modal-schedule-view" class="modal-contents">
+      <button class="modal-edit"><img class="ic_edit" alt=""></button>
+      <button class="modal-delete"><img class="ic_delete" alt=""></button>
+      <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
+      <div class="modal-body my_view">
+        <div class="title">
+          <h6>투자 컨설팅</h6>
+          <p>8월 17일(토요일) / 오전 10:~10:30</p>
+        </div>
+        <dl>
+          <dt> <img class="ic_timeline_calendar" alt=""> </dt>
+          <dd>여의도 투섬 플레이스</dd>
+        </dl>
+        <dl>
+          <dt> <img class="ic_timeline_contract" alt=""> </dt>
+          <dd>김민지 (1985.12.01/여/%고객상태%)</dd>
+        </dl>
+        <dl>
+          <dt> <img class="ic_timeline_memo" alt=""> </dt>
+          <dd>이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다 이곳에 메모가 노출됩니다</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../../scripts/func.js"></script>
+<script src="../../scripts/script.js"></script>
+<script>
+  // modal-open
+   document.querySelector(".btn_wrate").addEventListener("click",function(){
+     let el = document.getElementById('modal-schedule-reg');
+     if (el.closest('.modal-con').classList.contains('unstaged'))
+       document.body.style.overflow = "hidden";
+     else document.body.style.overflow = "unset";
+     el.closest('.modal-con').classList.toggle('opaque');
+     el.closest('.modal-con').classList.toggle('unstaged');
+   })
+
+   // modal-open
+    document.querySelector(".btn_view").addEventListener("click",function(){
+      let el = document.getElementById('modal-schedule-view');
+      if (el.closest('.modal-con').classList.contains('unstaged'))
+        document.body.style.overflow = "hidden";
+      else document.body.style.overflow = "unset";
+      el.closest('.modal-con').classList.toggle('opaque');
+      el.closest('.modal-con').classList.toggle('unstaged');
+    })
+</script>
+</html>
