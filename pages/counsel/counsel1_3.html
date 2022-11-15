@@ -7,7 +7,6 @@
   <title>고객상담</title>
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/counsel.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/><!-- 스와이퍼 -->
 </head>
 <body>
   <div id="wrapper" class="wrapper menuOpen">
@@ -80,7 +79,7 @@
       <img src="" alt="">
     </button>
 
-    <div id="main" class="main-wrap counsel counsel4">
+    <div id="main" class="main-wrap counsel counsel1">
       <div class="contents-wrap">
         <div class="contents-inner">
           <div class="contents-header">
@@ -88,68 +87,105 @@
           </div>
           <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
           <div class="contents-body card">
-            <div class="order-bar"><div class="current-bar c4"></div></div>
+            <div class="order-bar"><div class="current-bar c1"></div> </div>
 
-            <div class="title_box">
-              <h2>상담 리포트명</h2>
-              <button class="btn-s-green btn-reg-sche btn-tib">참고자료</button>
+            <div class="info-box">
+              <div class="profile">
+                <h5 class="title">담당자 정보</h5>
+                <div class="info-img">
+                  <div class="img-user-01"></div>
+                </div>
+                <ul class="etc-info">
+                  <li>
+                    <span class="tt">이름</span>
+                    <span class="co">홍길동</span>
+                  </li>
+                  <li>
+                    <span class="tt">성별</span>
+                    <span class="co">남</span>
+                  </li>
+                  <li>
+                    <span class="tt">생년월일</span>
+                    <span class="co">1987.09.09</span>
+                  </li>
+                  <li>
+                    <span class="tt">연락처</span>
+                    <span class="co"> 010-0000-0000</span>
+                  </li>
+                  <li>
+                    <span class="tt">이메일</span>
+                    <span class="co"> cleancyon@naver.com</span>
+                  </li>
+                  <li>
+                    <span class="tt">주소 </span>
+                    <span class="co">서울시 도봉구 도봉로 119, ㅇㅇ아파트 111동 111호</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="input-box">
+                <h5 class="title">재무 정보</h5>
+                <div class="input-group">
+                  <dl>
+                    <dt><span>수입</span></dt>
+                    <dd>
+                      <input type="number" name="" id="" placeholder="0">
+                      <span>만원</span>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="input-group">
+                  <dl>
+                    <dt><span>지출</span></dt>
+                    <dd>
+                      <input type="number" name="" id="" placeholder="0">
+                      <span>만원</span>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="input-group">
+                  <dl>
+                    <dt><span>국민연금</span></dt>
+                    <dd>
+                      <input type="number" name="" id="" placeholder="0">
+                      <span>만원</span>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="input-group">
+                  <dl>
+                    <dt><span>연금펀드</span></dt>
+                    <dd>
+                      <input type="number" name="" id="" placeholder="0">
+                      <span>만원</span>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="input-group">
+                  <dl>
+                    <dt><span>금융자산</span></dt>
+                    <dd>
+                      <input type="number" name="" id="" placeholder="0">
+                      <span>만원</span>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="input-group">
+                  <dl>
+                    <dt><span>기타자산</span></dt>
+                    <dd>
+                      <input type="number" name="" id="" placeholder="0">
+                      <span>만원</span>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
             </div>
-
-            <div class="set_box">
-              <div class="set_list">
-                <ul>
-                  <li class="tt">
-                    초기투자
-                  </li>
-                  <li class="in">
-                    <span>50,000</span>&nbsp;만 원<button>편집</button>
-                  </li>
-                  <li class="bar">
-                    <input type="range" value="3000" min="1000" max="5000" id="range" oninput="rangenumber.value=value"/>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="set_list">
-                <ul>
-                  <li>
-                    <p>초기투자</p>
-                  </li>
-                  <li>
-                    <span>50,000</span>&nbsp;만 원<button>편집</button>
-                  </li>
-                  <li>
-
-                    <input type="number" id="rangenumber01" min="1000" max="5000" value="3000" oninput="range01.value=value">
-                    <input type="range" value="3000" min="1000" max="5000" id="range01" oninput="rangenumber01.value=value"/>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <details class="set_box">
-              <div>
-                <ul>
-                  <li>
-                    <p>초기투자</p>
-                  </li>
-                  <li>
-                    <input type="number" id="rangenumber02" min="1000" max="5000" value="3000" oninput="range02.value=value">
-                  </li>
-                  <li>
-                    <input type="range" value="3000" min="1000" max="5000" id="range02" oninput="rangenumber02.value=value"/>
-                  </li>
-                </ul>
-              </div>
-              <summary>접었다 펼쳤다<div class="ic-open-arrow"></div></summary>
-            </details>
-
             <div class="btn-group">
               <button class="btn-text">임시저장</button>
               <button class="btn-white btn-cancel">이전</button>
               <button class="btn-green btn-next active">다음</button>
             </div>
-          </div><!-- card -->
+          </div>
         </div>
       </div>
       <!-- <footer id="footer"></footer>   -->

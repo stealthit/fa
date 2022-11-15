@@ -13,6 +13,14 @@
         display: flex;
         flex-direction: column;
         gap: $size-30;
+        min-height: $size-700;
+
+        .no_data{
+            padding: $size-30;
+            h3{
+                text-align: center;
+            }
+        }
 
         // 신청 진행바
         .order-bar {
@@ -128,6 +136,16 @@
 
 #main.counsel {
   .btn-group{
+    flex-wrap: wrap;
+    .btn-text{
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      font-size: $size-16;
+      text-decoration: underline;
+      color: #666;
+      margin-bottom: $size-10;
+    }
     button {
       max-width: $size-180;
     }
@@ -157,11 +175,16 @@
 
           .name-wrap {
             display: flex;
-            justify-content: space-between;
+            gap: $size-20;
             .mp-name {
               font-size: $size-20;
               font-weight: bold;
               color: #2e3666;
+            }
+            .mp-tel{
+              padding-top: $size-5;
+              font-size: $size-13;
+              color: #aaa;
             }
           }
         }
@@ -172,7 +195,13 @@
           font-size: $size-13;
           color: #aaa;
 
-          p{ padding: $size-20 0; }
+          p{
+            padding: $size-20 0 0 0;
+          }
+
+          i{
+            color: #eee;
+          }
 
           a {
             display: block;
@@ -226,42 +255,32 @@
         width: calc((100% - #{$size-15}) / 2);
         max-width: 100%;
       }
+      .info-box{
+        width: calc((100% - #{$size-15}) / 2);
+        max-width: 100%;
+      }
 
-      .customer-info{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .name{
-          font-size: $size-20;
-          font-weight: bold;
-          color: #111;
-        }
-        .birth{
-          padding-top: $size-6;
-          font-size: $size-14;
-          color: #aaa;
-        }
+      .title{
+        font-size: $size-20;
+        font-weight: bold;
+        color: #2e3666;
+        margin-bottom: $size-20;
+        padding-bottom: $size-20;
+        border-bottom: 2px solid #2e3666;
       }
 
       .etc-info{
-        padding-top: $size-15;
-        dt{
-          padding: $size-3 0;
-          font-size: $size-14;
-          color: #aaa;
+        display: flex;
+        flex-direction: column;
+        gap: $size-10;
+        font-size: $size-15;
+        padding: $size-20 0 0 0;
+        .tt{
+          color: #666;
         }
-        dd{
-          font-size: $size-14;
+        .co{
+          padding-left: $size-10;
         }
-      }
-
-      h5{
-        padding-bottom: $size-15;
-        font-size: $size-16;
-        font-weight: bold;
-        color: #2e3666;
-        border-bottom: 2px solid #ccc;
       }
 
       .cor-info{
@@ -282,13 +301,6 @@
         display: flex;
         flex-direction: column;
         gap: $size-10;
-        h5{
-          font-size: $size-18;
-          font-weight: bold;
-          color: #2e3666;
-          padding: $size-5;
-          border-bottom: 1px solid #2e3666;
-        }
         dl{
           display: flex;
           justify-content: space-between;
@@ -312,6 +324,43 @@
             span{
               white-space: nowrap;
               line-height: $size-48;
+            }
+          }
+        }
+      }
+
+      .info-box{
+        display: flex;
+        flex-direction: column;
+        gap: $size-10;
+        dl{
+          display: flex;
+          width: 100%;
+          padding: 0 0 0 $size-16;
+          border: 1px solid #ccc;
+        }
+        .input-group{
+          dt{
+            width: $size-120;
+            line-height: $size-48;
+          }
+          dd{
+            width: calc((100% - #{$size-120}));
+            input{
+              border: 0;
+              padding: $size-14 $size-10;
+            }
+          }
+          .zip_code{
+            display: flex;
+            input {
+              width: calc((100% - #{$size-90}));
+            }
+            button{
+              width: $size-90;
+              height: $size-48;
+              font-size: $size-14;
+              text-align: center;
             }
           }
         }
@@ -394,9 +443,106 @@
     }
 
     .box03{
-      min-height: $size-300;
+      display: flex;
+      flex-direction: column;
+      gap: $size-30 0;
+      height: $size-400;
       padding: $size-20;
       border: 1px solid #f5f5f5;
+      overflow-y: scroll;
+      dt{
+        font-size: $size-16;
+        padding-bottom: $size-20;
+        font-weight: 500;
+      }
+      dd{
+        font-size: $size-14;
+      }
+    }
+  }
+
+  &.counsel3{
+    .swiper {
+      width: $size-640;
+      height: $size-570;
+    }
+    .swiper-slide {
+      position: relative;
+      border: solid 1px #e5e5e5;
+      background-color: #fff;
+      h2{
+        margin: $size-60 0  $size-20 0;
+        padding-left: $size-20;
+        font-size: $size-24;
+        font-weight: bold;
+        color: #2e3666;
+        border-left: $size-20 solid #1ea5d2;
+      }
+      p{
+        padding: 0 $size-40;
+        font-size: $size-14;
+        color: #666;
+      }
+      div{
+        position: absolute;
+        right: $size-40;
+        bottom: $size-60;
+      }
+      .bar{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: $size-10;
+        background: #1ea5d2;
+      }
+      .img_box01{
+        content: url(#{$imgPath}img_model_01.png);
+      }
+      .img_box02{
+        content: url(#{$imgPath}img_model_01.png);
+      }
+      .img_box03{
+        content: url(#{$imgPath}img_model_01.png);
+      }
+      .img_box04{
+        content: url(#{$imgPath}img_model_01.png);
+      }
+      .img_box05{
+        content: url(#{$imgPath}img_model_01.png);
+      }
+    }
+    .swiper-3d .swiper-slide-shadow{
+      background-color: #fff;
+    }
+  }
+
+  &.counsel4{
+    .title_box{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .set_box{
+      display: flex;
+      justify-content: space-between;
+      gap: $size-20;
+      .set_list{
+        width: calc((100% - #{$size-20}) / 2);
+        ul{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        .tt{}
+        .in{}
+        .bar{
+          width: 100%;
+          input{
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }

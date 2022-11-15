@@ -87,70 +87,25 @@
           </div>
           <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
           <div class="contents-body card">
-            <div class="order-bar"><div class="current-bar c1"></div> </div>
+            <div class="order-bar"><div class="current-bar c1"></div></div>
 
-            <div class="info-box">
-                <div class="profile">
-                  <div class="customer-info">
-                    <div class="info-txt">
-                      <div class="name">홍길동</div>
-                      <div class="birth">남, 1985 10 13</div>
-                    </div>
-                    <div class="info-img">
-                      <div class="img-user-01"></div>
-                    </div>
-                  </div>
-                  <dl class="etc-info">
-                      <dt>연락처</dt>
-                      <dd> 010-0000-0000</dd>
-                      <dt>이메일</dt>
-                      <dd> cleancyon@naver.com</dd>
-                      <dt>주소 </dt>
-                      <dd>서울시 도봉구 도봉로 119, ㅇㅇ아파트 111동 111호</dd>
-                  </dl>
-              </div>
-              <div class="input-box cou3">
-                    <div class="input-group">
-                        <dl>
-                            <dt><span>수입</span></dt>
-                            <dd>
-                                <input type="number" name="" id="" placeholder="0">
-                                <span>만원</span>
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="input-group">
-                        <dl>
-                            <dt><span>지출</span></dt>
-                            <dd>
-                                <input type="number" name="" id="" placeholder="0">
-                                <span>만원</span>
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="input-group">
-                        <dl>
-                            <dt><span>현금자산</span></dt>
-                            <dd>
-                                <input type="number" name="" id="" placeholder="0">
-                                <span>만원</span>
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="input-group">
-                        <dl>
-                            <dt><span>부채현황</span></dt>
-                            <dd>
-                                <input type="number" name="" id="" placeholder="0">
-                                <span>만원</span>
-                            </dd>
-                        </dl>
-                    </div>
+            <div class="box01">
+              <div class="input-box">
+                <div class="input-group">
+                  <input type="number" name="" id="" placeholder="휴대폰번호">
+                  <button type="button" class="btn btn-url">전송</button>
                 </div>
+                <div class="msg-box err">비밀번호를 확인해 주세요.</div>
+              </div>
+
+              <div class="radio-group">
+                <input type="radio" id="rd1" name="rd" value="1" checked=""><label for="rd1">개인</label>
+                <input type="radio" id="rd2" name="rd" value="2"><label for="rd2">법인</label>
+              </div>
             </div>
-            <div class="btn-group">
-              <button class="btn-white btn-cancel">이전</button>
-              <button class="btn-green btn-next active">다음</button>
+
+            <div class="no_data">
+                <h3>상담을 위해 고객에게<br/>상담 URL을 발송해주세요.</h3>
             </div>
           </div>
         </div>
@@ -158,7 +113,43 @@
       <!-- <footer id="footer"></footer>   -->
     </div>
   </div>
+  <!-- 발송모달 -->
+  <div class="modal-con modal unstaged">
+    <div class="modal-overlay"></div>
+    <div id="modal-send-result" class="modal-contents">
+      <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
+      <div class="url">
+        <p class="desc">입력하신 번호로 url이 발송되었습니다.<br/>고객 응답완료 후<br/>다음 단계를 진행할 수 있습니다.</p>
+      </div>
+      <div class="del">
+        <p class="desc">해당 고객 응답정보를<br/>삭제하시겠습니까</p>
+      </div>
+      <div class="modal-bottom">
+        <div class="btn-sgroup">
+          <button class="btn-modal-white modal-close">취소</button>
+          <button class="btn-modal-blue">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="../../scripts/func.js"></script>
 <script src="../../scripts/script.js"></script>
+<script>
+// modal-open
+document.querySelector(".btn-url").addEventListener("click",function(){
+  let el = document.getElementById('modal-send-result');
+  el.querySelector('.del').style.display = 'none';
+  el.querySelector('.url').style.display = 'block';
+  el.closest('.modal-con').classList.toggle('opaque');
+  el.closest('.modal-con').classList.toggle('unstaged');
+})
+document.querySelector(".btn-del").addEventListener("click",function(){
+  let el = document.getElementById('modal-send-result');
+  el.querySelector('.url').style.display = 'none';
+  el.querySelector('.del').style.display = 'block';
+  el.closest('.modal-con').classList.toggle('opaque');
+  el.closest('.modal-con').classList.toggle('unstaged');
+})
+</script>
 </html>
