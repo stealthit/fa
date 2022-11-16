@@ -3,18 +3,11 @@
 @import url("common.css");
 #main.counsel {
   .contents-wrap {
-    @include flex_center;
-    min-height: $size-1080;
     .contents-inner {
-      display: flex;
-      width: $main_width;
-
       .contents-body {
         display: flex;
         flex-direction: column;
         gap: $size-30;
-        min-height: $size-700;
-
         .no_data{
           padding: $size-30;
           h3{

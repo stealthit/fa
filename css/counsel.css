@@ -26,23 +26,10 @@
 /*80px*/
 @import url("reset.css");
 @import url("common.css");
-#main.counsel .contents-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 67.5rem;
-}
-
-#main.counsel .contents-wrap .contents-inner {
-    display: flex;
-    width: 71.875rem;
-}
-
 #main.counsel .contents-wrap .contents-inner .contents-body {
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
-    min-height: 43.75rem;
 }
 
 #main.counsel .contents-wrap .contents-inner .contents-body .no_data {
