@@ -7,6 +7,7 @@
   <title>고객상담</title>
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/counsel.css">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 <body>
   <div id="wrapper" class="wrapper menuOpen">
@@ -79,7 +80,7 @@
       <img src="" alt="">
     </button>
 
-    <div id="main" class="main-wrap counsel counsel1">
+    <div id="main" class="main-wrap counsel counsel4">
       <div class="contents-wrap">
         <div class="contents-inner">
           <div class="contents-header">
@@ -105,69 +106,33 @@
           </div>
           <!-- 페이지별 퍼블 내용이 변경되는 부분 -->
           <div class="contents-body card">
-            <div class="order-bar"><div class="current-bar c1"></div></div>
+            <div class="order-bar"><div class="current-bar c4"></div></div>
 
-            <div class="box01">
-              <div class="input-box">
-                <div class="input-group">
-                  <input type="number" name="" id="" placeholder="휴대폰번호">
-                  <button type="button" class="btn btn-url">전송</button>
-                </div>
-                <div class="msg-box err">비밀번호를 확인해 주세요.</div>
-              </div>
-
-              <div class="radio-group">
-                <input type="radio" id="rd1" name="rd" value="1" checked=""><label for="rd1">개인</label>
-                <input type="radio" id="rd2" name="rd" value="2"><label for="rd2">법인</label>
-              </div>
+            <div class="end_box">
+              <h2>상담이 완료되었습니다.</h2>
+              <p class="exp">※ 리포트 출력은 추후에 고객메뉴 > 재무설계에서 가능합니다.</p>
             </div>
 
-            <div class="no_data">
-                <h3>상담을 위해 고객에게<br/>상담 URL을 발송해주세요.</h3>
+            <div class="title">
+              <h2>FA 코멘트</h2>
             </div>
-          </div>
+
+            <div class="text-group">
+              <textarea placeholder="상담 리포트에 함께 전달할 코멘트를 작성해주세요."></textarea>
+            </div>
+
+            <div class="btn-group">
+              <button class="btn-text">임시저장</button>
+              <button class="btn-white btn-cancel">이전</button>
+              <button class="btn-green btn-next active">리포트 생성</button>
+            </div>
+          </div><!-- card -->
         </div>
       </div>
       <!-- <footer id="footer"></footer>   -->
     </div>
   </div>
-  <!-- 발송모달 -->
-  <div class="modal-con modal unstaged">
-    <div class="modal-overlay"></div>
-    <div id="modal-send-result" class="modal-contents">
-      <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
-      <div class="url">
-        <p class="desc">입력하신 번호로 url이 발송되었습니다.<br/>고객 응답완료 후<br/>다음 단계를 진행할 수 있습니다.</p>
-      </div>
-      <div class="del">
-        <p class="desc">해당 고객 응답정보를<br/>삭제하시겠습니까</p>
-      </div>
-      <div class="modal-bottom">
-        <div class="btn-sgroup">
-          <button class="btn-modal-white modal-close">취소</button>
-          <button class="btn-modal-blue">확인</button>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 <script src="../../scripts/func.js"></script>
 <script src="../../scripts/script.js"></script>
-<script>
-// modal-open
-document.querySelector(".btn-url").addEventListener("click",function(){
-  let el = document.getElementById('modal-send-result');
-  el.querySelector('.del').style.display = 'none';
-  el.querySelector('.url').style.display = 'block';
-  el.closest('.modal-con').classList.toggle('opaque');
-  el.closest('.modal-con').classList.toggle('unstaged');
-})
-document.querySelector(".btn-del").addEventListener("click",function(){
-  let el = document.getElementById('modal-send-result');
-  el.querySelector('.url').style.display = 'none';
-  el.querySelector('.del').style.display = 'block';
-  el.closest('.modal-con').classList.toggle('opaque');
-  el.closest('.modal-con').classList.toggle('unstaged');
-})
-</script>
 </html>

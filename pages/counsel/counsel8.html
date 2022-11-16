@@ -242,13 +242,95 @@
               <summary class="more_btn"> 옵션 상세설정<div class="ic-open-arrow"></div></summary>
             </details>
 
-            <div class="graph-box">
-              <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
-              <figure class="highcharts-figure">
-                <div id="container"></div>
-              </figure>
-              <p class="msg-box gray">* 시뮬레이팅 결과에 대하여 골든트리 투자자문은 책임지지 않습니다</p>
+            <ul class="graph_01">
+              <li>
+                <div class="graph-box">
+                  <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
+                  <figure class="highcharts-figure">
+                    <div id="container"></div>
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="graph-box">
+                  <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
+                  <figure class="highcharts-figure">
+                    <div id="container"></div>
+                  </figure>
+                </div>
+              </li>
+            </ul>
+
+            <div class="table_box type_05">
+              <table class="gt-table">
+                <colgroup>
+                  <col style="" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>구분</th>
+                    <th colspan="6">운용자산 Style</th>
+                    <th colspan="2">비교치</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td>투자대상</td>
+                    <td>ELB/정기예금</td>
+                    <td>채권형</td>
+                    <td>채권혼합형</td>
+                    <td>주식혼합형</td>
+                    <td>국내주식형/ETF</td>
+                    <td>해외주식형/ETF</td>
+                    <td>즉시연금</td>
+                    <td>정기예금</td>
+                  </tr>
+                  <tr>
+                    <td>상대적 위험도</td>
+                    <td>원리금보존형</td>
+                    <td>원리금보존형</td>
+                    <td>원리금보존형</td>
+                    <td>원리금보존형</td>
+                    <td>원리금보존형</td>
+                    <td>원리금보존형</td>
+                    <td>원리금보존형</td>
+                    <td>원리금보존형</td>
+                  </tr>
+                  <tr class="bg_yellow">
+                    <td>기대수익률 (보수차감후)</td>
+                    <td>1.0%</td>
+                    <td>1.0%</td>
+                    <td>1.0%</td>
+                    <td>1.0%</td>
+                    <td>1.0%</td>
+                    <td>1.0%</td>
+                    <td>1.0%</td>
+                    <td>22.07.01</td>
+                  </tr>
+                  <tr>
+                    <td>대표적인 추천상품</td>
+                    <td>추천상품</td>
+                    <td>추천상품</td>
+                    <td>추천상품</td>
+                    <td>추천상품</td>
+                    <td>추천상품</td>
+                    <td>추천상품</td>
+                    <td>추천상품</td>
+                    <td>추천상품</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+
+            <p class="msg-box gray">* 시뮬레이팅 결과에 대하여 골든트리 투자자문은 책임지지 않습니다</p>
 
             <div class="btn-group">
               <button class="btn-text">임시저장</button>
@@ -264,44 +346,44 @@
 
   <!-- 모달 -->
   <div class="modal-con modal unstaged">
-      <div class="modal-overlay"></div>
-      <div id="modal-cou-tip" class="modal-contents">
-          <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
-          <div class="tib">
-            <h6>참고자료</h6>
-            <p class="desc">
-              결혼 비용 4,532만 원<br/>
-              • 주택마련 비용 제외<br/>
-              • 2020년 기준, 출처 : 통계청<br/><br/>
+    <div class="modal-overlay"></div>
+    <div id="modal-cou-tip" class="modal-contents">
+      <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
+      <div class="tib">
+        <h6>참고자료</h6>
+        <p class="desc">
+          결혼 비용 4,532만 원<br/>
+          • 주택마련 비용 제외<br/>
+          • 2020년 기준, 출처 : 통계청<br/><br/>
 
-              주택마련 비용 8억 7천만 원<br/>
-              • 서울 평균<br/>
-              • 2020년 기준, 출처 : 한국감정원<br/><br/>
+          주택마련 비용 8억 7천만 원<br/>
+          • 서울 평균<br/>
+          • 2020년 기준, 출처 : 한국감정원<br/><br/>
 
-              기대여명 남성 80.5세 / 여성 86.5세<br/>
-              • 2020년 기준, 출처 : 한국감정원<br/><br/>
+          기대여명 남성 80.5세 / 여성 86.5세<br/>
+          • 2020년 기준, 출처 : 한국감정원<br/><br/>
 
-              적정 은퇴 비용 2인 월 275만 원 / 1인 월 167만 원<br/>
-              • 60세 기준<br/>
-              • 2019년 기준, 출처 : 국민연금관리공단
-            </p>
-          </div>
+          적정 은퇴 비용 2인 월 275만 원 / 1인 월 167만 원<br/>
+          • 60세 기준<br/>
+          • 2019년 기준, 출처 : 국민연금관리공단
+        </p>
       </div>
+    </div>
   </div>
 </body>
 <script src="../../scripts/func.js"></script>
 <script src="../../scripts/script.js"></script>
 <script type="text/javascript">
-  document.querySelector('.rangeInput').addEventListener('input',function(event){
-  	var gradient_value = 100 / event.target.attributes.max.value;
-    event.target.style.background = 'linear-gradient(to right, #0bc890 0%, #0bc890 '+gradient_value * event.target.value +'%, #e6e6e6 ' +gradient_value *  event.target.value + '%, #e6e6e6 100%)';
-  });
-  // modal-open
-  document.querySelector(".btn-tib").addEventListener("click",function(){
-    let el = document.getElementById('modal-cou-tip');
-    el.querySelector('.tib').style.display = 'block';
-    el.closest('.modal-con').classList.toggle('opaque');
-    el.closest('.modal-con').classList.toggle('unstaged');
-  })
+document.querySelector('.rangeInput').addEventListener('input',function(event){
+  var gradient_value = 100 / event.target.attributes.max.value;
+  event.target.style.background = 'linear-gradient(to right, #0bc890 0%, #0bc890 '+gradient_value * event.target.value +'%, #e6e6e6 ' +gradient_value *  event.target.value + '%, #e6e6e6 100%)';
+});
+// modal-open
+document.querySelector(".btn-tib").addEventListener("click",function(){
+  let el = document.getElementById('modal-cou-tip');
+  el.querySelector('.tib').style.display = 'block';
+  el.closest('.modal-con').classList.toggle('opaque');
+  el.closest('.modal-con').classList.toggle('unstaged');
+})
 </script>
 </html>
