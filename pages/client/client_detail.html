@@ -612,6 +612,54 @@
                         </div>
                       </div>                
                     </div>
+                    <div class="timeline-list">
+                      <div class="date">2022.09.17(일)</div>
+                      <div class="timeline-item">
+                        <div class="item-marker"><img class="ic-timeline-calendar" alt=""></div>
+                        <div class="item-desc">
+                          <button class="btn-ic-close"><img class="ic-close" alt=""></button>
+                          <div class="item-type">일정</div>
+                          <h3>오전 11:30 오후 1:30</h3>
+                          <div class="item-expl">자문계약서 작성</div>
+                        </div>
+                      </div>                
+                    </div>
+                    <div class="timeline-list">
+                      <div class="date">2022.09.17(일)</div>
+                      <div class="timeline-item">
+                        <div class="item-marker"><img class="ic-timeline-calendar" alt=""></div>
+                        <div class="item-desc">
+                          <button class="btn-ic-close"><img class="ic-close" alt=""></button>
+                          <div class="item-type">일정</div>
+                          <h3>오전 11:30 오후 1:30</h3>
+                          <div class="item-expl">자문계약서 작성</div>
+                        </div>
+                      </div>                
+                    </div>
+                    <div class="timeline-list">
+                      <div class="date">2022.09.17(일)</div>
+                      <div class="timeline-item">
+                        <div class="item-marker"><img class="ic-timeline-calendar" alt=""></div>
+                        <div class="item-desc">
+                          <button class="btn-ic-close"><img class="ic-close" alt=""></button>
+                          <div class="item-type">일정</div>
+                          <h3>오전 11:30 오후 1:30</h3>
+                          <div class="item-expl">자문계약서 작성</div>
+                        </div>
+                      </div>                
+                    </div>
+                    <div class="timeline-list">
+                      <div class="date">2022.09.17(일)</div>
+                      <div class="timeline-item">
+                        <div class="item-marker"><img class="ic-timeline-calendar" alt=""></div>
+                        <div class="item-desc">
+                          <button class="btn-ic-close"><img class="ic-close" alt=""></button>
+                          <div class="item-type">일정</div>
+                          <h3>오전 11:30 오후 1:30</h3>
+                          <div class="item-expl">자문계약서 작성</div>
+                        </div>
+                      </div>                
+                    </div>
                   </div>
                 </div>
               </div>
@@ -740,38 +788,7 @@
     list.classList.toggle('up');
   });  
 });
-
-  // modal-open
-  document.querySelector(".btn-change-pf").addEventListener("click",function(){
-    let el = document.getElementById('modal-profile');
-    if (el.closest('.modal-con').classList.contains('unstaged')) 
-      document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "unset";
-    el.closest('.modal-con').classList.toggle('opaque');
-    el.closest('.modal-con').classList.toggle('unstaged');
-  })
-
-  document.querySelectorAll('ul.char-list > li').forEach( (list) => {
-    list.addEventListener('click', () => {    
-      sRemoveClass(sSiblings(list),'selected');
-      list.classList.add('selected');
-      let selPfImg = document.getElementById('sel-char').querySelector('img');
-      let charName = list.querySelector('img').className + '-l';
-      selPfImg.className = 'sel-img-user';
-      selPfImg.classList.add(charName);
-    })
-  })
-
-  document.querySelectorAll('ul.bg-list > li').forEach( (list) => {
-    list.addEventListener('click', () => {    
-      sRemoveClass(sSiblings(list),'selected');
-      list.classList.add('selected');
-      let selPf = document.getElementById('sel-char');
-      selPf.className = '';      
-      selPf.classList.add(list.querySelector('.bg-color').classList[1]);
-    })
-  })
-
+  
   // swiper
   var swiper = new Swiper(".mySwiper", {
         effect: "cards",

@@ -4,7 +4,7 @@ const menuLink = ['/pages/main.html', //대시보드
                   '/pages/mywork/my_work.html', //마이워크
                   '/pages/reward.html', //보수내역
                   '/pages/client/client.html', //고객
-                  '', //상품
+                  '/pages/error.html', //상품
                   '/pages/insight.html', //Insight                  
                   '/pages/myinfo.html'] //내정보
 
@@ -72,8 +72,9 @@ function clickBodyEvent(event) {
   var target = event.target;      
   var miniMenu = document.querySelector(".mini-menu");
 
-  if (target.className == 'name') return;
-  if (miniMenu.classList.contains("on")) miniMenu.classList.remove("on");
+  if ((target.className == 'name') || (target.parentElement.className == 'name')) return;
+  if (miniMenu.classList.contains("on")) 
+    miniMenu.classList.remove("on");
 
   
   if((target.parentNode.id == 'menu-depth2') 
@@ -112,7 +113,38 @@ document.querySelectorAll('.modal-close').forEach( (list) => {
 });
 
 
+// profile-change-modal-open
+// 프로필 설정 오픈시 btn-change-pf 클래스 버튼 클릭 --------------
+document.querySelector(".btn-change-pf").addEventListener("click",function(){
+  let el = document.getElementById('modal-profile');
+  if (el.closest('.modal-con').classList.contains('unstaged')) 
+    document.body.style.overflow = "hidden";
+  else document.body.style.overflow = "unset";
+  el.closest('.modal-con').classList.toggle('opaque');
+  el.closest('.modal-con').classList.toggle('unstaged');
+})
 
+document.querySelectorAll('ul.char-list > li').forEach( (list) => {
+  list.addEventListener('click', () => {    
+    sRemoveClass(sSiblings(list),'selected');
+    list.classList.add('selected');
+    let selPfImg = document.getElementById('sel-char').querySelector('img');
+    let charName = list.querySelector('img').className + '-l';
+    selPfImg.className = 'sel-img-user';
+    selPfImg.classList.add(charName);
+  })
+})
+
+document.querySelectorAll('ul.bg-list > li').forEach( (list) => {
+  list.addEventListener('click', () => {    
+    sRemoveClass(sSiblings(list),'selected');
+    list.classList.add('selected');
+    let selPf = document.getElementById('sel-char');
+    selPf.className = '';      
+    selPf.classList.add(list.querySelector('.bg-color').classList[1]);
+  })
+})
+// ---------------------------------------------------------------
 
 /*** Calendar ***/
 // var calendarEl = document.getElementById('calendar');

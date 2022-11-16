@@ -928,6 +928,11 @@ li {
   height: $size-20;
 }
 // img- *************
+.img-error-01 {
+  content: url(#{$imgPath}ic_error.png);
+  width: $size-68;
+  height: $size-68;
+}
 .img-model-01 {
   content: url(#{$imgPath}img_model_01.png);
   width: $size-230;
