@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>고객상담</title>
-  <link rel="stylesheet" href="../../css/style.css">  
+  <link rel="stylesheet" href="../../css/style.css">
   <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 <body>
@@ -109,157 +109,18 @@
 
             <div class="type_04">
               <ul>
-                <li>자유설계</li>
-                <li>은퇴설계</li>
+                <li>
+                  <div class="ic_free"></div>
+                  <p>자유설계 &nbsp; <i></i></p>
+                </li>
+                <li>
+                  <div class="ic_retire"></div>
+                  <p>은퇴설계 &nbsp; <i></i></p>
+                </li>
               </ul>
             </div>
 
-            <div class="title_box">
-              <h2><input type="text" value="YYYY.MM.DD의 모델명 자문 상담 리포트"></h2>
-              <button class="btn-s-green active btn-tib">참고자료</button>
-            </div>
-
-            <div class="set_box">
-              <div class="set_list">
-                <ul>
-                  <li class="tt">
-                    초기투자
-                  </li>
-                  <li class="in">
-                    <span><input id="rangenumber" type="number" min="0" max="500" value="250" ></span>&nbsp;만 원<button>편집</button>
-                  </li>
-                  <li class="bar">
-                    <input id="range" class="rangeInput" type="range"  min="0" max="500" step="1" value="250" oninput="rangenumber.value=value"/>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="set_list">
-                <ul>
-                  <li class="tt">
-                    월간투자
-                  </li>
-                  <li class="in">
-                    <span>50,000</span>&nbsp;만 원<button>편집</button>
-                  </li>
-                  <li class="bar">
-                    <input type="range" disabled />
-                  </li>
-                </ul>
-              </div>
-
-              <div class="set_list">
-                <ul>
-                  <li class="tt">
-                    기간
-                  </li>
-                  <li class="in">
-                    <span>50,000</span>&nbsp;만 원<button>편집</button>
-                  </li>
-                  <li class="bar">
-                    <input type="range" disabled />
-                  </li>
-                </ul>
-              </div>
-            </div><!-- set_box -->
-
-            <details class="more_box">
-              <div class="set_box">
-                <div class="set_list">
-                  <ul>
-                    <li class="tt">
-                      기간
-                    </li>
-                    <li class="in">
-                      <span>50,000</span>&nbsp;만 원<button>편집</button>
-                    </li>
-                    <li class="bar">
-                      <input type="range" disabled />
-                    </li>
-                  </ul>
-                </div>
-                <div class="set_list">
-                  <ul>
-                    <li class="tt">
-                      기간
-                    </li>
-                    <li class="in">
-                      <span>50,000</span>&nbsp;만 원<button>편집</button>
-                    </li>
-                    <li class="bar">
-                      <input type="range" disabled />
-                    </li>
-                  </ul>
-                </div>
-                <div class="set_list">
-                  <ul>
-                    <li class="tt">
-                      기간
-                    </li>
-                    <li class="in">
-                      <span>50,000</span>&nbsp;만 원<button>편집</button>
-                    </li>
-                    <li class="bar">
-                      <input type="range" disabled />
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="set_list">
-                  <ul>
-                    <li class="tt">
-                      기간
-                    </li>
-                    <li class="in">
-                      <span>50,000</span>&nbsp;만 원<button>편집</button>
-                    </li>
-                    <li class="bar">
-                      <input type="range" disabled />
-                    </li>
-                  </ul>
-                </div>
-                <div class="set_list">
-                  <ul>
-                    <li class="tt">
-                      기간
-                    </li>
-                    <li class="in">
-                      <span>50,000</span>&nbsp;만 원<button>편집</button>
-                    </li>
-                    <li class="bar">
-                      <input type="range" disabled />
-                    </li>
-                  </ul>
-                </div>
-                <div class="set_list">
-                  <ul>
-                    <li class="tt">
-                      기간
-                    </li>
-                    <li class="in">
-                      <span>50,000</span>&nbsp;만 원<button>편집</button>
-                    </li>
-                    <li class="bar">
-                      <input type="range" disabled />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <summary class="more_btn"> 옵션 상세설정<div class="ic-open-arrow"></div></summary>
-            </details>
-
-            <div class="graph-box">
-              <!-- chart 솔루션 들어갈 부분 (구글차트 더미) -->
-              <figure class="highcharts-figure">
-                <div id="container"></div>
-              </figure>
-            </div>
-
             <p class="msg-box gray">* 시뮬레이팅 결과에 대하여 골든트리 투자자문은 책임지지 않습니다</p>
-
-            <div class="btn-group">
-              <button class="btn-blue active">재무추가</button>
-            </div>
 
             <div class="btn-group">
               <button class="btn-text">임시저장</button>
