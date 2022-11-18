@@ -1661,6 +1661,12 @@
         border-bottom: 2px solid #2e3666;
       }
 
+      .img_company{
+        content: url(#{$imgPath}img_company.png);
+        width: $size-61;
+        height: $size-71;
+      }
+
       .etc-info{
         display: flex;
         flex-direction: column;

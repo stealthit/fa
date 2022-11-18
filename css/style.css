@@ -1940,6 +1940,12 @@
     border-bottom: 2px solid #2e3666;
 }
 
+#main.counsel.counsel1 .info-box .img_company {
+    content: url(../assets/img_company.png);
+    width: 3.8125rem;
+    height: 4.4375rem;
+}
+
 #main.counsel.counsel1 .info-box .etc-info {
     display: flex;
     flex-direction: column;
