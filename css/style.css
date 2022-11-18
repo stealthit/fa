@@ -2258,8 +2258,38 @@
 #main.counsel.counsel4 .set_wrap .set_box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 1.875rem;
+}
+
+#main.counsel.counsel4 .set_wrap .set_box .set_list.w100p {
+    width: 100%;
+}
+
+#main.counsel.counsel4 .set_wrap .set_box .set_list.w100p h6 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    color: #2e3666;
+}
+
+#main.counsel.counsel4 .set_wrap .set_box .set_list.w100p h6 i {
+    color: #1ea5d2;
+}
+
+#main.counsel.counsel4 .set_wrap .set_box .set_list.w60p {
+    width: 65%;
+}
+
+#main.counsel.counsel4 .set_wrap .set_box .set_list.w60p h6 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    color: #2e3666;
+}
+
+#main.counsel.counsel4 .set_wrap .set_box .set_list.w60p h6 i {
+    color: #1ea5d2;
 }
 
 #main.counsel.counsel4 .set_wrap .set_box .set_list {
@@ -2297,6 +2327,16 @@
     margin-left: 0.625rem;
     padding: 0.1875rem 1rem;
     text-align: center;
+    border: solid 1px #ccc;
+    background: #fff;
+}
+
+#main.counsel.counsel4 .set_wrap .set_box .set_list .in .select-box {
+    width: 9.375rem;
+    height: 1.5625rem;
+    padding: 0 0.625rem;
+    font-size: 0.875rem;
+    color: #999;
     border: solid 1px #ccc;
 }
 
@@ -2736,6 +2776,11 @@
     background-color: #f5f5f5;
 }
 
+#main.counsel.counsel4 .btn_box button {
+    width: 100%;
+    text-align: center;
+}
+
 #main.counsel.counsel9 .box {
     border: solid 1px #e5e5e5;
 }
@@ -2895,7 +2940,7 @@
 #main.counsel.counsel9 .section03 .set_box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 1.25rem;
     padding: 1.875rem 2.5rem;
 }

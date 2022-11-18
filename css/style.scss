@@ -1953,8 +1953,33 @@
       .set_box{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: $size-30;
+        .set_list.w100p{
+          width: 100%;
+          h6{
+            font-size: $size-20;
+            font-weight: bold;
+            text-align: center;
+            color: #2e3666;
+            i{
+              color: #1ea5d2;
+            }
+          }
+        }
+
+        .set_list.w60p{
+          width: 65%;
+          h6{
+            font-size: $size-20;
+            font-weight: bold;
+            text-align: center;
+            color: #2e3666;
+            i{
+              color: #1ea5d2;
+            }
+          }
+        }
         .set_list{
           width: calc((100% - #{$size-60}) / 3);
           ul{
@@ -1986,6 +2011,15 @@
               margin-left: $size-10;
               padding: $size-3 $size-16;
               text-align: center;
+              border: solid 1px #ccc;
+              background: #fff;
+            }
+            .select-box{
+              width: $size-150;
+              height: $size-25;
+              padding: 0 $size-10;
+              font-size: $size-14;
+              color: #999;
               border: solid 1px #ccc;
             }
           }
@@ -2328,6 +2362,12 @@
         background-color: #f5f5f5;
       }
     }
+    .btn_box{
+      button{
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
   &.counsel9{
     .box{
@@ -2470,7 +2510,7 @@
       .set_box{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: $size-20;
         padding: $size-30 $size-40;
         .set_list{
