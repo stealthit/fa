@@ -1,0 +1,264 @@
+@import "func.scss";
+@import url("reset.css");
+@import url("common.css");
+
+#main.mob {
+  .contents-wrap {
+    @include flex_center;
+    min-height: $size-1080;
+    .contents-inner {
+      display: flex;
+      width: $size-360;
+      .contents-body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: $size-30;
+        min-height: $size-720;
+        padding: $size-30 $size-20 $size-86 $size-20;
+
+        h2{
+          i{
+            color: #0bc890;
+          }
+        }
+
+        .img-top-logo{
+          width: $size-172;
+          height: $size-34;
+        }
+
+        // 신청 진행바
+        .order-bar {
+          position: relative;
+          width: $size-98;
+          height: 5px;
+          background-color: #e5e5e5;
+          border-radius: 5px;
+
+          .current-bar {
+            position: absolute;
+            height: 5px;
+            background-color: #0bc890;
+            border-radius: 5px;
+            left: 0;
+            z-index: 1;
+
+            &.c1 {
+              width: $size-14;
+            }
+            &.c2 {
+              width: $size-28;
+            }
+            &.c3 {
+              width: $size-42;
+            }
+            &.c4 {
+              width: $size-56;
+            }
+            &.c5 {
+              width: $size-70;
+            }
+            &.c6 {
+              width: $size-84;
+            }
+            &.c7 {
+              width: $size-98;
+            }
+          }
+        }
+
+        .btn-ck-agree {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: $size-10;
+          width: 100%;
+          height: $size-60;
+          padding: 0 $size-20;
+          border: solid 1px #ccc;
+          background-color: #fff;
+          font-size: $size-16;;
+          font-weight: bold;
+          line-height: 1.05;
+          color: #aaa;
+
+          img {
+            content: url(#{$imgPath}bt_check_n.png);
+            width: $size-19;
+            height: $size-18;
+          }
+
+          &.checked {
+            border: solid 1px #0bc890;
+            color: #0bc890;
+            img {
+              content: url(#{$imgPath}bt_check_s.png);
+            }
+          }
+        }
+
+        .agree-box {
+          display: flex;
+          flex-direction: column;
+          gap: $size-20;
+          details.agree-check {
+            summary {
+              position: relative;
+              display: flex;
+              align-items: center;
+              gap: $size-10;
+              font-size: $size-14;
+              line-height: 1.5;
+              color: #222;
+            }
+            .item-desc {
+              @include scrollbar('V');
+              height: $size-180;
+              margin-top: $size-10;
+              border: solid 1px #e5e5e5;
+              background-color: #fff;
+              padding: $size-20;
+              font-size: $size-14;
+              color: #666;
+            }
+          }
+        }
+        // 문구
+        .refer-txt{
+          font-size: $size-14;
+          color: #666;
+        }
+        .result-txt{
+          font-size: $size-14;
+          font-weight: bold;
+        }
+
+        // 버튼
+        .btn-group{
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          gap: 0;
+          button{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+#main.mob2{
+  .img-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $size-190;
+    height: $size-190;
+    margin: $size-70 auto;
+    border-radius: $size-100;
+    background: #f8f9fd;
+    p{
+      content: url(#{$imgPath}img_phone.png);
+    }
+  }
+}
+
+#main.mob4{
+  .input-box{
+    display: flex;
+    flex-direction: column;
+    gap: $size-10;
+    .input-group{
+      gap: 0;
+      button{
+        width: $size-100;
+        height: $size-48;
+        font-size: $size-14;
+        font-weight: normal;
+        border-left: 0;
+      }
+    }
+  }
+}
+
+#main.mob5{
+  .complete-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: $size-30;
+    gap: $size-20;
+  }
+  .refer-txt{
+    text-align: center;
+  }
+}
+
+#main.mob7{
+  .info-box{
+    display: flex;
+    align-items: center;
+    gap: $size-10;
+    .info-tt{
+      font-size: $size-14;
+      color: #999;
+    }
+    .info-co{
+      font-size: $size-14;
+      font-weight: bold;
+    }
+    .v-seperate{
+      border: none;
+      width: 1px;
+      height: $size-16;
+      background-color: #ccc;
+    }
+  }
+  .survey{
+    display: flex;
+    flex-wrap: wrap;
+    gap: $size-20 $size-10;
+    dt{
+      width: 100%;
+      font-size: $size-18;
+      font-weight: bold;
+      color: #2e3666;
+    }
+    dd{
+      width: 100%;
+    }
+    &.w1{
+      dd{
+        width: 100%;
+      }
+    }
+    &.w2{
+      dd{
+        width: calc(50% - #{$size-10});
+      }
+    }
+    textarea{
+      position: relative;
+      width: 100%;
+      height: $size-100;
+      padding: $size-14 $size-16;
+      border: solid 1px #ccc;
+      background-color: #fff;
+      font-size: $size-14;
+      line-height: 1.2;
+    }
+    textarea::placeholder{
+      color: #ccc;
+    }
+  }
+}
+
+#main.mob8{
+  .img-bias{
+    content: url(#{$imgPath}img_bias.png);
+  }
+}
