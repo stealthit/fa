@@ -288,12 +288,14 @@
           .calendar-wrap {
             flex: 1;
             display: flex;
-            flex-direction: column;
-            gap: $size-30;
+            flex-direction: column;            
 
             .calendar-top {
               display: flex;
               justify-content: space-between;
+            }
+            .my_work {
+              margin-top: 0;
             }
           }
         }
@@ -481,7 +483,6 @@
           border: solid 1px #ccc;
           background-color: #fff;
           font-size: $size-16;
-          ;
           font-weight: bold;
           line-height: 1.05;
           color: #aaa;
@@ -1528,7 +1529,34 @@
     width: 100%;
   }
 }
+// login extension
+#modal-ex-login {
+  width: $size-560;
+  text-align: center;
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: $size-20;    
 
+    h3 {text-align: center;}
+  }
+  .h-line {
+    width: 100%;
+    height: 2px;    
+    background-color: #2e3666;
+  }
+  .count-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;    
+    background-color: #f8f9fd;
+    font-size: 16px;
+    font-weight: 500;  
+    text-align: center;
+    color: #666;
+  }
+}
 // counsel modal
 #modal-send-result {
   width: 25rem;
@@ -1753,7 +1781,6 @@
           border: solid 1px #ccc;
           background-color: #fff;
           font-size: $size-16;
-          ;
           font-weight: bold;
           line-height: 1.05;
           color: #aaa;

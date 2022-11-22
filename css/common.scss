@@ -1639,3 +1639,12 @@ option {
     }
   }
 }
+.no-data { 
+  margin-top: $size-180;
+  width: $main_width;  
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  justify-content: center;
+  p {color: #999999;}
+}
