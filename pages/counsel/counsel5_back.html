@@ -114,136 +114,185 @@
             </div>
 
             <div class="set_wrap">
-              <div class="set_box">
-                <div class="set_list">
-                  <ul>
-                    <li class="tt">
-                      항목명
-                    </li>
-                    <li class="in">
-                      <span><input id="rangenumber" type="number" min="0" max="500" value="250" ></span>&nbsp;단위<button>편집</button>
-                    </li>
-                    <li class="bar">
-                      <input id="range" class="rangeInput" type="range"  min="0" max="500" step="1" value="250" oninput="rangenumber.value=value"/>
-                    </li>
-                  </ul>
+              <ul class="tab-menu">
+                <li class="active" data-tab="tab01">인컴펀트</li>
+                <li data-tab="tab02">투자형 보험연금</li>
+              </ul>
+              <div id="tab01" class="tab-content active">
+                <div class="set_box">
+                  <div class="set_list">
+                    <ul>
+                      <li class="tt">
+                        목표금액
+                      </li>
+                      <li class="in">
+                        <span><input id="rangenumber" type="number" min="0" max="500" value="250" ></span>&nbsp;만원<button>편집</button>
+                      </li>
+                      <li class="bar">
+                        <input id="range" class="rangeInput" type="range"  min="0" max="500" step="1" value="250" oninput="rangenumber.value=value"/>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="set_list">
+                    <ul>
+                      <li class="tt">
+                        거치금액
+                      </li>
+                      <li class="in">
+                        <span>50,000</span>&nbsp;만원<button>편집</button>
+                      </li>
+                      <li class="bar">
+                        <input type="range" disabled />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="set_list">
+                    <ul>
+                      <li class="tt">
+                        적립투입금
+                      </li>
+                      <li class="in">
+                        <span>50,000</span>&nbsp;만원<button>편집</button>
+                      </li>
+                      <li class="bar">
+                        <input type="range" disabled />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="set_list">
+                    <ul>
+                      <li class="tt">
+                        투자기간
+                      </li>
+                      <li class="in">
+                        <span>5</span>&nbsp;년<button>편집</button>
+                      </li>
+                      <li class="bar">
+                        <input type="range" disabled />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="set_list">
+                    <ul>
+                      <li class="tt">
+                        분배율(연)
+                      </li>
+                      <li class="in">
+                        <span>50,000</span>&nbsp;만원<button>편집</button>
+                      </li>
+                      <li class="bar">
+                        <input type="range" disabled />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="set_list">
+                    <ul>
+                      <li class="tt">
+                        비용(수수료)
+                      </li>
+                      <li class="in">
+                        <span>50,000</span>&nbsp;만원<button>편집</button>
+                      </li>
+                      <li class="bar">
+                        <input type="range" disabled />
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div><!-- tab01 -->
 
-                <div class="set_list">
-                  <ul>
-                    <li class="tt">
-                      월간투자
-                    </li>
-                    <li class="in">
-                      <span>50,000</span>&nbsp;만 원<button>편집</button>
-                    </li>
-                    <li class="bar">
-                      <input type="range" disabled />
-                    </li>
-                  </ul>
+              <div id="tab02" class="tab-content">
+                <div class="set_box">
+                  <div class="set_list">
+                    <ul>
+                      <li class="tt">
+                        목표금액
+                      </li>
+                      <li class="in">
+                        <span><input id="rangenumber" type="number" min="0" max="500" value="250" ></span>&nbsp;만원<button>편집</button>
+                      </li>
+                      <li class="bar">
+                        <input id="range" class="rangeInput" type="range"  min="0" max="500" step="1" value="250" oninput="rangenumber.value=value"/>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="set_list">
+                    <ul>
+                      <li class="tt">
+                        거치금액
+                      </li>
+                      <li class="in">
+                        <span>50,000</span>&nbsp;만원<button>편집</button>
+                      </li>
+                      <li class="bar">
+                        <input type="range" disabled />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="set_list">
+                    <ul>
+                      <li class="tt">
+                        적립투입금
+                      </li>
+                      <li class="in">
+                        <span>50,000</span>&nbsp;만원<button>편집</button>
+                      </li>
+                      <li class="bar">
+                        <input type="range" disabled />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="set_list">
+                    <ul>
+                      <li class="tt">
+                        투자기간
+                      </li>
+                      <li class="in">
+                        <span>5</span>&nbsp;년<button>편집</button>
+                      </li>
+                      <li class="bar">
+                        <input type="range" disabled />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="set_list">
+                    <ul>
+                      <li class="tt">
+                        분배율(연)
+                      </li>
+                      <li class="in">
+                        <span>50,000</span>&nbsp;만원<button>편집</button>
+                      </li>
+                      <li class="bar">
+                        <input type="range" disabled />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="set_list">
+                    <ul>
+                      <li class="tt">
+                        비용(수수료)
+                      </li>
+                      <li class="in">
+                        <span>50,000</span>&nbsp;만원<button>편집</button>
+                      </li>
+                      <li class="bar">
+                        <input type="range" disabled />
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-
-                <div class="set_list">
-                  <ul>
-                    <li class="tt">
-                      기간
-                    </li>
-                    <li class="in">
-                      <span>5</span>&nbsp;년<button>편집</button>
-                    </li>
-                    <li class="bar">
-                      <input type="range" disabled />
-                    </li>
-                  </ul>
-                </div>
-
-                <details class="more_box">
-                  <div class="set_list">
-                    <ul>
-                      <li class="tt">
-                        기간
-                      </li>
-                      <li class="in">
-                        <span>50,000</span>&nbsp;만 원<button>편집</button>
-                      </li>
-                      <li class="bar">
-                        <input type="range" disabled />
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="set_list">
-                    <ul>
-                      <li class="tt">
-                        기간
-                      </li>
-                      <li class="in">
-                        <span>50,000</span>&nbsp;만 원<button>편집</button>
-                      </li>
-                      <li class="bar">
-                        <input type="range" disabled />
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="set_list">
-                    <ul>
-                      <li class="tt">
-                        기간
-                      </li>
-                      <li class="in">
-                        <span>50,000</span>&nbsp;만 원<button>편집</button>
-                      </li>
-                      <li class="bar">
-                        <input type="range" disabled />
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="set_list">
-                    <ul>
-                      <li class="tt">
-                        기간
-                      </li>
-                      <li class="in">
-                        <span>50,000</span>&nbsp;만 원<button>편집</button>
-                      </li>
-                      <li class="bar">
-                        <input type="range" disabled />
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="set_list">
-                    <ul>
-                      <li class="tt">
-                        기간
-                      </li>
-                      <li class="in">
-                        <span>50,000</span>&nbsp;만 원<button>편집</button>
-                      </li>
-                      <li class="bar">
-                        <input type="range" disabled />
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="set_list">
-                    <ul>
-                      <li class="tt">
-                        기간
-                      </li>
-                      <li class="in">
-                        <span>50,000</span>&nbsp;만 원<button>편집</button>
-                      </li>
-                      <li class="bar">
-                        <input type="range" disabled />
-                      </li>
-                    </ul>
-                  </div>
-                  <summary class="more_btn"> 옵션 상세설정<div class="ic-open-arrow"></div></summary>
-                </details>
-              </div>
+              </div><!-- tab02 -->
             </div><!-- set_wrap -->
 
             <div class="title">
