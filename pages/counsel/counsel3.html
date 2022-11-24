@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>고객상담</title>
-  <link rel="stylesheet" href="../../css/style.css">  
+  <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/><!-- 스와이퍼 -->
 </head>
 <body>
@@ -154,7 +154,7 @@
 
             <div class="btn-group">
               <button class="btn-text">임시저장</button>
-              <button class="btn-white btn-cancel">이전</button>
+              <button class="btn-white btn-prev">이전</button>
               <button class="btn-green btn-next active">다음</button>
             </div>
           </div><!-- card -->
@@ -175,5 +175,11 @@
     loop : true,
     loopAdditionalSlides : 3,
   });
+  document.querySelector(".btn-prev").onclick = (e) => {
+    location.href = "counsel2.html";
+  }
+  document.querySelector(".btn-next").onclick = (e) => {
+    location.href = "counsel4.html";
+  }
 </script>
 </html>

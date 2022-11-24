@@ -210,7 +210,7 @@
             </div>
             <div class="btn-group">
               <button class="btn-text">임시저장</button>
-              <button class="btn-white btn-cancel">이전</button>
+              <button class="btn-white btn-prev">이전</button>
               <button class="btn-green btn-next active">다음</button>
             </div>
           </div>
@@ -222,4 +222,12 @@
 </body>
 <script src="../../scripts/func.js"></script>
 <script src="../../scripts/script.js"></script>
+<script>
+    document.querySelector(".btn-prev").onclick = (e) => {
+      location.href = "counsel1_3.html";
+    }
+    document.querySelector(".btn-next").onclick = (e) => {
+      location.href = "counsel1_5.html";
+    }
+</script>
 </html>

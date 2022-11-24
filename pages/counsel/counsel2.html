@@ -166,7 +166,7 @@
 
             <div class="btn-group">
               <button class="btn-text">임시저장</button>
-              <button class="btn-white btn-cancel">이전</button>
+              <button class="btn-white btn-prev">이전</button>
               <button class="btn-green btn-next active">다음</button>
             </div>
           </div><!-- card -->
@@ -206,12 +206,11 @@ document.querySelector(".btn-url").addEventListener("click",function(){
   el.closest('.modal-con').classList.toggle('opaque');
   el.closest('.modal-con').classList.toggle('unstaged');
 })
-document.querySelector(".btn-del").addEventListener("click",function(){
-  let el = document.getElementById('modal-send-result');
-  el.querySelector('.url').style.display = 'none';
-  el.querySelector('.del').style.display = 'block';
-  el.closest('.modal-con').classList.toggle('opaque');
-  el.closest('.modal-con').classList.toggle('unstaged');
-})
+document.querySelector(".btn-prev").onclick = (e) => {
+  location.href = "counsel1.html";
+}
+document.querySelector(".btn-next").onclick = (e) => {
+  location.href = "counsel3.html";
+}
 </script>
 </html>

@@ -177,7 +177,7 @@
             </div>
             <div class="btn-group">
               <button class="btn-text">임시저장</button>
-              <button class="btn-white btn-cancel">이전</button>
+              <button class="btn-white btn-prev">이전</button>
               <button class="btn-green btn-next active btn-war">다음</button>
             </div>
           </div>
@@ -197,7 +197,7 @@
       </div>
       <div class="modal-bottom">
         <div class="btn-sgroup">
-          <button class="btn-modal-blue">확인</button>
+          <button class="btn-modal-blue modal-close">확인</button>
         </div>
       </div>
     </div>
@@ -213,5 +213,8 @@ document.querySelector(".btn-war").addEventListener("click",function(){
   el.closest('.modal-con').classList.toggle('opaque');
   el.closest('.modal-con').classList.toggle('unstaged');
 })
+document.querySelector(".btn-prev").onclick = (e) => {
+  location.href = "counsel1_4.html";
+}
 </script>
 </html>

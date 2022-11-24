@@ -107,7 +107,7 @@
           <div class="contents-body card">
             <div class="order-bar"><div class="current-bar c4"></div></div>
 
-            <div class="type_04">
+            <!-- <div class="type_04">
               <ul>
                 <li>
                   <div class="ic_free"></div>
@@ -118,13 +118,17 @@
                   <p>은퇴설계 &nbsp; <i></i></p>
                 </li>
               </ul>
+            </div> -->
+
+            <div class="btn_box">
+              <button class="btn-blue active btn-fin">재무추가</button>
             </div>
 
             <p class="msg-box gray">* 시뮬레이팅 결과에 대하여 골든트리 투자자문은 책임지지 않습니다</p>
 
             <div class="btn-group">
               <button class="btn-text">임시저장</button>
-              <button class="btn-white btn-cancel">이전</button>
+              <button class="btn-white btn-prev">이전</button>
               <button class="btn-green btn-next active">다음</button>
             </div>
           </div><!-- card -->
@@ -134,44 +138,42 @@
     </div>
   </div>
 
-  <!-- 모달 -->
+  <!-- 재무추가 -->
   <div class="modal-con modal unstaged">
     <div class="modal-overlay"></div>
-    <div id="modal-cou-tip" class="modal-contents">
-      <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>
-      <div class="tib">
-        <h6>참고자료</h6>
-        <p class="desc">
-          결혼 비용 4,532만 원<br/>
-          • 주택마련 비용 제외<br/>
-          • 2020년 기준, 출처 : 통계청<br/><br/>
-
-          주택마련 비용 8억 7천만 원<br/>
-          • 서울 평균<br/>
-          • 2020년 기준, 출처 : 한국감정원<br/><br/>
-
-          기대여명 남성 80.5세 / 여성 86.5세<br/>
-          • 2020년 기준, 출처 : 한국감정원<br/><br/>
-
-          적정 은퇴 비용 2인 월 275만 원 / 1인 월 167만 원<br/>
-          • 60세 기준<br/>
-          • 2019년 기준, 출처 : 국민연금관리공단
-        </p>
+    <div id="modal-cou-fin" class="modal-contents">
+      <div class="fin">
+        <ul>
+          <li>
+            <button>
+              <div class="ic_free"></div>
+              <p>자유설계 &nbsp; <i></i></p>
+            </button>
+          </li>
+          <li>
+            <button>
+              <div class="ic_retire"></div>
+              <p>은퇴설계 &nbsp; <i></i></p>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-bottom">
+        <div class="btn-sgroup">
+          <button class="btn-modal-white modal-close">취소</button>
+        </div>
       </div>
     </div>
   </div>
+
 </body>
 <script src="../../scripts/func.js"></script>
 <script src="../../scripts/script.js"></script>
 <script type="text/javascript">
-document.querySelector('.rangeInput').addEventListener('input',function(event){
-  var gradient_value = 100 / event.target.attributes.max.value;
-  event.target.style.background = 'linear-gradient(to right, #0bc890 0%, #0bc890 '+gradient_value * event.target.value +'%, #e6e6e6 ' +gradient_value *  event.target.value + '%, #e6e6e6 100%)';
-});
 // modal-open
-document.querySelector(".btn-tib").addEventListener("click",function(){
-  let el = document.getElementById('modal-cou-tip');
-  el.querySelector('.tib').style.display = 'block';
+document.querySelector(".btn-fin").addEventListener("click",function(){
+  let el = document.getElementById('modal-cou-fin');
+  el.querySelector('.fin').style.display = 'block';
   el.closest('.modal-con').classList.toggle('opaque');
   el.closest('.modal-con').classList.toggle('unstaged');
 })
